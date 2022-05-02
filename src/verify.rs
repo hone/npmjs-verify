@@ -1,15 +1,11 @@
 use crate::npmjs::{Dist, Version};
-use std::{
-    fs::File,
-    io::Write,
-    path::Path,
-    process::{Command, Output},
-};
+use std::{fs::File, future::Future, io::Write, path::Path, process::Output};
+use tokio::process::Command;
 use tracing::debug;
 
 const SIGNED_BY: &str = "npmregistry";
 
-pub fn verify(version: &Version) -> Option<bool> {
+pub async fn verify(version: &Version) -> Option<bool> {
     let message = match message(&version) {
         Some(m) => m,
         None => return None,
@@ -20,7 +16,7 @@ pub fn verify(version: &Version) -> Option<bool> {
         .is_some()
     {
         let output = verify_cmd(SIGNED_BY, sig_tempfile.path(), &message);
-        if let Ok(output) = output {
+        if let Ok(output) = output.await.await {
             let status = output.status.success();
             debug!("{}", String::from_utf8_lossy(&output.stdout));
             debug!("{}", String::from_utf8_lossy(&output.stderr));
@@ -44,11 +40,11 @@ fn message(version: &Version) -> Option<String> {
     }
 }
 
-fn verify_cmd(
+async fn verify_cmd(
     signed_by: &str,
     detached: impl AsRef<Path>,
     message: &str,
-) -> Result<Output, std::io::Error> {
+) -> impl Future<Output = Result<Output, std::io::Error>> {
     Command::new("keybase")
         .args([
             "pgp",

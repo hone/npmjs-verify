@@ -11,8 +11,12 @@ async fn main() {
 
     if let Some(package) = npmjs::package(&args.package).await.unwrap() {
         info!("Found {}", package.name);
-        for version in package.versions.values() {
-            if let Some(result) = npmjs_verify::verify(&version) {
+        let futures = package
+            .versions
+            .values()
+            .map(|version| (version, npmjs_verify::verify(&version)));
+        for (version, future) in futures {
+            if let Some(result) = future.await {
                 info!("{}: {}", version.version, result);
             } else {
                 info!("{}: Can not verify", version.version);
