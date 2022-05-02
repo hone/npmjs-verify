@@ -5,6 +5,7 @@ use std::{
     path::Path,
     process::{Command, Output},
 };
+use tracing::debug;
 
 const SIGNED_BY: &str = "npmregistry";
 
@@ -21,6 +22,8 @@ pub fn verify(version: &Version) -> Option<bool> {
         let output = verify_cmd(SIGNED_BY, sig_tempfile.path(), &message);
         if let Ok(output) = output {
             let status = output.status.success();
+            debug!("{}", String::from_utf8_lossy(&output.stdout));
+            debug!("{}", String::from_utf8_lossy(&output.stderr));
             return Some(status);
         } else {
             return Some(false);

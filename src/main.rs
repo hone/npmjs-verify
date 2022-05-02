@@ -1,20 +1,24 @@
 use clap::Parser;
 use npmjs_verify::{cli::Args, npmjs};
+use tracing::info;
+use tracing_subscriber;
 
 #[tokio::main]
 async fn main() {
+    tracing_subscriber::fmt::init();
+
     let args = Args::parse();
 
     if let Some(package) = npmjs::package(&args.package).await.unwrap() {
-        println!("Found {}", package.name);
+        info!("Found {}", package.name);
         for version in package.versions.values() {
             if let Some(result) = npmjs_verify::verify(&version) {
-                println!("{}: {}", version.version, result);
+                info!("{}: {}", version.version, result);
             } else {
-                println!("{}: Can not verify", version.version);
+                info!("{}: Can not verify", version.version);
             }
         }
     } else {
-        println!("{} not found", &args.package);
+        info!("{} not found", &args.package);
     }
 }
