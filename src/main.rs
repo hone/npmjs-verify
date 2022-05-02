@@ -15,13 +15,12 @@ async fn main() {
         let futures = package
             .versions
             .values()
-            .map(|version| (version, npmjs_verify::verify(version)));
-        for (version, future) in futures {
-            if let Some(result) = future.await {
-                info!("{}: {}", version.version, result);
-            } else {
-                info!("{}: Can not verify", version.version);
-            }
+            .map(|version| npmjs_verify::verify(version));
+
+        let mut outputs = futures::future::join_all(futures).await;
+        outputs.sort_by(|a, b| a.version.cmp(&b.version));
+        for output in outputs {
+            info!("{}: {:?}", output.version, output.result);
         }
     } else {
         info!("{} not found", &args.package);

@@ -5,10 +5,34 @@ use tracing::debug;
 
 const SIGNED_BY: &str = "npmregistry";
 
-pub async fn verify(version: &Version) -> Option<bool> {
+#[derive(Debug)]
+pub enum Verify {
+    Pass,
+    Fail,
+    Missing,
+}
+
+#[derive(Debug)]
+pub struct VerifyOutput {
+    pub name: String,
+    pub version: node_semver::Version,
+    pub result: Verify,
+}
+
+impl VerifyOutput {
+    pub fn new(version: &Version, result: Verify) -> VerifyOutput {
+        VerifyOutput {
+            name: version.name.clone(),
+            version: version.version.clone(),
+            result,
+        }
+    }
+}
+
+pub async fn verify(version: &Version) -> VerifyOutput {
     let message = match message(version) {
         Some(m) => m,
-        None => return None,
+        None => return VerifyOutput::new(version, Verify::Missing),
     };
     let sig_tempfile = tempfile::NamedTempFile::new().unwrap();
     if write_signature(&version.dist, sig_tempfile.path())
@@ -20,13 +44,13 @@ pub async fn verify(version: &Version) -> Option<bool> {
             let status = output.status.success();
             debug!("{}", String::from_utf8_lossy(&output.stdout));
             debug!("{}", String::from_utf8_lossy(&output.stderr));
-            return Some(status);
+            return VerifyOutput::new(version, if status { Verify::Pass } else { Verify::Fail });
         } else {
-            return Some(false);
+            return VerifyOutput::new(version, Verify::Fail);
         }
     }
 
-    None
+    VerifyOutput::new(version, Verify::Missing)
 }
 
 fn message(version: &Version) -> Option<String> {
