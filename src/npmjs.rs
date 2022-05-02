@@ -6,17 +6,20 @@ use reqwest::{header, Client as ReqwestClient, ClientBuilder};
 
 const NPMJS_REGISTRY_BASE: &str = "https://registry.npmjs.org";
 
+/// NPM API Client
 pub struct Client {
     client: reqwest::Client,
 }
 
 impl Client {
+    /// Construct a new NPM API Client with an optional provided auth token
     pub fn new(auth: Option<String>) -> Result<Client, reqwest::Error> {
         Ok(Client {
             client: client(auth)?,
         })
     }
 
+    /// Fetch information for specified package
     pub async fn package(&self, name: &str) -> Result<Option<Package>, reqwest::Error> {
         let response = self
             .client
