@@ -8,8 +8,10 @@ async fn main() {
     tracing_subscriber::fmt::init();
 
     let args = Args::parse();
+    let npmjs_token = std::env::var("NPMJS_TOKEN").ok();
+    let npmjs_client = npmjs::Client::new(npmjs_token).unwrap();
 
-    if let Some(package) = npmjs::package(&args.package).await.unwrap() {
+    if let Some(package) = npmjs_client.package(&args.package).await.unwrap() {
         info!("Found {}", package.name);
         let futures = package
             .versions
