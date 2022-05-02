@@ -1,0 +1,1534 @@
+{
+  "_id": "light-cycle",
+  "_rev": "31-6420cf508f3a1aaf3fab110c419cd649",
+  "name": "light-cycle",
+  "description": "a consistent hash ring for your blue-glowing shards of PURE ENERGY",
+  "dist-tags": {
+    "latest": "1.4.3"
+  },
+  "versions": {
+    "0.0.1": {
+      "name": "light-cycle",
+      "version": "0.0.1",
+      "description": "a consistent hash ring for your blue-glowing shards",
+      "author": {
+        "name": "C J Silverio",
+        "email": "ceejceej@gmail.com"
+      },
+      "license": "MIT",
+      "main": "index.js",
+      "scripts": {
+        "test": "./node_modules/.bin/mocha -R spec test/*.js && ./node_modules/.bin/mocha --require blanket -R travis-cov test/*.js"
+      },
+      "keywords": [
+        "hashing",
+        "hash ring",
+        "consistent hash ring",
+        "sharding"
+      ],
+      "dependencies": {
+        "skiplist": "~0.0.1",
+        "xxhash": "~0.0.2"
+      },
+      "devDependencies": {
+        "blanket": "*",
+        "chai": "*",
+        "mocha": "*",
+        "travis-cov": "*"
+      },
+      "contributors": [
+        {
+          "name": "C J Silverio",
+          "email": "ceejceej@gmail.com"
+        },
+        {
+          "name": "Kit Cambridge",
+          "email": "kitcambridge@me.com"
+        }
+      ],
+      "_id": "light-cycle@0.0.1",
+      "dist": {
+        "shasum": "b6ce8deaa09c02b58b8c4afe238b7a44040254f4",
+        "tarball": "https://registry.npmjs.org/light-cycle/-/light-cycle-0.0.1.tgz"
+      },
+      "_from": ".",
+      "_npmVersion": "1.3.2",
+      "_npmUser": {
+        "name": "ceejbot",
+        "email": "ceejceej@gmail.com"
+      },
+      "maintainers": [
+        {
+          "name": "ceejbot",
+          "email": "ceejceej@gmail.com"
+        }
+      ],
+      "directories": {}
+    },
+    "0.0.2": {
+      "name": "light-cycle",
+      "version": "0.0.2",
+      "description": "a consistent hash ring for your blue-glowing shards",
+      "author": {
+        "name": "C J Silverio",
+        "email": "ceejceej@gmail.com"
+      },
+      "license": "MIT",
+      "main": "index.js",
+      "scripts": {
+        "test": "./node_modules/.bin/mocha -R spec test/*.js && ./node_modules/.bin/mocha --require blanket -R travis-cov test/*.js"
+      },
+      "keywords": [
+        "hashing",
+        "hash ring",
+        "consistent hash ring",
+        "sharding"
+      ],
+      "dependencies": {
+        "skiplist": "*",
+        "xxhash": "*"
+      },
+      "devDependencies": {
+        "blanket": "*",
+        "chai": "*",
+        "mocha": "*",
+        "travis-cov": "*"
+      },
+      "contributors": [
+        {
+          "name": "C J Silverio",
+          "email": "ceejceej@gmail.com"
+        },
+        {
+          "name": "Kit Cambridge",
+          "email": "kitcambridge@me.com"
+        }
+      ],
+      "_id": "light-cycle@0.0.2",
+      "dist": {
+        "shasum": "ca99bfcc9e46c0a3dee4bf06aa8ad41aa91fc957",
+        "tarball": "https://registry.npmjs.org/light-cycle/-/light-cycle-0.0.2.tgz"
+      },
+      "_from": ".",
+      "_npmVersion": "1.3.2",
+      "_npmUser": {
+        "name": "ceejbot",
+        "email": "ceejceej@gmail.com"
+      },
+      "maintainers": [
+        {
+          "name": "ceejbot",
+          "email": "ceejceej@gmail.com"
+        }
+      ],
+      "directories": {}
+    },
+    "0.0.3": {
+      "name": "light-cycle",
+      "version": "0.0.3",
+      "description": "a consistent hash ring for your blue-glowing shards",
+      "author": {
+        "name": "C J Silverio",
+        "email": "ceejceej@gmail.com"
+      },
+      "license": "MIT",
+      "main": "index.js",
+      "scripts": {
+        "test": "./node_modules/.bin/mocha -R spec test/*.js && ./node_modules/.bin/mocha --require blanket -R travis-cov test/*.js"
+      },
+      "keywords": [
+        "hashing",
+        "hash ring",
+        "consistent hash ring",
+        "sharding"
+      ],
+      "dependencies": {
+        "skiplist": ">=0.0.2",
+        "xxhash": "*"
+      },
+      "devDependencies": {
+        "blanket": "*",
+        "chai": "*",
+        "mocha": "*",
+        "travis-cov": "*"
+      },
+      "contributors": [
+        {
+          "name": "C J Silverio",
+          "email": "ceejceej@gmail.com"
+        },
+        {
+          "name": "Kit Cambridge",
+          "email": "kitcambridge@me.com"
+        }
+      ],
+      "_id": "light-cycle@0.0.3",
+      "dist": {
+        "shasum": "facee3d2a6f38c439ebe3e5a51732cb883a32d77",
+        "tarball": "https://registry.npmjs.org/light-cycle/-/light-cycle-0.0.3.tgz"
+      },
+      "_from": ".",
+      "_npmVersion": "1.3.2",
+      "_npmUser": {
+        "name": "ceejbot",
+        "email": "ceejceej@gmail.com"
+      },
+      "maintainers": [
+        {
+          "name": "ceejbot",
+          "email": "ceejceej@gmail.com"
+        }
+      ],
+      "directories": {}
+    },
+    "0.0.4": {
+      "name": "light-cycle",
+      "version": "0.0.4",
+      "description": "a consistent hash ring for your blue-glowing shards",
+      "author": {
+        "name": "C J Silverio",
+        "email": "ceejceej@gmail.com"
+      },
+      "license": "MIT",
+      "main": "index.js",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/ceejbot/light-cycle.git"
+      },
+      "scripts": {
+        "test": "npm run basic-tests && npm run coverage && npm run coveralls",
+        "basic-tests": "./node_modules/.bin/mocha -R spec test/*.js",
+        "coverage": "./node_modules/.bin/mocha --require blanket -R travis-cov test/*.js",
+        "coveralls": "NODE_ENV=test YOURPACKAGE_COVERAGE=1 ./node_modules/.bin/mocha --require blanket --reporter mocha-lcov-reporter test/*.js | ./node_modules/coveralls/bin/coveralls.js"
+      },
+      "keywords": [
+        "hashing",
+        "hash ring",
+        "consistent hash ring",
+        "sharding"
+      ],
+      "dependencies": {
+        "skiplist": ">=0.0.2",
+        "xxhash": "*"
+      },
+      "devDependencies": {
+        "blanket": "*",
+        "chai": "*",
+        "mocha": "*",
+        "travis-cov": "*",
+        "mocha-lcov-reporter": "*",
+        "coveralls": "*"
+      },
+      "contributors": [
+        {
+          "name": "C J Silverio",
+          "email": "ceejceej@gmail.com"
+        },
+        {
+          "name": "Kit Cambridge",
+          "email": "kitcambridge@me.com"
+        }
+      ],
+      "bugs": {
+        "url": "https://github.com/ceejbot/light-cycle/issues"
+      },
+      "_id": "light-cycle@0.0.4",
+      "dist": {
+        "shasum": "1584b23cd3ebb3a58828c5f402d38e2a13017549",
+        "tarball": "https://registry.npmjs.org/light-cycle/-/light-cycle-0.0.4.tgz"
+      },
+      "_from": ".",
+      "_npmVersion": "1.3.2",
+      "_npmUser": {
+        "name": "ceejbot",
+        "email": "ceejceej@gmail.com"
+      },
+      "maintainers": [
+        {
+          "name": "ceejbot",
+          "email": "ceejceej@gmail.com"
+        },
+        {
+          "name": "kitcambridge",
+          "email": "kit.cambridge@voxer.com"
+        }
+      ],
+      "directories": {}
+    },
+    "0.0.5": {
+      "name": "light-cycle",
+      "version": "0.0.5",
+      "description": "a consistent hash ring for your blue-glowing shards",
+      "author": {
+        "name": "C J Silverio",
+        "email": "ceejceej@gmail.com"
+      },
+      "license": "MIT",
+      "main": "index.js",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/ceejbot/light-cycle.git"
+      },
+      "scripts": {
+        "test": "npm run test-basic && npm run test-cov && npm run coveralls",
+        "test-basic": "./node_modules/.bin/mocha -R spec test/*.js",
+        "test-cov": "./node_modules/.bin/mocha --require blanket -R travis-cov test/*.js",
+        "coverage": "./node_modules/.bin/mocha --require blanket -R html-cov test/*.js > test/coverage.html",
+        "coveralls": "NODE_ENV=test YOURPACKAGE_COVERAGE=1 ./node_modules/.bin/mocha --require blanket --reporter mocha-lcov-reporter test/*.js | ./node_modules/coveralls/bin/coveralls.js"
+      },
+      "keywords": [
+        "hashing",
+        "hash ring",
+        "consistent hash ring",
+        "sharding"
+      ],
+      "dependencies": {
+        "skiplist": ">=0.0.2",
+        "xxhash": "*"
+      },
+      "devDependencies": {
+        "blanket": "*",
+        "chai": "*",
+        "mocha": "*",
+        "travis-cov": "*",
+        "mocha-lcov-reporter": "*",
+        "coveralls": "*"
+      },
+      "contributors": [
+        {
+          "name": "C J Silverio",
+          "email": "ceejceej@gmail.com"
+        },
+        {
+          "name": "Kit Cambridge",
+          "email": "kitcambridge@me.com"
+        }
+      ],
+      "bugs": {
+        "url": "https://github.com/ceejbot/light-cycle/issues"
+      },
+      "_id": "light-cycle@0.0.5",
+      "dist": {
+        "shasum": "30c989169d650ab9e5a1cc25e3268187791915f9",
+        "tarball": "https://registry.npmjs.org/light-cycle/-/light-cycle-0.0.5.tgz"
+      },
+      "_from": ".",
+      "_npmVersion": "1.3.2",
+      "_npmUser": {
+        "name": "ceejbot",
+        "email": "ceejceej@gmail.com"
+      },
+      "maintainers": [
+        {
+          "name": "ceejbot",
+          "email": "ceejceej@gmail.com"
+        },
+        {
+          "name": "kitcambridge",
+          "email": "kit.cambridge@voxer.com"
+        }
+      ],
+      "directories": {}
+    },
+    "0.0.6": {
+      "name": "light-cycle",
+      "version": "0.0.6",
+      "description": "a consistent hash ring for your blue-glowing shards",
+      "author": {
+        "name": "C J Silverio",
+        "email": "ceejceej@gmail.com"
+      },
+      "license": "MIT",
+      "main": "index.js",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/ceejbot/light-cycle.git"
+      },
+      "scripts": {
+        "test": "npm run test-basic && npm run test-cov && npm run coveralls",
+        "test-basic": "./node_modules/.bin/mocha -R spec test/*.js",
+        "test-cov": "./node_modules/.bin/mocha --require blanket -R travis-cov test/*.js",
+        "coverage": "./node_modules/.bin/mocha --require blanket -R html-cov test/*.js > test/coverage.html",
+        "coveralls": "NODE_ENV=test YOURPACKAGE_COVERAGE=1 ./node_modules/.bin/mocha --require blanket --reporter mocha-lcov-reporter test/*.js | ./node_modules/coveralls/bin/coveralls.js"
+      },
+      "keywords": [
+        "hashing",
+        "hash ring",
+        "consistent hash ring",
+        "sharding"
+      ],
+      "dependencies": {
+        "skiplist": ">=0.0.2",
+        "xxhash": "*"
+      },
+      "devDependencies": {
+        "blanket": "*",
+        "chai": "*",
+        "mocha": "*",
+        "travis-cov": "*",
+        "mocha-lcov-reporter": "*",
+        "coveralls": "*"
+      },
+      "contributors": [
+        {
+          "name": "C J Silverio",
+          "email": "ceejceej@gmail.com"
+        },
+        {
+          "name": "Kit Cambridge",
+          "email": "kitcambridge@me.com"
+        }
+      ],
+      "bugs": {
+        "url": "https://github.com/ceejbot/light-cycle/issues"
+      },
+      "_id": "light-cycle@0.0.6",
+      "dist": {
+        "shasum": "01a3e662ef02ff797cb83b6edcc28f4968d9bd9f",
+        "tarball": "https://registry.npmjs.org/light-cycle/-/light-cycle-0.0.6.tgz"
+      },
+      "_from": ".",
+      "_npmVersion": "1.3.2",
+      "_npmUser": {
+        "name": "ceejbot",
+        "email": "ceejceej@gmail.com"
+      },
+      "maintainers": [
+        {
+          "name": "ceejbot",
+          "email": "ceejceej@gmail.com"
+        },
+        {
+          "name": "kitcambridge",
+          "email": "kit.cambridge@voxer.com"
+        }
+      ],
+      "directories": {}
+    },
+    "0.1.0": {
+      "name": "light-cycle",
+      "version": "0.1.0",
+      "description": "a consistent hash ring for your blue-glowing shards",
+      "author": {
+        "name": "C J Silverio",
+        "email": "ceejceej@gmail.com"
+      },
+      "license": "MIT",
+      "main": "index.js",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/ceejbot/light-cycle.git"
+      },
+      "scripts": {
+        "test": "npm run test-suite && npm run test-cov && npm run coveralls",
+        "test-suite": "mocha -R spec test/*.js",
+        "test-cov": "mocha --require blanket -R travis-cov test/*.js",
+        "coverage": "mocha --require blanket -R html-cov test/*.js > test/coverage.html",
+        "coveralls": "NODE_ENV=test YOURPACKAGE_COVERAGE=1 ./node_modules/.bin/mocha --require blanket --reporter mocha-lcov-reporter test/*.js | ./node_modules/coveralls/bin/coveralls.js"
+      },
+      "config": {
+        "blanket": {
+          "pattern": "//^((?!/test|node_modules/).)*$/ig",
+          "onlyCwd": true
+        },
+        "travis-cov": {
+          "threshold": 90
+        }
+      },
+      "keywords": [
+        "hashing",
+        "hash ring",
+        "consistent hash ring",
+        "sharding"
+      ],
+      "dependencies": {
+        "skiplist": "^0.0",
+        "xxhash": "ceejbot/node-xxhash.git"
+      },
+      "devDependencies": {
+        "blanket": "^1.1",
+        "chai": "^1.9",
+        "mocha": "^1.17",
+        "travis-cov": "^0.2",
+        "mocha-lcov-reporter": "^0.0",
+        "coveralls": "^2.7"
+      },
+      "contributors": [
+        {
+          "name": "C J Silverio",
+          "email": "ceejceej@gmail.com"
+        },
+        {
+          "name": "Kit Cambridge",
+          "email": "kitcambridge@me.com"
+        }
+      ],
+      "bugs": {
+        "url": "https://github.com/ceejbot/light-cycle/issues"
+      },
+      "homepage": "https://github.com/ceejbot/light-cycle",
+      "_id": "light-cycle@0.1.0",
+      "dist": {
+        "shasum": "cae23df99dbf227f61ea34aaa3b234fc3575b247",
+        "tarball": "https://registry.npmjs.org/light-cycle/-/light-cycle-0.1.0.tgz"
+      },
+      "_from": ".",
+      "_npmVersion": "1.3.24",
+      "_npmUser": {
+        "name": "ceejbot",
+        "email": "ceejceej@gmail.com"
+      },
+      "maintainers": [
+        {
+          "name": "ceejbot",
+          "email": "ceejceej@gmail.com"
+        }
+      ],
+      "directories": {}
+    },
+    "1.0.0": {
+      "name": "light-cycle",
+      "version": "1.0.0",
+      "description": "a consistent hash ring for your blue-glowing shards",
+      "author": {
+        "name": "C J Silverio",
+        "email": "ceejceej@gmail.com"
+      },
+      "license": "MIT",
+      "main": "index.js",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/ceejbot/light-cycle.git"
+      },
+      "scripts": {
+        "test": "npm run test-suite && npm run test-cov && npm run coveralls",
+        "test-suite": "mocha -R spec test/*.js",
+        "test-cov": "mocha --require blanket -R travis-cov test/*.js",
+        "coverage": "mocha --require blanket -R html-cov test/*.js > test/coverage.html",
+        "coveralls": "NODE_ENV=test YOURPACKAGE_COVERAGE=1 ./node_modules/.bin/mocha --require blanket --reporter mocha-lcov-reporter test/*.js | ./node_modules/coveralls/bin/coveralls.js"
+      },
+      "config": {
+        "blanket": {
+          "pattern": "//^((?!/test|node_modules/).)*$/ig",
+          "onlyCwd": true
+        },
+        "travis-cov": {
+          "threshold": 90
+        }
+      },
+      "keywords": [
+        "hashing",
+        "hash ring",
+        "consistent hash ring",
+        "sharding"
+      ],
+      "dependencies": {
+        "skiplist": "^1.0.0",
+        "xxhash": "git+https://github.com/ceejbot/node-xxhash.git"
+      },
+      "devDependencies": {
+        "blanket": "^1.1",
+        "chai": "^1.9",
+        "mocha": "^1.17",
+        "travis-cov": "^0.2",
+        "mocha-lcov-reporter": "^0.0",
+        "coveralls": "^2.7"
+      },
+      "contributors": [
+        {
+          "name": "C J Silverio",
+          "email": "ceejceej@gmail.com"
+        },
+        {
+          "name": "Kit Cambridge",
+          "email": "kitcambridge@me.com"
+        }
+      ],
+      "gitHead": "ef5b03edabff8c954e7f4a4094983c9e51ced916",
+      "bugs": {
+        "url": "https://github.com/ceejbot/light-cycle/issues"
+      },
+      "homepage": "https://github.com/ceejbot/light-cycle",
+      "_id": "light-cycle@1.0.0",
+      "_shasum": "471849e1fc37ba957d7b033b4f2bb19befbcbcca",
+      "_from": ".",
+      "_npmVersion": "2.0.0-alpha-5",
+      "_npmUser": {
+        "name": "ceejbot",
+        "email": "ceejceej@gmail.com"
+      },
+      "maintainers": [
+        {
+          "name": "ceejbot",
+          "email": "ceejceej@gmail.com"
+        },
+        {
+          "name": "kitcambridge",
+          "email": "kit.cambridge@voxer.com"
+        }
+      ],
+      "dist": {
+        "shasum": "471849e1fc37ba957d7b033b4f2bb19befbcbcca",
+        "tarball": "https://registry.npmjs.org/light-cycle/-/light-cycle-1.0.0.tgz"
+      },
+      "directories": {}
+    },
+    "1.1.0": {
+      "name": "light-cycle",
+      "description": "a consistent hash ring for your blue-glowing shards",
+      "version": "1.1.0",
+      "author": {
+        "name": "C J Silverio",
+        "email": "ceejceej@gmail.com"
+      },
+      "bugs": {
+        "url": "https://github.com/ceejbot/light-cycle/issues"
+      },
+      "config": {
+        "blanket": {
+          "pattern": "//^((?!/test|node_modules/).)*$/ig",
+          "onlyCwd": true
+        },
+        "travis-cov": {
+          "threshold": 90
+        }
+      },
+      "contributors": [
+        {
+          "name": "C J Silverio",
+          "email": "ceejceej@gmail.com"
+        },
+        {
+          "name": "Kit Cambridge",
+          "email": "kitcambridge@me.com"
+        }
+      ],
+      "dependencies": {
+        "skiplist": "^1.0.0",
+        "xxhash-nan": "~0.9.0"
+      },
+      "devDependencies": {
+        "blanket": "^1.1",
+        "chai": "^1.9",
+        "coveralls": "^2.7",
+        "mocha": "^1.17",
+        "mocha-lcov-reporter": "^0.0",
+        "travis-cov": "^0.2"
+      },
+      "homepage": "https://github.com/ceejbot/light-cycle",
+      "keywords": [
+        "hashing",
+        "hash ring",
+        "consistent hash ring",
+        "sharding"
+      ],
+      "license": "MIT",
+      "main": "index.js",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/ceejbot/light-cycle.git"
+      },
+      "scripts": {
+        "test": "npm run test-suite && npm run test-cov && npm run coveralls",
+        "test-suite": "mocha -R spec test/*.js",
+        "test-cov": "mocha --require blanket -R travis-cov test/*.js",
+        "coverage": "mocha --require blanket -R html-cov test/*.js > test/coverage.html",
+        "coveralls": "NODE_ENV=test YOURPACKAGE_COVERAGE=1 ./node_modules/.bin/mocha --require blanket --reporter mocha-lcov-reporter test/*.js | ./node_modules/coveralls/bin/coveralls.js"
+      },
+      "gitHead": "621cea9854910cbbfd7ab9ace860b20a040d7f54",
+      "_id": "light-cycle@1.1.0",
+      "_shasum": "a43c8e962c67fae44d787f0cf75f7b77b88deb19",
+      "_from": ".",
+      "_npmVersion": "2.1.2",
+      "_nodeVersion": "0.10.31",
+      "_npmUser": {
+        "name": "ceejbot",
+        "email": "ceejceej@gmail.com"
+      },
+      "maintainers": [
+        {
+          "name": "ceejbot",
+          "email": "ceejceej@gmail.com"
+        },
+        {
+          "name": "kitcambridge",
+          "email": "kit.cambridge@voxer.com"
+        }
+      ],
+      "dist": {
+        "shasum": "a43c8e962c67fae44d787f0cf75f7b77b88deb19",
+        "tarball": "https://registry.npmjs.org/light-cycle/-/light-cycle-1.1.0.tgz"
+      },
+      "directories": {}
+    },
+    "1.2.0": {
+      "name": "light-cycle",
+      "description": "a consistent hash ring for your blue-glowing shards",
+      "version": "1.2.0",
+      "author": {
+        "name": "C J Silverio",
+        "email": "ceejceej@gmail.com"
+      },
+      "bugs": {
+        "url": "https://github.com/ceejbot/light-cycle/issues"
+      },
+      "config": {
+        "blanket": {
+          "pattern": "//^((?!/test|node_modules/).)*$/ig",
+          "onlyCwd": true
+        },
+        "travis-cov": {
+          "threshold": 90
+        }
+      },
+      "contributors": [
+        {
+          "name": "C J Silverio",
+          "email": "ceejceej@gmail.com"
+        },
+        {
+          "name": "Kit Cambridge",
+          "email": "kitcambridge@me.com"
+        }
+      ],
+      "dependencies": {
+        "skiplist": "~1.0.0",
+        "xxhash": "~0.2.1"
+      },
+      "devDependencies": {
+        "blanket": "^1.1",
+        "chai": "~1.10.0",
+        "coveralls": "~2.11.2",
+        "mocha": "~2.1.0",
+        "mocha-lcov-reporter": "^0.0",
+        "travis-cov": "^0.2"
+      },
+      "homepage": "https://github.com/ceejbot/light-cycle",
+      "keywords": [
+        "hashing",
+        "hash ring",
+        "consistent hash ring",
+        "sharding"
+      ],
+      "license": "MIT",
+      "main": "index.js",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/ceejbot/light-cycle.git"
+      },
+      "scripts": {
+        "test": "npm run test-suite && npm run test-cov && npm run coveralls",
+        "test-suite": "mocha -R spec test/*.js",
+        "test-cov": "mocha --require blanket -R travis-cov test/*.js",
+        "coverage": "mocha --require blanket -R html-cov test/*.js > test/coverage.html",
+        "coveralls": "NODE_ENV=test YOURPACKAGE_COVERAGE=1 ./node_modules/.bin/mocha --require blanket --reporter mocha-lcov-reporter test/*.js | ./node_modules/coveralls/bin/coveralls.js"
+      },
+      "gitHead": "2f2a3cd6d82f302d914f03e00e7b5e51b9777bcd",
+      "_id": "light-cycle@1.2.0",
+      "_shasum": "3f7d6ccae1a42e8248c26e0dd42319f1a3926cf0",
+      "_from": ".",
+      "_npmVersion": "2.4.1",
+      "_nodeVersion": "1.1.0",
+      "_npmUser": {
+        "name": "ceejbot",
+        "email": "ceejceej@gmail.com"
+      },
+      "maintainers": [
+        {
+          "name": "ceejbot",
+          "email": "ceejceej@gmail.com"
+        },
+        {
+          "name": "kitcambridge",
+          "email": "kit.cambridge@voxer.com"
+        }
+      ],
+      "dist": {
+        "shasum": "3f7d6ccae1a42e8248c26e0dd42319f1a3926cf0",
+        "tarball": "https://registry.npmjs.org/light-cycle/-/light-cycle-1.2.0.tgz"
+      },
+      "directories": {}
+    },
+    "1.3.0": {
+      "name": "light-cycle",
+      "description": "a consistent hash ring for your blue-glowing shards",
+      "version": "1.3.0",
+      "author": {
+        "name": "C J Silverio",
+        "email": "ceejceej@gmail.com"
+      },
+      "bugs": {
+        "url": "https://github.com/ceejbot/light-cycle/issues"
+      },
+      "config": {
+        "blanket": {
+          "pattern": "index.js",
+          "data-cover-never": [
+            "node_modules",
+            "test"
+          ],
+          "output-reporter": "spec"
+        },
+        "travis-cov": {
+          "threshold": 90
+        }
+      },
+      "contributors": [
+        {
+          "name": "C J Silverio",
+          "email": "ceejceej@gmail.com"
+        },
+        {
+          "name": "Kit Cambridge",
+          "email": "kitcambridge@me.com"
+        }
+      ],
+      "dependencies": {
+        "mocoverage": "~1.0.0",
+        "skiplist": "~1.0.0",
+        "xxhashjs": "~0.1.1"
+      },
+      "devDependencies": {
+        "blanket": "~1.1.7",
+        "coveralls": "~2.11.3",
+        "jscs": "~2.0.0",
+        "jshint": "~2.8.0",
+        "mocha": "~2.2.5",
+        "mocha-lcov-reporter": "0.0.2",
+        "must": "~0.12.0",
+        "travis-cov": "^0.2"
+      },
+      "homepage": "https://github.com/ceejbot/light-cycle",
+      "keywords": [
+        "hashing",
+        "hash ring",
+        "consistent hash",
+        "consistent hash ring",
+        "sharding"
+      ],
+      "license": "MIT",
+      "main": "index.js",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/ceejbot/light-cycle.git"
+      },
+      "scripts": {
+        "lint": "jshint *.js test/*.js && jscs *.js test/*.js",
+        "travis": "npm run lint && npm run test && npm run test-cov",
+        "test": "mocha --check-leaks --ui exports --require blanket -R mocoverage test/test*.js",
+        "test-cov": "mocha --require blanket -R travis-cov test/*.js",
+        "coverage": "mocha --require blanket -R html-cov test/*.js > test/coverage.html"
+      },
+      "gitHead": "e5e988b8934125e935fc10e002807e7cf3e2ca02",
+      "_id": "light-cycle@1.3.0",
+      "_shasum": "e27dba1267a26426a4a319b11233ce853f0f85bd",
+      "_from": ".",
+      "_npmVersion": "2.11.3",
+      "_nodeVersion": "2.3.3",
+      "_npmUser": {
+        "name": "ceejbot",
+        "email": "ceejceej@gmail.com"
+      },
+      "maintainers": [
+        {
+          "name": "ceejbot",
+          "email": "ceejceej@gmail.com"
+        },
+        {
+          "name": "kitcambridge",
+          "email": "kit.cambridge@voxer.com"
+        }
+      ],
+      "dist": {
+        "shasum": "e27dba1267a26426a4a319b11233ce853f0f85bd",
+        "tarball": "https://registry.npmjs.org/light-cycle/-/light-cycle-1.3.0.tgz"
+      },
+      "directories": {}
+    },
+    "1.3.1": {
+      "name": "light-cycle",
+      "description": "a consistent hash ring for your blue-glowing shards",
+      "version": "1.3.1",
+      "author": {
+        "name": "C J Silverio",
+        "email": "ceejceej@gmail.com"
+      },
+      "bugs": {
+        "url": "https://github.com/ceejbot/light-cycle/issues"
+      },
+      "config": {
+        "blanket": {
+          "pattern": "index.js",
+          "data-cover-never": [
+            "node_modules",
+            "test"
+          ],
+          "output-reporter": "spec"
+        },
+        "travis-cov": {
+          "threshold": 90
+        }
+      },
+      "contributors": [
+        {
+          "name": "C J Silverio",
+          "email": "ceejceej@gmail.com"
+        },
+        {
+          "name": "Kit Cambridge",
+          "email": "kitcambridge@me.com"
+        }
+      ],
+      "dependencies": {
+        "mocoverage": "~1.0.0",
+        "skiplist": "~1.0.0",
+        "xxhashjs": "~0.1.1"
+      },
+      "devDependencies": {
+        "blanket": "~1.1.7",
+        "coveralls": "~2.11.4",
+        "jscs": "~2.1.1",
+        "jshint": "~2.8.0",
+        "mocha": "~2.3.0",
+        "mocha-lcov-reporter": "0.0.2",
+        "must": "~0.12.0",
+        "travis-cov": "^0.2"
+      },
+      "homepage": "https://github.com/ceejbot/light-cycle",
+      "keywords": [
+        "hashing",
+        "hash ring",
+        "consistent hash",
+        "consistent hash ring",
+        "sharding"
+      ],
+      "license": "MIT",
+      "main": "index.js",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/ceejbot/light-cycle.git"
+      },
+      "scripts": {
+        "lint": "jshint *.js test/*.js && jscs *.js test/*.js",
+        "travis": "npm run lint && npm run test && npm run test-cov",
+        "test": "mocha --check-leaks --ui exports --require blanket -R mocoverage test/test*.js",
+        "test-cov": "mocha --require blanket -R travis-cov test/*.js",
+        "coverage": "mocha --require blanket -R html-cov test/*.js > test/coverage.html"
+      },
+      "gitHead": "170e3ddcb5dfc8f60b015d59c71dbc43bc0f39d3",
+      "_id": "light-cycle@1.3.1",
+      "_shasum": "7eb4f2c5848258f3933f2493f70c172cbf112a57",
+      "_from": ".",
+      "_npmVersion": "2.14.1",
+      "_nodeVersion": "2.3.3",
+      "_npmUser": {
+        "name": "ceejbot",
+        "email": "ceejceej@gmail.com"
+      },
+      "maintainers": [
+        {
+          "name": "ceejbot",
+          "email": "ceejceej@gmail.com"
+        },
+        {
+          "name": "kitcambridge",
+          "email": "kit.cambridge@voxer.com"
+        }
+      ],
+      "dist": {
+        "shasum": "7eb4f2c5848258f3933f2493f70c172cbf112a57",
+        "tarball": "https://registry.npmjs.org/light-cycle/-/light-cycle-1.3.1.tgz"
+      },
+      "directories": {}
+    },
+    "1.3.2": {
+      "name": "light-cycle",
+      "description": "a consistent hash ring for your blue-glowing shards",
+      "version": "1.3.2",
+      "author": {
+        "name": "C J Silverio",
+        "email": "ceejceej@gmail.com"
+      },
+      "bugs": {
+        "url": "https://github.com/ceejbot/light-cycle/issues"
+      },
+      "config": {
+        "blanket": {
+          "pattern": "index.js",
+          "data-cover-never": [
+            "node_modules",
+            "test"
+          ],
+          "output-reporter": "spec"
+        },
+        "travis-cov": {
+          "threshold": 90
+        }
+      },
+      "contributors": [
+        {
+          "name": "C J Silverio",
+          "email": "ceejceej@gmail.com"
+        },
+        {
+          "name": "Kit Cambridge",
+          "email": "kitcambridge@me.com"
+        }
+      ],
+      "dependencies": {
+        "mocoverage": "~1.0.0",
+        "skiplist": "~1.0.0",
+        "xxhashjs": "~0.1.1"
+      },
+      "devDependencies": {
+        "blanket": "~1.2.1",
+        "coveralls": "~2.11.6",
+        "jscs": "~2.8.0",
+        "jshint": "~2.9.1-rc2",
+        "mocha": "~2.3.4",
+        "mocha-lcov-reporter": "0.0.2",
+        "must": "~0.13.1",
+        "travis-cov": "^0.2"
+      },
+      "homepage": "https://github.com/ceejbot/light-cycle",
+      "keywords": [
+        "hashing",
+        "hash ring",
+        "consistent hash",
+        "consistent hash ring",
+        "sharding"
+      ],
+      "license": "MIT",
+      "main": "index.js",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/ceejbot/light-cycle.git"
+      },
+      "scripts": {
+        "lint": "jshint *.js test/*.js && jscs *.js test/*.js",
+        "travis": "npm run lint && npm run test && npm run test-cov",
+        "test": "mocha --check-leaks --ui exports --require blanket -R mocoverage test/test*.js",
+        "test-cov": "mocha --require blanket -R travis-cov test/*.js",
+        "coverage": "mocha --require blanket -R html-cov test/*.js > test/coverage.html"
+      },
+      "gitHead": "e6eba09dfdc9e1b7c3c68ea62df311a29c393a84",
+      "_id": "light-cycle@1.3.2",
+      "_shasum": "8e77eea8826472497070a54f453b65d984ffe2c1",
+      "_from": ".",
+      "_npmVersion": "3.5.1",
+      "_nodeVersion": "5.1.0",
+      "_npmUser": {
+        "name": "ceejbot",
+        "email": "ceejceej@gmail.com"
+      },
+      "dist": {
+        "shasum": "8e77eea8826472497070a54f453b65d984ffe2c1",
+        "tarball": "https://registry.npmjs.org/light-cycle/-/light-cycle-1.3.2.tgz"
+      },
+      "maintainers": [
+        {
+          "name": "ceejbot",
+          "email": "ceejceej@gmail.com"
+        },
+        {
+          "name": "kitcambridge",
+          "email": "kit.cambridge@voxer.com"
+        }
+      ],
+      "directories": {}
+    },
+    "1.3.3": {
+      "name": "light-cycle",
+      "description": "a consistent hash ring for your blue-glowing shards",
+      "version": "1.3.3",
+      "author": {
+        "name": "C J Silverio",
+        "email": "ceejceej@gmail.com"
+      },
+      "bugs": {
+        "url": "https://github.com/ceejbot/light-cycle/issues"
+      },
+      "contributors": [
+        {
+          "name": "C J Silverio",
+          "email": "ceejceej@gmail.com"
+        },
+        {
+          "name": "Kit Cambridge",
+          "email": "kitcambridge@me.com"
+        }
+      ],
+      "dependencies": {
+        "skiplist": "~1.0.0",
+        "xxhashjs": "~0.1.1"
+      },
+      "devDependencies": {
+        "coveralls": "~2.11.6",
+        "eslint": "~2.1.0",
+        "mocha": "~2.4.5",
+        "must": "~0.13.1",
+        "nyc": "~5.6.0"
+      },
+      "homepage": "https://github.com/ceejbot/light-cycle",
+      "keywords": [
+        "hashing",
+        "hash ring",
+        "consistent hash",
+        "consistent hash ring",
+        "sharding"
+      ],
+      "license": "MIT",
+      "main": "index.js",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/ceejbot/light-cycle.git"
+      },
+      "scripts": {
+        "lint": "eslint *.js test/*.js",
+        "travis": "npm run lint && npm run test && npm run test-cov",
+        "test": "nyc mocha --check-leaks -R spec test/test*.js",
+        "test-cov": "nyc report --reporter=text-lcov | coveralls"
+      },
+      "gitHead": "48238bacdd671b2726a4071be031106caff318eb",
+      "_id": "light-cycle@1.3.3",
+      "_shasum": "a90ba4ede4668917fec8e4f9c40d6f3c59d2e95d",
+      "_from": ".",
+      "_npmVersion": "3.5.2",
+      "_nodeVersion": "5.3.0",
+      "_npmUser": {
+        "name": "ceejbot",
+        "email": "ceejceej@gmail.com"
+      },
+      "dist": {
+        "shasum": "a90ba4ede4668917fec8e4f9c40d6f3c59d2e95d",
+        "tarball": "https://registry.npmjs.org/light-cycle/-/light-cycle-1.3.3.tgz"
+      },
+      "maintainers": [
+        {
+          "name": "ceejbot",
+          "email": "ceejceej@gmail.com"
+        },
+        {
+          "name": "kitcambridge",
+          "email": "kit.cambridge@voxer.com"
+        }
+      ],
+      "_npmOperationalInternal": {
+        "host": "packages-6-west.internal.npmjs.com",
+        "tmp": "tmp/light-cycle-1.3.3.tgz_1455845917368_0.23583989054895937"
+      },
+      "directories": {}
+    },
+    "1.3.4": {
+      "name": "light-cycle",
+      "description": "a consistent hash ring for your blue-glowing shards",
+      "version": "1.3.4",
+      "author": {
+        "name": "C J Silverio",
+        "email": "ceejceej@gmail.com"
+      },
+      "bugs": {
+        "url": "https://github.com/ceejbot/light-cycle/issues"
+      },
+      "contributors": [
+        {
+          "name": "C J Silverio",
+          "email": "ceejceej@gmail.com"
+        },
+        {
+          "name": "Kit Cambridge",
+          "email": "kitcambridge@me.com"
+        }
+      ],
+      "dependencies": {
+        "skiplist": "~1.0.0",
+        "xxhashjs": "~0.2.1"
+      },
+      "devDependencies": {
+        "coveralls": "~2.11.15",
+        "eslint-config-ceejbot": "~1.0.3",
+        "mocha": "3.2.0",
+        "must": "~0.13.1",
+        "nyc": "10.0.0",
+        "xo": "~0.17.1"
+      },
+      "homepage": "https://github.com/ceejbot/light-cycle",
+      "keywords": [
+        "hashing",
+        "hash ring",
+        "consistent hash",
+        "consistent hash ring",
+        "sharding"
+      ],
+      "license": "MIT",
+      "main": "index.js",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/ceejbot/light-cycle.git"
+      },
+      "scripts": {
+        "lint": "xo",
+        "test": "nyc mocha --check-leaks -R spec test/test*.js",
+        "coverage": "nyc report --reporter=text-lcov | coveralls"
+      },
+      "xo": {
+        "extends": "eslint-config-ceejbot"
+      },
+      "gitHead": "ca6cb3e3bc20ea3d9fd5c0882f1686059c01ec3c",
+      "_id": "light-cycle@1.3.4",
+      "_shasum": "e7f8e2d07105919c6abd7f1a16ee1c9cf4d3bd73",
+      "_from": ".",
+      "_npmVersion": "3.10.8",
+      "_nodeVersion": "6.9.1",
+      "_npmUser": {
+        "name": "ceejbot",
+        "email": "ceejceej@gmail.com"
+      },
+      "dist": {
+        "shasum": "e7f8e2d07105919c6abd7f1a16ee1c9cf4d3bd73",
+        "tarball": "https://registry.npmjs.org/light-cycle/-/light-cycle-1.3.4.tgz"
+      },
+      "maintainers": [
+        {
+          "name": "ceejbot",
+          "email": "ceejceej@gmail.com"
+        },
+        {
+          "name": "kitcambridge",
+          "email": "kit.cambridge@voxer.com"
+        }
+      ],
+      "_npmOperationalInternal": {
+        "host": "packages-12-west.internal.npmjs.com",
+        "tmp": "tmp/light-cycle-1.3.4.tgz_1480309215006_0.1864479233045131"
+      },
+      "directories": {}
+    },
+    "1.3.5": {
+      "name": "light-cycle",
+      "description": "a consistent hash ring for your blue-glowing shards",
+      "version": "1.3.5",
+      "author": {
+        "name": "C J Silverio",
+        "email": "ceejceej@gmail.com"
+      },
+      "bugs": {
+        "url": "https://github.com/ceejbot/light-cycle/issues"
+      },
+      "contributors": [
+        {
+          "name": "C J Silverio",
+          "email": "ceejceej@gmail.com"
+        },
+        {
+          "name": "Kit Cambridge",
+          "email": "kitcambridge@me.com"
+        }
+      ],
+      "dependencies": {
+        "skiplist": "~1.0.0",
+        "xxhashjs": "~0.2.1"
+      },
+      "devDependencies": {
+        "coveralls": "~2.12.0",
+        "eslint-config-ceejbot": "~1.0.3",
+        "mocha": "3.2.0",
+        "must": "~0.13.4",
+        "nyc": "~10.1.2",
+        "xo": "~0.18.0"
+      },
+      "homepage": "https://github.com/ceejbot/light-cycle",
+      "keywords": [
+        "hashing",
+        "hash ring",
+        "consistent hash",
+        "consistent hash ring",
+        "sharding"
+      ],
+      "license": "MIT",
+      "main": "index.js",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/ceejbot/light-cycle.git"
+      },
+      "scripts": {
+        "lint": "xo",
+        "test": "nyc mocha --check-leaks -R spec test/test*.js",
+        "coverage": "nyc report --reporter=text-lcov | coveralls"
+      },
+      "xo": {
+        "extends": "eslint-config-ceejbot"
+      },
+      "gitHead": "27be2fd38a762233a81519b2885b8f5bd0ad4f60",
+      "_id": "light-cycle@1.3.5",
+      "_shasum": "081020cd0fd01e764ed4f249e5082d20a384c0e1",
+      "_from": ".",
+      "_npmVersion": "3.10.10",
+      "_nodeVersion": "6.9.5",
+      "_npmUser": {
+        "name": "ceejbot",
+        "email": "ceejceej@gmail.com"
+      },
+      "dist": {
+        "shasum": "081020cd0fd01e764ed4f249e5082d20a384c0e1",
+        "tarball": "https://registry.npmjs.org/light-cycle/-/light-cycle-1.3.5.tgz"
+      },
+      "maintainers": [
+        {
+          "name": "ceejbot",
+          "email": "ceejceej@gmail.com"
+        },
+        {
+          "name": "kitcambridge",
+          "email": "kit.cambridge@voxer.com"
+        }
+      ],
+      "_npmOperationalInternal": {
+        "host": "packages-18-east.internal.npmjs.com",
+        "tmp": "tmp/light-cycle-1.3.5.tgz_1490161033473_0.09321729466319084"
+      },
+      "directories": {}
+    },
+    "1.4.2": {
+      "name": "light-cycle",
+      "description": "a consistent hash ring for your blue-glowing shards of PURE ENERGY",
+      "version": "1.4.2",
+      "author": {
+        "name": "C J Silverio",
+        "email": "ceejceej@gmail.com"
+      },
+      "bugs": {
+        "url": "https://github.com/ceejbot/light-cycle/issues"
+      },
+      "contributors": [
+        {
+          "name": "C J Silverio",
+          "email": "ceejceej@gmail.com"
+        },
+        {
+          "name": "Kit Cambridge",
+          "email": "kitcambridge@me.com"
+        }
+      ],
+      "dependencies": {
+        "skiplist": "~1.0.0",
+        "xxhashjs": "~0.2.2"
+      },
+      "devDependencies": {
+        "coveralls": "~3.0.0",
+        "eslint-config-ceejbot": "~1.1.1",
+        "mocha": "~5.1.0",
+        "must": "~0.13.4",
+        "nyc": "~10.1.2",
+        "xo": "~0.20.3"
+      },
+      "homepage": "https://github.com/ceejbot/light-cycle",
+      "keywords": [
+        "hashing",
+        "hash ring",
+        "consistent hash",
+        "consistent hash ring",
+        "sharding"
+      ],
+      "license": "MIT",
+      "main": "index.js",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/ceejbot/light-cycle.git"
+      },
+      "scripts": {
+        "lint": "xo",
+        "test": "nyc mocha --check-leaks -R spec test/test*.js",
+        "coverage": "nyc report --reporter=text-lcov | coveralls"
+      },
+      "xo": {
+        "extends": "eslint-config-ceejbot"
+      },
+      "gitHead": "5de6f14b5d29a74d8d8e26dd4f36a675802f66e1",
+      "_id": "light-cycle@1.4.2",
+      "_npmVersion": "5.8.0",
+      "_nodeVersion": "8.9.1",
+      "_npmUser": {
+        "name": "ceejbot",
+        "email": "ceejceej@gmail.com"
+      },
+      "dist": {
+        "integrity": "sha512-badZ3KMUaGwQfVcHjXTXSecYSXxT6f99bT+kVzBqmO10U1UNlEthJ1XAok97E4gfDRTA2JJ3r0IeMPtKf0EJMw==",
+        "shasum": "03c70bcecc6bcfa42a1a61186a46b839c294b638",
+        "tarball": "https://registry.npmjs.org/light-cycle/-/light-cycle-1.4.2.tgz",
+        "fileCount": 11,
+        "unpackedSize": 25612
+      },
+      "maintainers": [
+        {
+          "email": "ceejceej@gmail.com",
+          "name": "ceejbot"
+        },
+        {
+          "email": "github@kitcambridge.be",
+          "name": "kitcambridge"
+        }
+      ],
+      "directories": {},
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/light-cycle_1.4.2_1523656593284_0.2356583509635577"
+      }
+    },
+    "1.4.3": {
+      "name": "light-cycle",
+      "description": "a consistent hash ring for your blue-glowing shards of PURE ENERGY",
+      "version": "1.4.3",
+      "author": {
+        "name": "C J Silverio",
+        "email": "ceejceej@gmail.com"
+      },
+      "bugs": {
+        "url": "https://github.com/ceejbot/light-cycle/issues"
+      },
+      "contributors": [
+        {
+          "name": "C J Silverio",
+          "email": "ceejceej@gmail.com"
+        },
+        {
+          "name": "Kit Cambridge",
+          "email": "kitcambridge@me.com"
+        }
+      ],
+      "dependencies": {
+        "skiplist": "~1.0.0",
+        "xxhashjs": "~0.2.2"
+      },
+      "devDependencies": {
+        "coveralls": "~3.0.0",
+        "eslint-config-ceejbot": "~1.1.1",
+        "mocha": "~5.1.0",
+        "must": "~0.13.4",
+        "nyc": "~10.1.2",
+        "xo": "~0.20.3"
+      },
+      "homepage": "https://github.com/ceejbot/light-cycle",
+      "keywords": [
+        "hashing",
+        "hash ring",
+        "consistent hash",
+        "consistent hash ring",
+        "sharding"
+      ],
+      "license": "MIT",
+      "main": "index.js",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/ceejbot/light-cycle.git"
+      },
+      "scripts": {
+        "lint": "xo",
+        "test": "nyc mocha --check-leaks -R spec test/test*.js",
+        "coverage": "nyc report --reporter=text-lcov | coveralls"
+      },
+      "xo": {
+        "extends": "eslint-config-ceejbot"
+      },
+      "gitHead": "5de6f14b5d29a74d8d8e26dd4f36a675802f66e1",
+      "_id": "light-cycle@1.4.3",
+      "_npmVersion": "5.8.0",
+      "_nodeVersion": "8.9.1",
+      "_npmUser": {
+        "name": "ceejbot",
+        "email": "ceejceej@gmail.com"
+      },
+      "dist": {
+        "integrity": "sha512-sFcuivsDZ99fY0TbvuRC6CDXB8r/ylafjJAMnbSF0y4EMM1/1DtQo40G2WKz1rBbyiz4SLAc3Wa6yZyC4XSGOQ==",
+        "shasum": "c305f0113d81d880f846d84f80c7f3237f197bab",
+        "tarball": "https://registry.npmjs.org/light-cycle/-/light-cycle-1.4.3.tgz",
+        "fileCount": 11,
+        "unpackedSize": 25612,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJa0SiFCRA9TVsSAnZWagAAf40QAI6m9uc8N8iQ4xmVJI+y\naPICZ2wwSGY/LvjpSfMHcjiT9h92lijXQcF0bAdtUA6UPjI4e9GuzoBME52Q\nkfPPRQ06icX0Om8XJxNIeLgJ1PK9Odv5fmb4sOZZxk/4t1hhf15KdfJ7vQYr\nMbb6gI/QkcOgi8NHHJSAQDBxws679zj8f7j2qYr6RzaJ8v3kGlEDnjD4LxwU\nXkK9TALJmwrgocqQ05XO+k/C6sVAuM7dg3fuRJUQab6liyyxtfnIbNaam+2V\neDaf6IurFnkcwjfmtin9tq9pLE/Ml+MI38wqAmyNpWHCGPzJKZpd7nSPQQSR\n1M2n/yLPcTh7YBKgiDaGTdtjPgtq+gYiWzqXbQFw3ICLCDhwcemHMizuuhAu\nig8dsCleFnQW21eYCbP2s6H/Kp77NnYV2vFOLS2PobUapP9jVDYVOkfdGUKS\nYbhU3lhg7Dgx6WtHmvfmDyWClSljJir99rnlp8bxYzipVCEai+2SR371PwK5\nkkWNdd2dh2oIBnpZu6m/ksK+5Oz9Mq0cdpq8R2BSlUNAiRHjjDECCrHAxRs+\n276vyovxQlGhnuTKmbu4ivUD3i7TUp0RVmZHIjxt2+xFB99u1861MN20UFp6\nr6WmvstyORBFMHHlccT3a5y6mwQtMMId7ysc2hbn+FHURBClGmVv+frb72sk\n+GGk\r\n=AAks\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "maintainers": [
+        {
+          "email": "ceejceej@gmail.com",
+          "name": "ceejbot"
+        },
+        {
+          "email": "github@kitcambridge.be",
+          "name": "kitcambridge"
+        }
+      ],
+      "directories": {},
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/light-cycle_1.4.3_1523656836588_0.3093144184283898"
+      }
+    }
+  },
+  "readme": "Light-cycle\n============\n\nA consistent hashringcycle for sharding your dataz, with 100% more blue glow and 50% less Wagner.\n\n[![npm](http://img.shields.io/npm/v/light-cycle.svg?style=flat)](https://www.npmjs.org/package/light-cycle) [![Tests](http://img.shields.io/travis/ceejbot/light-cycle.svg?style=flat)](http://travis-ci.org/ceejbot/light-cycle) [![Coverage Status](https://img.shields.io/coveralls/ceejbot/light-cycle.svg?style=flat)](https://coveralls.io/github/ceejbot/light-cycle?branch=master)    [![Dependencies](https://david-dm.org/ceejbot/light-cycle.svg)](https://david-dm.org/ceejbot/light-cycle)\n\n## Usage\n\nTo install:\n\n`npm install light-cycle`\n\nSample usage:\n\n```javascript\nvar Lightcycle = require('light-cycle');\n\nvar cycle = new Lightcycle(\n{\n    seed: 0xdeadbeef,\n    size: 50\n});\n\n// Create entries in the hash ring for each of our redis caches, using redis:host:port as\n// their unique ids in the ring.\nfor (var i = 0; i < myRedisInstances.length; i++)\n{\n    var redisShard = myRedisInstances[i];\n    cycle.add(redisShard, ['redis', redisShard.host, redisShard.port].join(':'));\n}\n\n// Now we have something to cache in one of our shards.\nvar dataToStore =\n{\n    id: '3421',\n    data: 'This is very important data that must be cached in our redises.',\n    timestamp: Date.now()\n};\n\n// Where shall we store this?\nvar whichRedis = cycle.locate(dataToStore.id);\nwhichRedis.hmset(dataToStore.id, dataToStore, callback);\n```\n\n## API\n\nResources are any object or identifier you wish to store. You can store an open database connection, a resource identifier, or something else. This module does not attempt to inspect or use the resource. It just implements a sharding scheme based on the resource's id.\n\n### new Lightcycle(settings)\n\nConstruct a cycle.\n\nSettings may include the following fields:\n\n`seed`: seed for the hash function; must be a positive integer; defaults to `0xcafed00d`  \n`size`: expected number of resources you'll be storing; defaults to 128  \n`replicas`: number of replicas to store in the cycle for each resource; defaults to `size`\n\nIf you want your light-cycle to behave identically to other invocations, pass the same hash seed.\n\n### cycle.add(resource, id)\n\nAdd a resource to the cycle. This will create *replicas* entries in the underlying data structure. The `id` parameter must be a string.\n\n### cycle.remove(id)\n\nRemove the resource with the given id from the cycle. This removes all replica entries.\n\n### cycle.locate(id)\n\nGiven the id of some data you wish to locate, return the resource where it should reside. `id` may be a string or a buffer.\n\n### cycle.rebalance()\n\nResize the cycle to accomodate the current number of entries plus some padding.\n\nThis is called automatically if the number of entries added exceeds the size option passed in at configuration. Rebalance is not automatically called when resources are removed.\n\nHash keys are cached, so rebalancing shouldn't be too slow, but to avoid thrash rebalancing pads out the size and the replica count by `Lightcycle.SIZE_PAD` and `Lightcycle.REPLICAS_PAD` respectively. For best results, choose a size setting at start that can accomodate the number of resources you intend to use.\n\n## See Also\n\n[Wikipedia](http://en.wikipedia.org/wiki/Consistent_hashing) is informative.\n\n[This page is another good introduction](http://www.martinbroadhurst.com/Consistent-Hash-Ring.html) to consistent hash rings.\n\n[So is this one.](http://www.tom-e-white.com/2007/11/consistent-hashing.html)\n\nAnd there's always [the original paper](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.147.1879).\n",
+  "maintainers": [
+    {
+      "email": "ceejceej@gmail.com",
+      "name": "ceejbot"
+    },
+    {
+      "email": "github@kitcambridge.be",
+      "name": "kitcambridge"
+    }
+  ],
+  "time": {
+    "modified": "2018-04-13T22:00:40.676Z",
+    "created": "2013-07-12T23:25:08.846Z",
+    "0.0.1": "2013-07-12T23:25:09.829Z",
+    "0.0.2": "2013-07-12T23:38:48.615Z",
+    "0.0.3": "2013-07-13T00:21:27.649Z",
+    "0.0.4": "2013-07-14T02:47:35.721Z",
+    "0.0.5": "2013-07-14T04:54:55.916Z",
+    "0.0.6": "2013-07-15T16:43:42.677Z",
+    "0.1.0": "2014-02-03T15:57:32.508Z",
+    "1.0.0": "2014-08-01T01:42:44.468Z",
+    "1.1.0": "2014-10-02T21:00:27.417Z",
+    "1.2.0": "2015-02-04T20:00:51.296Z",
+    "1.3.0": "2015-07-28T03:13:44.706Z",
+    "1.3.1": "2015-09-02T21:24:24.485Z",
+    "1.3.2": "2016-01-09T06:52:46.540Z",
+    "1.3.3": "2016-02-19T01:38:40.014Z",
+    "1.3.4": "2016-11-28T05:00:15.237Z",
+    "1.3.5": "2017-03-22T05:37:15.387Z",
+    "1.4.2": "2018-04-13T21:56:33.374Z",
+    "1.4.3": "2018-04-13T22:00:36.664Z"
+  },
+  "author": {
+    "name": "C J Silverio",
+    "email": "ceejceej@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ceejbot/light-cycle.git"
+  },
+  "readmeFilename": "README.md",
+  "users": {
+    "ceejbot": true
+  },
+  "homepage": "https://github.com/ceejbot/light-cycle",
+  "keywords": [
+    "hashing",
+    "hash ring",
+    "consistent hash",
+    "consistent hash ring",
+    "sharding"
+  ],
+  "contributors": [
+    {
+      "name": "C J Silverio",
+      "email": "ceejceej@gmail.com"
+    },
+    {
+      "name": "Kit Cambridge",
+      "email": "kitcambridge@me.com"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/ceejbot/light-cycle/issues"
+  },
+  "license": "MIT",
+  "_attachments": {}
+}
