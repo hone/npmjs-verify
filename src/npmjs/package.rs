@@ -3,6 +3,7 @@ use std::collections::HashMap;
 
 #[derive(Deserialize, Debug)]
 #[serde(rename_all = "camelCase")]
+#[allow(dead_code)]
 pub struct Package {
     pub name: String,
     pub description: String,
@@ -28,6 +29,7 @@ pub struct Package {
 
 #[derive(Deserialize, Debug)]
 #[serde(rename_all = "camelCase")]
+#[allow(dead_code)]
 pub struct Version {
     pub name: String,
     pub version: node_semver::Version,
@@ -54,6 +56,7 @@ pub struct Version {
 }
 
 #[derive(Deserialize, Debug)]
+#[allow(dead_code)]
 pub struct Contributor {
     pub email: Option<String>,
     pub name: String,
@@ -61,6 +64,7 @@ pub struct Contributor {
 
 #[derive(Deserialize, Debug)]
 #[serde(rename_all = "camelCase")]
+#[allow(dead_code)]
 pub struct Dist {
     pub shasum: String,
     pub tarball: String,
@@ -72,12 +76,14 @@ pub struct Dist {
 }
 
 #[derive(Deserialize, Debug)]
+#[allow(dead_code)]
 pub struct Repository {
     r#type: String,
     url: String,
 }
 
 #[derive(Deserialize, Debug)]
+#[allow(dead_code)]
 pub struct Bugs {
     url: String,
 }
