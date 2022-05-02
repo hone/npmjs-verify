@@ -1,7 +1,6 @@
 use clap::Parser;
 use npmjs_verify::{cli::Args, npmjs};
 use tracing::info;
-use tracing_subscriber;
 
 #[tokio::main]
 async fn main() {
@@ -16,7 +15,7 @@ async fn main() {
         let futures = package
             .versions
             .values()
-            .map(|version| (version, npmjs_verify::verify(&version)));
+            .map(|version| (version, npmjs_verify::verify(version)));
         for (version, future) in futures {
             if let Some(result) = future.await {
                 info!("{}: {}", version.version, result);

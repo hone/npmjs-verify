@@ -6,7 +6,7 @@ use tracing::debug;
 const SIGNED_BY: &str = "npmregistry";
 
 pub async fn verify(version: &Version) -> Option<bool> {
-    let message = match message(&version) {
+    let message = match message(version) {
         Some(m) => m,
         None => return None,
     };
@@ -30,14 +30,11 @@ pub async fn verify(version: &Version) -> Option<bool> {
 }
 
 fn message(version: &Version) -> Option<String> {
-    if let Some(integrity) = version.dist.integrity.as_ref() {
-        Some(format!(
-            "{}@{}:{}",
-            version.name, version.version, integrity
-        ))
-    } else {
-        None
-    }
+    version
+        .dist
+        .integrity
+        .as_ref()
+        .map(|integrity| format!("{}@{}:{}", version.name, version.version, integrity))
 }
 
 async fn verify_cmd(
@@ -54,7 +51,7 @@ async fn verify_cmd(
             "--detached",
             detached.as_ref().to_str().unwrap(),
             "--message",
-            &format!("{message}"),
+            message,
         ])
         .output()
 }
@@ -62,7 +59,7 @@ async fn verify_cmd(
 fn write_signature(dist: &Dist, file: impl AsRef<Path>) -> Result<Option<()>, std::io::Error> {
     if let Some(signature) = dist.npm_signature.as_ref() {
         let mut file = File::create(file)?;
-        file.write(signature.as_bytes())?;
+        file.write_all(signature.as_bytes())?;
 
         Ok(Some(()))
     } else {
