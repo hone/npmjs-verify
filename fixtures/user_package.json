@@ -1,0 +1,4 @@
+{
+  "heroku-container-registry": "read",
+  "heroku-cli-deploy": "write"
+}

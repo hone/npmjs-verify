@@ -1,4 +1,4 @@
-use crate::npmjs::{Dist, Version};
+use crate::npmjs::data::{Dist, Version};
 use std::{fs::File, future::Future, io::Write, path::Path, process::Output};
 use tokio::process::Command;
 use tracing::debug;
