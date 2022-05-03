@@ -1,10 +1,12 @@
 use serde::Deserialize;
 use std::collections::HashMap;
 
+/// NPMJS API Endpoint `/-/{user}/package` format
 pub type UserPackage = HashMap<String, Mode>;
 
 #[derive(Deserialize, Debug)]
 #[serde(rename_all = "camelCase")]
+/// Read/Write access for a particular package
 pub enum Mode {
     Read,
     Write,
@@ -19,7 +21,6 @@ mod tests {
         let input = include_str!("../../fixtures/user_package.json");
         let result = serde_json::from_str::<UserPackage>(input);
 
-        result.unwrap();
-        //assert!(result.is_ok());
+        assert!(result.is_ok());
     }
 }

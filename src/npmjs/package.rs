@@ -4,6 +4,7 @@ use std::collections::HashMap;
 #[derive(Deserialize, Debug)]
 #[serde(rename_all = "camelCase")]
 #[allow(dead_code)]
+/// NPMJS AP Endpoint `/{package}` format
 pub struct Package {
     pub name: String,
     pub description: Option<String>,

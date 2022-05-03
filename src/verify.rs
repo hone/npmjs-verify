@@ -6,6 +6,7 @@ use tracing::debug;
 const SIGNED_BY: &str = "npmregistry";
 
 #[derive(Debug)]
+/// Possible Verification Values
 pub enum Verify {
     Pass,
     Fail,
@@ -13,6 +14,7 @@ pub enum Verify {
 }
 
 #[derive(Debug)]
+/// Named Tuple of the Verify Output
 pub struct VerifyOutput {
     pub name: String,
     pub version: node_semver::Version,
@@ -29,6 +31,7 @@ impl VerifyOutput {
     }
 }
 
+/// PGP Verify using Keybase of a NPM Version
 pub async fn verify(version: &Version) -> VerifyOutput {
     let message = match message(version) {
         Some(m) => m,
