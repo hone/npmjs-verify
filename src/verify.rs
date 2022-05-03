@@ -32,28 +32,28 @@ impl VerifyOutput {
 }
 
 /// PGP Verify using Keybase of a NPM Version
-pub async fn verify(version: &Version) -> VerifyOutput {
+pub async fn verify(version: &Version) -> Result<VerifyOutput, std::io::Error> {
     let message = match message(version) {
         Some(m) => m,
-        None => return VerifyOutput::new(version, Verify::Missing),
+        None => return Ok(VerifyOutput::new(version, Verify::Missing)),
     };
-    let sig_tempfile = tempfile::NamedTempFile::new().unwrap();
-    if write_signature(&version.dist, sig_tempfile.path())
-        .unwrap()
-        .is_some()
-    {
+    let sig_tempfile = tempfile::NamedTempFile::new()?;
+    if write_signature(&version.dist, sig_tempfile.path())?.is_some() {
         let output = verify_cmd(SIGNED_BY, sig_tempfile.path(), &message);
         if let Ok(output) = output.await.await {
             let status = output.status.success();
             debug!("{}", String::from_utf8_lossy(&output.stdout));
             debug!("{}", String::from_utf8_lossy(&output.stderr));
-            return VerifyOutput::new(version, if status { Verify::Pass } else { Verify::Fail });
+            return Ok(VerifyOutput::new(
+                version,
+                if status { Verify::Pass } else { Verify::Fail },
+            ));
         } else {
-            return VerifyOutput::new(version, Verify::Fail);
+            return Ok(VerifyOutput::new(version, Verify::Fail));
         }
     }
 
-    VerifyOutput::new(version, Verify::Missing)
+    Ok(VerifyOutput::new(version, Verify::Missing))
 }
 
 fn message(version: &Version) -> Option<String> {
@@ -76,7 +76,7 @@ async fn verify_cmd(
             "--signed-by",
             signed_by,
             "--detached",
-            detached.as_ref().to_str().unwrap(),
+            &detached.as_ref().to_string_lossy(),
             "--message",
             message,
         ])

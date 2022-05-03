@@ -3,6 +3,7 @@ use futures::StreamExt;
 use npmjs_verify::{
     cli::{Cli, Commands},
     npmjs,
+    verify::VerifyOutput,
 };
 use tracing::info;
 
@@ -41,7 +42,12 @@ async fn package(client: &npmjs::Client, name: &str, futures_buffer: usize) {
         let futures = package.versions.values().map(npmjs_verify::verify);
         let stream = futures::stream::iter(futures).buffer_unordered(futures_buffer);
 
-        let mut outputs = stream.collect::<Vec<_>>().await;
+        let mut outputs = stream
+            .collect::<Vec<_>>()
+            .await
+            .into_iter()
+            .collect::<Result<Vec<VerifyOutput>, std::io::Error>>()
+            .unwrap();
         outputs.sort_by(|a, b| a.version.cmp(&b.version));
         for output in outputs {
             info!("{}: {:?}", output.version, output.result);
