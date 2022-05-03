@@ -6,24 +6,24 @@ use std::collections::HashMap;
 #[allow(dead_code)]
 pub struct Package {
     pub name: String,
-    pub description: String,
+    pub description: Option<String>,
     #[serde(rename = "dist-tags")]
     pub dist_tags: HashMap<String, node_semver::Version>,
     pub versions: HashMap<node_semver::Version, Version>,
     pub readme: String,
     pub maintainers: Vec<Contributor>,
     pub time: HashMap<String, String>,
-    pub author: Contributor,
-    pub repository: Repository,
+    pub author: Option<Contributor>,
+    pub repository: Option<Repository>,
     pub readme_filename: String,
     #[serde(default)]
     pub users: HashMap<String, bool>,
-    pub homepage: String,
+    pub homepage: Option<String>,
     #[serde(default)]
     pub keywords: Vec<String>,
     #[serde(default)]
     pub contributors: Vec<Contributor>,
-    pub bugs: Bugs,
+    pub bugs: Option<Bugs>,
     pub license: Option<String>,
 }
 
@@ -33,11 +33,11 @@ pub struct Package {
 pub struct Version {
     pub name: String,
     pub version: node_semver::Version,
-    pub description: String,
-    pub author: Contributor,
+    pub description: Option<String>,
+    pub author: Option<Contributor>,
     pub bugs: Option<Bugs>,
     pub license: Option<String>,
-    pub main: String,
+    pub main: Option<String>,
     #[serde(default)]
     pub scripts: HashMap<String, String>,
     pub homepage: Option<String>,
@@ -56,10 +56,14 @@ pub struct Version {
 }
 
 #[derive(Deserialize, Debug)]
+#[serde(untagged)]
 #[allow(dead_code)]
-pub struct Contributor {
-    pub email: Option<String>,
-    pub name: String,
+pub enum Contributor {
+    Object {
+        email: Option<String>,
+        name: Option<String>,
+    },
+    String(String),
 }
 
 #[derive(Deserialize, Debug)]
@@ -97,7 +101,14 @@ mod tests {
         let input = include_str!("../../fixtures/light-cycle.json");
         let result = serde_json::from_str::<Package>(input);
 
-        result.unwrap();
-        //assert!(result.is_ok());
+        assert!(result.is_ok());
+    }
+
+    #[test]
+    fn it_parses_empty_contributor_object() {
+        let input = include_str!("../../fixtures/ember-slds-components.json");
+        let result = serde_json::from_str::<Package>(input);
+
+        assert!(result.is_ok());
     }
 }

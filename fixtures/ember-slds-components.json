@@ -1,0 +1,6628 @@
+{
+  "_id": "@heroku/ember-slds-components",
+  "_rev": "388-c4aa63d1ddafd164896196fcdc2994e0",
+  "name": "@heroku/ember-slds-components",
+  "dist-tags": {
+    "latest": "0.0.1",
+    "next": "0.0.5-0"
+  },
+  "versions": {
+    "0.0.1": {
+      "name": "@heroku/ember-slds-components",
+      "version": "0.0.1",
+      "description": "The default blueprint for ember-cli addons.",
+      "keywords": [
+        "ember-addon"
+      ],
+      "repository": "",
+      "license": "MIT",
+      "author": "",
+      "directories": {
+        "doc": "doc",
+        "test": "tests"
+      },
+      "scripts": {
+        "build": "ember build",
+        "dev": "ember serve",
+        "prebuild-storybook": "yarn build && shx cp -r public/* dist",
+        "build-storybook": "build-storybook -s dist",
+        "storybook": "yarn build && start-storybook -p 9009 -s dist",
+        "storybook:dev": "yarn dev & start-storybook -p 9009 -s dist",
+        "lint:hbs": "ember-template-lint .",
+        "lint:js": "eslint .",
+        "start": "ember serve",
+        "test": "ember test",
+        "test:all": "ember try:each"
+      },
+      "dependencies": {
+        "@salesforce-ux/design-system": "^2.10.2",
+        "broccoli-funnel": "^2.0.2",
+        "broccoli-merge-trees": "^3.0.2",
+        "ember-cli-babel": "^7.11.1",
+        "ember-cli-htmlbars": "^4.0.0"
+      },
+      "devDependencies": {
+        "@babel/core": "^7.7.2",
+        "@ember/optional-features": "^1.0.0",
+        "@storybook/addon-a11y": "^5.2.6",
+        "@storybook/addon-actions": "^5.2.6",
+        "@storybook/addon-backgrounds": "^5.2.6",
+        "@storybook/addon-knobs": "^5.2.6",
+        "@storybook/addon-storysource": "^5.2.6",
+        "@storybook/addon-viewport": "^5.2.6",
+        "@storybook/ember": "^5.2.6",
+        "@storybook/source-loader": "^5.2.6",
+        "babel-eslint": "^10.0.3",
+        "babel-loader": "^8.0.6",
+        "broccoli-asset-rev": "^3.0.0",
+        "ember-cli": "~3.13.1",
+        "ember-cli-dependency-checker": "^3.1.0",
+        "ember-cli-eslint": "^5.1.0",
+        "ember-cli-htmlbars-inline-precompile": "^3.0.1",
+        "ember-cli-inject-live-reload": "^2.0.1",
+        "ember-cli-sri": "^2.1.1",
+        "ember-cli-storybook": "^0.1.0",
+        "ember-cli-template-lint": "^1.0.0-beta.3",
+        "ember-cli-uglify": "^3.0.0",
+        "ember-disable-prototype-extensions": "^1.1.3",
+        "ember-export-application-global": "^2.0.0",
+        "ember-load-initializers": "^2.1.0",
+        "ember-maybe-import-regenerator": "^0.1.6",
+        "ember-qunit": "^4.5.1",
+        "ember-resolver": "^5.3.0",
+        "ember-source": "~3.13.0",
+        "ember-source-channel-url": "^2.0.1",
+        "ember-try": "^1.2.1",
+        "eslint-plugin-ember": "^7.1.0",
+        "eslint-plugin-node": "^10.0.0",
+        "loader.js": "^4.7.0",
+        "qunit-dom": "^0.9.0"
+      },
+      "engines": {
+        "node": "8.* || >= 10.*"
+      },
+      "ember-addon": {
+        "configPath": "tests/dummy/config"
+      },
+      "gitHead": "ad88beac87e0ddb04c2c053abc0fa1f2407fa348",
+      "_id": "@heroku/ember-slds-components@0.0.1",
+      "_nodeVersion": "10.16.0",
+      "_npmVersion": "6.9.0",
+      "dist": {
+        "integrity": "sha512-csbsEHM/hCm0jR6U5vZ1FJ9tmQbC7aLtB41IXazpOU9ijDBin69qDSvQMHkc7BRFi7egICmfzYq+8H7Jw+lePw==",
+        "shasum": "0c059f64e7789d3aab52b5eae74ee1bdf3bd07f4",
+        "tarball": "https://registry.npmjs.org/@heroku/ember-slds-components/-/ember-slds-components-0.0.1.tgz",
+        "fileCount": 23,
+        "unpackedSize": 15220,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdzqHtCRA9TVsSAnZWagAA/dUP/RyKgrhejq2aEiJJ+xuJ\nLYdt93dx9B4xpAHuh/9uRH7dnJRdcy3pb8lD9Tgfj8EqHNvW6UaQTWC5jHcn\na9fcd3EnoXSDbTHnLhRq8295U70kqZNi8SpxMhj5cROK1UdVZs75Z+lk0wdz\nT1BC14GMNZ7CHfYM3comvLAi9X6i1pj55M0T6fd3aiU2W21iu2eHCkbbzwf7\nQyR6gR7pUJG+rPnnSwYLFLGcc9tQ9faHScl5rFWibXGGBAnAWWuBNeKerJzF\nEerJxwtK4tOETIcOroisnKmAs+fFKhy7WhoV2zHDXYU2GwueiT6Us2+as24x\nEIABo+cUN+gbNWmuWjUJy3aLFkZIT0wei3radfn35/aO/+ZqTL2lueZWNNvY\n4wm5rcTiv16Z6WTEE/DddByFa4vvNRxOcJftMy527cN8HTi5hc5NBSgdT7nD\n64DH1pwz4dw7oGuP6ryVnIv2yIQ0kkGm0ffBGpFhcslcTgpgKUR6XtjGBJMD\nSoY5uLlBCHRM/ZkbeuPMHMKBId2NfoPopX9qUyQ6+316WBxGbbN8vpqYqHK7\ntqk4J96emATx5t0lBNJV9y2UmdLcdDcMzFK5vZsbhUkmUlK7pOGOm8bk0M+Z\ndi/TxaF2jcC4MuvkPitkPhi+bGHyVQrknp18Z7dzBEVqa3gRLcLVSFa/YI7+\nNfBV\r\n=n5kv\r\n-----END PGP SIGNATURE-----\r\n",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEQCIBCzl+zqA4ExoyaSwW1JjHpSRpFNlORcdosaLWwwEWkGAiA7ZuWNoFIYTdmJLtu4oEgpuTRekp5mS2P5+X/JHpAz/A=="
+          }
+        ]
+      },
+      "maintainers": [
+        {
+          "name": "cwallsf",
+          "email": "cwall@salesforce.com"
+        },
+        {
+          "name": "jqian",
+          "email": "jqian@salesforce.com"
+        },
+        {
+          "name": "cobyr",
+          "email": "crandquist@salesforce.com"
+        },
+        {
+          "name": "mpsenn",
+          "email": "npmjs@msenn.com"
+        },
+        {
+          "name": "mcavage",
+          "email": "mcavage@gmail.com"
+        },
+        {
+          "name": "samuel.sharaf",
+          "email": "samuel.sharaf@salesforce.com"
+        },
+        {
+          "name": "vrana2019",
+          "email": "vikram.s.rana1@gmail.com"
+        },
+        {
+          "name": "woodchopgirl",
+          "email": "karalyncapone@gmail.com"
+        },
+        {
+          "name": "pnance",
+          "email": "pamela.nance@yahoo.com"
+        },
+        {
+          "name": "asegebresalazar",
+          "email": "asegebresalazar@salesforce.com"
+        },
+        {
+          "name": "nickcannariato",
+          "email": "nickcannariato@gmail.com"
+        },
+        {
+          "name": "sshaginyan",
+          "email": "SShaginyan@Gmail.com"
+        },
+        {
+          "name": "emccartie",
+          "email": "emccartie@salesforce.com"
+        },
+        {
+          "name": "edubs",
+          "email": "erin.willis@salesforce.com"
+        },
+        {
+          "name": "n.kothari",
+          "email": "n.kothari@salesforce.com"
+        },
+        {
+          "name": "threadwaste",
+          "email": "tony@threadwaste.com"
+        },
+        {
+          "name": "thebecky",
+          "email": "beckyjaimes@gmail.com"
+        },
+        {
+          "name": "baliles",
+          "email": "david@baliles.com"
+        },
+        {
+          "name": "chandana_anumula",
+          "email": "canumula@heroku.com"
+        },
+        {
+          "name": "vishalr7",
+          "email": "vrawtani@heroku.com"
+        },
+        {
+          "name": "santoshbandari7",
+          "email": "saisantosh.bandari@heroku.com"
+        },
+        {
+          "name": "jahnavi_barma",
+          "email": "bjahnavi@heroku.com"
+        },
+        {
+          "name": "sudayavarman",
+          "email": "sudayavarman@heroku.com"
+        },
+        {
+          "name": "dzhuo",
+          "email": "dzhuo@salesforce.com"
+        },
+        {
+          "name": "sripad.kulkarni",
+          "email": "sripad.kulkarni@heroku.com"
+        },
+        {
+          "name": "mikemondragon",
+          "email": "mikemondragon@gmail.com"
+        },
+        {
+          "name": "tcuilty",
+          "email": "tcuilty@salesforce.com"
+        },
+        {
+          "name": "icoffeysfdc",
+          "email": "icoffey@salesforce.com"
+        },
+        {
+          "name": "julianduque",
+          "email": "julianduquej@gmail.com"
+        },
+        {
+          "name": "luzcn6",
+          "email": "zheng.lu@salesforce.com"
+        },
+        {
+          "name": "zhang.l",
+          "email": "zhang.l@salesforce.com"
+        },
+        {
+          "name": "wbarnette",
+          "email": "wbarnette@heroku.com"
+        },
+        {
+          "name": "ericlchen2",
+          "email": "echen1@salesforce.com"
+        },
+        {
+          "name": "ssherbondy77",
+          "email": "seanderson07@gmail.com"
+        },
+        {
+          "name": "jroes-sfdc",
+          "email": "jroes@salesforce.com"
+        },
+        {
+          "name": "w.griggs",
+          "email": "w.griggs@heroku.com"
+        },
+        {
+          "name": "jonmountjoy",
+          "email": "tech+npm@jonmountjoy.com"
+        },
+        {
+          "name": "chrismarino",
+          "email": "christopher.marino@heroku.com"
+        },
+        {
+          "name": "mrmicahcooper",
+          "email": "mrmicahcooper@gmail.com"
+        },
+        {
+          "name": "coreymartinheroku",
+          "email": "corey.martin@salesforce.com"
+        },
+        {
+          "name": "bigaluk",
+          "email": "big.aps@gmail.com"
+        },
+        {
+          "name": "lxfontes",
+          "email": "lxfontes@gmail.com"
+        },
+        {
+          "name": "dkvdm",
+          "email": "dkvdmeer@salesforce.com"
+        },
+        {
+          "name": "abernicchia",
+          "email": "abernicchia@heroku.com"
+        },
+        {
+          "name": "rmanrique",
+          "email": "rmanrique@breadbox.io"
+        },
+        {
+          "name": "thody",
+          "email": "adam@adamthody.com"
+        },
+        {
+          "name": "ceaess",
+          "email": "ceaess@gmail.com"
+        },
+        {
+          "name": "sleight42",
+          "email": "elight@salesforce.com"
+        },
+        {
+          "name": "cafreeman",
+          "email": "cfreeman.code@gmail.com"
+        },
+        {
+          "name": "sarahpmac2",
+          "email": "sarah.macdonald@salesforce.com"
+        },
+        {
+          "name": "tmock12",
+          "email": "taylor.mock@heroku.com"
+        },
+        {
+          "name": "apdarr",
+          "email": "alexdarr@gmail.com"
+        },
+        {
+          "name": "sghaffar",
+          "email": "sghaffar@heroku.com"
+        },
+        {
+          "name": "jbousiquotheroku",
+          "email": "jboursiquot@heroku.com"
+        },
+        {
+          "name": "aschneider-heroku",
+          "email": "alexander.schneider@heroku.com"
+        },
+        {
+          "name": "suguruo",
+          "email": "sohtaka@heroku.com"
+        },
+        {
+          "name": "enelson1992",
+          "email": "enelson@salesforce.com"
+        },
+        {
+          "name": "mnorth",
+          "email": "mnorth@heroku.com"
+        },
+        {
+          "name": "ssetayeshfar",
+          "email": "ssetayeshfar@salesforce.com"
+        },
+        {
+          "name": "uchi_mata",
+          "email": "mluft@heroku.com"
+        },
+        {
+          "name": "mwhagedorn_h",
+          "email": "mhagedorn@heroku.com"
+        },
+        {
+          "name": "camillebaldock",
+          "email": "npm@camillebaldock.com"
+        },
+        {
+          "name": "iriberri",
+          "email": "iriberrig@gmail.com"
+        },
+        {
+          "name": "eallard",
+          "email": "eallard@heroku.com"
+        },
+        {
+          "name": "mark.newell",
+          "email": "mark.newell@salesforce.com"
+        },
+        {
+          "name": "chadian",
+          "email": "chadcarbert@me.com"
+        },
+        {
+          "name": "jsoyland",
+          "email": "jsoyland@heroku.com"
+        },
+        {
+          "name": "flarco",
+          "email": "flarco@live.com"
+        },
+        {
+          "name": "hsophie-sf",
+          "email": "hsophie@salesforce.com"
+        },
+        {
+          "name": "lmatte7",
+          "email": "lmatte@heroku.com"
+        },
+        {
+          "name": "lsorstokke",
+          "email": "lsorstokke@heroku.com"
+        },
+        {
+          "name": "oodelola",
+          "email": "oodelola@heroku.com"
+        },
+        {
+          "name": "vshiva",
+          "email": "vshiva@gmail.com"
+        },
+        {
+          "name": "jdance",
+          "email": "jdance@salesforce.com"
+        },
+        {
+          "name": "johlym",
+          "email": "jelyman@gmail.com"
+        },
+        {
+          "name": "adelcambre",
+          "email": "adelcambre@gmail.com"
+        },
+        {
+          "name": "yy318",
+          "email": "yueya8@gmail.com"
+        },
+        {
+          "name": "edmorley",
+          "email": "edmorley@users.noreply.github.com"
+        },
+        {
+          "name": "lyric",
+          "email": "lyrichartley@gmail.com"
+        },
+        {
+          "name": "plathrop",
+          "email": "plathrop@salesforce.com"
+        },
+        {
+          "name": "sandy.lai",
+          "email": "sandy.lai@salesforce.com"
+        },
+        {
+          "name": "bensymonds",
+          "email": "bsymonds@salesforce.com"
+        },
+        {
+          "name": "kwugirl",
+          "email": "kwu@heroku.com"
+        },
+        {
+          "name": "adovenmuehlesf",
+          "email": "adovenmuehle@salesforce.com"
+        },
+        {
+          "name": "sowjusutherland",
+          "email": "smudunuri@salesforce.com"
+        },
+        {
+          "name": "ymiyake",
+          "email": "ymiyake@salesforce.com"
+        },
+        {
+          "name": "cleroy",
+          "email": "cleroy@heroku.com"
+        },
+        {
+          "name": "7ftz",
+          "email": "zwhitfield@heroku.com"
+        },
+        {
+          "name": "jbyrum",
+          "email": "jbyrum@heroku.com"
+        },
+        {
+          "name": "philheroku",
+          "email": "phil@heroku.com"
+        },
+        {
+          "name": "rchimal",
+          "email": "ricardo@heroku.com"
+        },
+        {
+          "name": "erik.jones",
+          "email": "ejones@heroku.com"
+        },
+        {
+          "name": "rbriggs",
+          "email": "rbriggs@heroku.com"
+        },
+        {
+          "name": "johndalton",
+          "email": "john@johndalton.info"
+        },
+        {
+          "name": "code0100fun",
+          "email": "chase@code0100fun.com"
+        },
+        {
+          "name": "stevenharman",
+          "email": "steven@harmanly.com"
+        },
+        {
+          "name": "tlinquist",
+          "email": "tlinquist@heroku.com"
+        },
+        {
+          "name": "breeldo",
+          "email": "bdodd@salesforce.com"
+        },
+        {
+          "name": "andscoop",
+          "email": "andycooper.s@gmail.com"
+        },
+        {
+          "name": "imtayadeway",
+          "email": "hello@timjwade.com"
+        },
+        {
+          "name": "nsamsami",
+          "email": "nsamsami@salesforce.com"
+        },
+        {
+          "name": "cfunkhouser",
+          "email": "cfunkhouser@heroku.com"
+        },
+        {
+          "name": "bob_h",
+          "email": "bob@heroku.com"
+        },
+        {
+          "name": "paulcsmith",
+          "email": "catalystmediastudios@gmail.com"
+        },
+        {
+          "name": "eviking",
+          "email": "jschutt@salesforce.com"
+        },
+        {
+          "name": "matttannahill",
+          "email": "matthew.r.tannahill@live.com"
+        },
+        {
+          "name": "kbong",
+          "email": "kbong@salesforce.com"
+        },
+        {
+          "name": "csinghaus-sfdc",
+          "email": "csinghaus@heroku.com"
+        },
+        {
+          "name": "neerajheroku",
+          "email": "kumar.neeraj@heroku.com"
+        },
+        {
+          "name": "dhavalthakkar93",
+          "email": "dthakkar@salesforce.com"
+        },
+        {
+          "name": "vishvananda",
+          "email": "vishvananda@gmail.com"
+        },
+        {
+          "name": "taylor.jones",
+          "email": "taylor.jones@heroku.com"
+        },
+        {
+          "name": "sjezewskicm",
+          "email": "sjezewski@salesforce.com"
+        },
+        {
+          "name": "mjandreau",
+          "email": "mjandreau@heroku.com"
+        },
+        {
+          "name": "danielleadams",
+          "email": "adamzdanielle@gmail.com"
+        },
+        {
+          "name": "abnovak",
+          "email": "anovak@salesforce.com"
+        },
+        {
+          "name": "rchanda",
+          "email": "rchanda@heroku.com"
+        },
+        {
+          "name": "astojanovic",
+          "email": "astojanovic@salesforce.com"
+        },
+        {
+          "name": "scureton",
+          "email": "scureton@heroku.com"
+        },
+        {
+          "name": "murphybytes",
+          "email": "jmurphy@heroku.com"
+        },
+        {
+          "name": "joanneyeung",
+          "email": "jttyeung@gmail.com"
+        },
+        {
+          "name": "tholmes",
+          "email": "shadox@gmail.com"
+        },
+        {
+          "name": "treznick",
+          "email": "treznick+npmjs@heroku.com"
+        },
+        {
+          "name": "karuna123",
+          "email": "kgarigipati@salesforce.com"
+        },
+        {
+          "name": "jmar910",
+          "email": "jmar910@gmail.com"
+        },
+        {
+          "name": "xiaolin-ninja",
+          "email": "xiaolin.xu@heroku.com"
+        },
+        {
+          "name": "thaichili",
+          "email": "thaichili@hotmail.com"
+        },
+        {
+          "name": "niklasrichardson",
+          "email": "niklas.richardson@salesforce.com"
+        },
+        {
+          "name": "hannesfostie",
+          "email": "hannes.fostie@gmail.com"
+        },
+        {
+          "name": "rakesh.patil",
+          "email": "rakesh.patil@salesforce.com"
+        },
+        {
+          "name": "reidmix",
+          "email": "reidmix@gmail.com"
+        },
+        {
+          "name": "sheax0r",
+          "email": "michael.shea@heroku.com"
+        },
+        {
+          "name": "jordaneekey",
+          "email": "jordanee@heroku.com"
+        },
+        {
+          "name": "vjohne",
+          "email": "vjohne@heroku.com"
+        },
+        {
+          "name": "varunbezzam",
+          "email": "varun.bezzam@heroku.com"
+        },
+        {
+          "name": "hwalls",
+          "email": "hwalls@heroku.com"
+        },
+        {
+          "name": "diana.doherty",
+          "email": "diana.doherty@heroku.com"
+        },
+        {
+          "name": "lyubo1",
+          "email": "lyubo@heroku.com"
+        },
+        {
+          "name": "jmccartie",
+          "email": "jon@mccartie.com"
+        },
+        {
+          "name": "coreypurcell",
+          "email": "me@coreypurcell.com"
+        },
+        {
+          "name": "dan.richards",
+          "email": "dan.richards@heroku.com"
+        },
+        {
+          "name": "friism",
+          "email": "friism@gmail.com"
+        },
+        {
+          "name": "wchrisjohnson",
+          "email": "wchrisjohnson@gmail.com"
+        },
+        {
+          "name": "mrowley",
+          "email": "mrowley@heroku.com"
+        },
+        {
+          "name": "subakva",
+          "email": "jdwadsworth@gmail.com"
+        },
+        {
+          "name": "tkoh",
+          "email": "tim.kohrumel@gmail.com"
+        },
+        {
+          "name": "tomozilla",
+          "email": "tmitani@salesforce.com"
+        },
+        {
+          "name": "mbuschheroku",
+          "email": "mbusch@heroku.com"
+        },
+        {
+          "name": "arafatm",
+          "email": "npmjs@arafatm.com"
+        },
+        {
+          "name": "schneems",
+          "email": "richard.schneeman+no-recruiters@gmail.com"
+        },
+        {
+          "name": "mklinger",
+          "email": "mklinger@salesforce.com"
+        },
+        {
+          "name": "mwoods79",
+          "email": "micahwoods@gmail.com"
+        },
+        {
+          "name": "gwinter",
+          "email": "gwinter@heroku.com"
+        },
+        {
+          "name": "mble-sfdc",
+          "email": "mblewitt@salesforce.com"
+        },
+        {
+          "name": "mathias_heroku",
+          "email": "mathias@heroku.com"
+        },
+        {
+          "name": "jason.cummings",
+          "email": "jason.cummings@heroku.com"
+        },
+        {
+          "name": "pbalchin-heroku",
+          "email": "pbalchin@heroku.com"
+        },
+        {
+          "name": "tevanoff",
+          "email": "vitamint100@gmail.com"
+        },
+        {
+          "name": "jsalaz",
+          "email": "jsalaz@salesforce.com"
+        },
+        {
+          "name": "apghero",
+          "email": "agwozdziewycz@salesforce.com"
+        },
+        {
+          "name": "rcross",
+          "email": "rcross@gmail.com"
+        },
+        {
+          "name": "kstonesf",
+          "email": "Kyle.Stone@salesforce.com"
+        },
+        {
+          "name": "hone",
+          "email": "hone02@gmail.com"
+        },
+        {
+          "name": "amandadolan",
+          "email": "amandacrawfordalc@gmail.com"
+        },
+        {
+          "name": "chap",
+          "email": "chapambrose@gmail.com"
+        },
+        {
+          "name": "drapergeek",
+          "email": "jason@drapergeek.com"
+        },
+        {
+          "name": "brettgoulder",
+          "email": "brett.goulder@gmail.com"
+        },
+        {
+          "name": "neilmiddleton",
+          "email": "neil@heroku.com"
+        },
+        {
+          "name": "staaldraad",
+          "email": "estalmans@heroku.com"
+        },
+        {
+          "name": "brockspratlen",
+          "email": "npm@brockspratlen.com"
+        },
+        {
+          "name": "jvinil05",
+          "email": "vjain@heroku.com"
+        },
+        {
+          "name": "ryanbrainard",
+          "email": "ryan@ryanbrainard.com"
+        },
+        {
+          "name": "dhaulagiri",
+          "email": "brian.runnells+github@gmail.com"
+        },
+        {
+          "name": "mattrothenberg",
+          "email": "hello@mattrothenberg.com"
+        },
+        {
+          "name": "kevinbrolly",
+          "email": "kbrolly@heroku.com"
+        },
+        {
+          "name": "raulmurciano",
+          "email": "raul@murciano.net"
+        },
+        {
+          "name": "jabrown85",
+          "email": "jabrown85@gmail.com"
+        },
+        {
+          "name": "jhargis",
+          "email": "jhargis@salesforce.com"
+        },
+        {
+          "name": "randerton",
+          "email": "randerton@salesforce.com"
+        },
+        {
+          "name": "bvanderhoof",
+          "email": "bvanderhoof@heroku.com"
+        },
+        {
+          "name": "johnbeynon",
+          "email": "john@beynon.org.uk"
+        },
+        {
+          "name": "jmervine",
+          "email": "joshua@mervine.net"
+        },
+        {
+          "name": "geemus",
+          "email": "geemus@gmail.com"
+        },
+        {
+          "name": "ahamidi",
+          "email": "ahamidi@salesforce.com"
+        },
+        {
+          "name": "bdjohnso",
+          "email": "bradley@heroku.com"
+        },
+        {
+          "name": "mars",
+          "email": "m@marsorange.com"
+        },
+        {
+          "name": "wfarrington",
+          "email": "wfarrington@salesforce.com"
+        },
+        {
+          "name": "k.parnell",
+          "email": "k.parnell@gmail.com"
+        },
+        {
+          "name": "dmcinnes",
+          "email": "doug@dougmcinnes.com"
+        },
+        {
+          "name": "jessieheroku711",
+          "email": "jessie.young@heroku.com"
+        },
+        {
+          "name": "tholschuh-salesforce",
+          "email": "tholschuh@salesforce.com"
+        },
+        {
+          "name": "dzuelke",
+          "email": "dzuelke@gmail.com"
+        },
+        {
+          "name": "mhale_salesforce",
+          "email": "mhale@salesforce.com"
+        },
+        {
+          "name": "stellacotton",
+          "email": "stella@stellacotton.com"
+        },
+        {
+          "name": "crcastle",
+          "email": "castle@heroku.com"
+        },
+        {
+          "name": "iamjem",
+          "email": "pixeldonor@gmail.com"
+        },
+        {
+          "name": "chadbailey59",
+          "email": "chadbailey@gmail.com"
+        },
+        {
+          "name": "pradhantushar",
+          "email": "tpradhan@salesforce.com"
+        },
+        {
+          "name": "agnaite",
+          "email": "agnesklimaite@gmail.com"
+        },
+        {
+          "name": "zunda",
+          "email": "zundan@gmail.com"
+        },
+        {
+          "name": "jmahmood",
+          "email": "jmahmood@salesforce.com"
+        },
+        {
+          "name": "mttr",
+          "email": "mitsuteru.s@gmail.com"
+        },
+        {
+          "name": "jgwhite",
+          "email": "jamie@jgwhite.co.uk"
+        },
+        {
+          "name": "tbalthazar",
+          "email": "tbalthazar@heroku.com"
+        },
+        {
+          "name": "josephwegner",
+          "email": "dev@joewegner.com"
+        },
+        {
+          "name": "xavriley",
+          "email": "info@xavierriley.co.uk"
+        },
+        {
+          "name": "jntullo",
+          "email": "jillian.tullo@gmail.com"
+        },
+        {
+          "name": "anniesexton",
+          "email": "asexton@salesforce.com"
+        },
+        {
+          "name": "freeformz",
+          "email": "edwardam@interlix.com"
+        },
+        {
+          "name": "raulb",
+          "email": "ra.barroso@gmail.com"
+        },
+        {
+          "name": "amerine",
+          "email": "mark@amerine.net"
+        },
+        {
+          "name": "jingweno",
+          "email": "jingweno@gmail.com"
+        },
+        {
+          "name": "gulopine",
+          "email": "marty@martyalchin.com"
+        },
+        {
+          "name": "hunterloftis",
+          "email": "hunter@hunterloftis.com"
+        },
+        {
+          "name": "joshwlewis",
+          "email": "josh.w.lewis@gmail.com"
+        },
+        {
+          "name": "cfaist",
+          "email": "cfaist@salesforce.com"
+        },
+        {
+          "name": "ojacobson",
+          "email": "owen@grimoire.ca"
+        },
+        {
+          "name": "curzonj",
+          "email": "curzonj@gmail.com"
+        },
+        {
+          "name": "bernerdschaefer",
+          "email": "bernerd.schaefer@salesforce.com"
+        },
+        {
+          "name": "jdowning",
+          "email": "justin@downing.us"
+        },
+        {
+          "name": "klockwood",
+          "email": "klockwood@heroku.com"
+        },
+        {
+          "name": "binarycleric",
+          "email": "binarycleric@gmail.com"
+        },
+        {
+          "name": "naaman",
+          "email": "naaman@heroku.com"
+        },
+        {
+          "name": "eblack",
+          "email": "eblack@heroku.com"
+        },
+        {
+          "name": "william-schmitt",
+          "email": "w.schmitt@heroku.com"
+        },
+        {
+          "name": "cdueltgen-heroku",
+          "email": "cdueltgen@heroku.com"
+        },
+        {
+          "name": "alouie-sfdc",
+          "email": "alouie@heroku.com"
+        },
+        {
+          "name": "mimen",
+          "email": "miladmaaan@gmail.com"
+        },
+        {
+          "name": "danp128",
+          "email": "dpiddy@gmail.com"
+        },
+        {
+          "name": "cji",
+          "email": "cingram@heroku.com"
+        },
+        {
+          "name": "beanieboi",
+          "email": "bfritsch@heroku.com"
+        },
+        {
+          "name": "elbandito",
+          "email": "longoria.public@gmail.com"
+        },
+        {
+          "name": "ransombriggs",
+          "email": "rbriggs@heroku.com"
+        },
+        {
+          "name": "halorgium",
+          "email": "tim@spork.in"
+        },
+        {
+          "name": "jsullivandigs",
+          "email": "josh@dipperstove.com"
+        },
+        {
+          "name": "codefinger",
+          "email": "joe@heroku.com"
+        },
+        {
+          "name": "heroku-tcrayford",
+          "email": "tcrayford@heroku.com"
+        },
+        {
+          "name": "jmonster",
+          "email": "jvdomino@gmail.com"
+        },
+        {
+          "name": "fivetanley",
+          "email": "stanley@stan.li"
+        },
+        {
+          "name": "heroku-hit",
+          "email": "johnny@heroku.com"
+        },
+        {
+          "name": "heroku-dod-npm",
+          "email": "dod-secure@heroku.com"
+        },
+        {
+          "name": "fivetanley-heroku",
+          "email": "sstuart@heroku.com"
+        },
+        {
+          "name": "troelsthomsen",
+          "email": "troethom@gmail.com"
+        },
+        {
+          "name": "rasphilco",
+          "email": "philipe@heroku.com"
+        },
+        {
+          "name": "jmorrell",
+          "email": "morrell.jeremy@gmail.com"
+        },
+        {
+          "name": "dmathieu",
+          "email": "damien@heroku.com"
+        },
+        {
+          "name": "cyx",
+          "email": "cyx@cyx.is"
+        },
+        {
+          "name": "sibson",
+          "email": "sibson@gmail.com"
+        },
+        {
+          "name": "sigmavirus24",
+          "email": "graffatcolmingov+npm@gmail.com"
+        },
+        {
+          "name": "lambacck",
+          "email": "clambacher@heroku.com"
+        },
+        {
+          "name": "superhighfives",
+          "email": "hi@charliegleason.com"
+        },
+        {
+          "name": "yann_ck",
+          "email": "yannick.schutz@gmail.com"
+        },
+        {
+          "name": "mattgraham",
+          "email": "kickthebox@gmail.com"
+        },
+        {
+          "name": "genslein",
+          "email": "genslein@salesforce.com"
+        }
+      ],
+      "_npmUser": {
+        "name": "raulb",
+        "email": "ra.barroso@gmail.com"
+      },
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/ember-slds-components_0.0.1_1573822956684_0.2299056889232849"
+      },
+      "_hasShrinkwrap": false
+    },
+    "0.0.2-0": {
+      "name": "@heroku/ember-slds-components",
+      "version": "0.0.2-0",
+      "description": "The default blueprint for ember-cli addons.",
+      "keywords": [
+        "ember-addon"
+      ],
+      "repository": {
+        "type": "git",
+        "url": ""
+      },
+      "license": "MIT",
+      "author": {},
+      "scripts": {
+        "build": "ember build",
+        "dev": "ember serve",
+        "prebuild-storybook": "yarn build && shx cp -r public/* dist",
+        "build-storybook": "build-storybook -s dist",
+        "storybook": "yarn build && start-storybook -p 9009 -s dist",
+        "storybook:dev": "yarn dev & start-storybook -p 9009 -s dist",
+        "lint:hbs": "ember-template-lint .",
+        "lint:js": "eslint .",
+        "start": "ember serve"
+      },
+      "dependencies": {
+        "@salesforce-ux/design-system": "^2.10.2",
+        "broccoli-funnel": "^2.0.2",
+        "broccoli-merge-trees": "^3.0.2",
+        "ember-cli-babel": "^7.11.1",
+        "ember-cli-htmlbars": "^4.0.0"
+      },
+      "devDependencies": {
+        "@babel/core": "^7.7.2",
+        "@ember/optional-features": "^1.0.0",
+        "@storybook/addon-a11y": "^5.2.6",
+        "@storybook/addon-actions": "^5.2.6",
+        "@storybook/addon-backgrounds": "^5.2.6",
+        "@storybook/addon-knobs": "^5.2.6",
+        "@storybook/addon-storysource": "^5.2.6",
+        "@storybook/addon-viewport": "^5.2.6",
+        "@storybook/ember": "^5.2.6",
+        "@storybook/source-loader": "^5.2.6",
+        "babel-eslint": "^10.0.3",
+        "babel-loader": "^8.0.6",
+        "broccoli-asset-rev": "^3.0.0",
+        "ember-cli": "~3.13.1",
+        "ember-cli-dependency-checker": "^3.1.0",
+        "ember-cli-eslint": "^5.1.0",
+        "ember-cli-htmlbars-inline-precompile": "^3.0.1",
+        "ember-cli-inject-live-reload": "^2.0.1",
+        "ember-cli-sri": "^2.1.1",
+        "ember-cli-storybook": "^0.1.0",
+        "ember-cli-template-lint": "^1.0.0-beta.3",
+        "ember-cli-uglify": "^3.0.0",
+        "ember-disable-prototype-extensions": "^1.1.3",
+        "ember-export-application-global": "^2.0.0",
+        "ember-load-initializers": "^2.1.0",
+        "ember-maybe-import-regenerator": "^0.1.6",
+        "ember-qunit": "^4.5.1",
+        "ember-resolver": "^5.3.0",
+        "ember-source": "~3.13.0",
+        "ember-source-channel-url": "^2.0.1",
+        "ember-try": "^1.2.1",
+        "eslint-plugin-ember": "^7.1.0",
+        "eslint-plugin-node": "^10.0.0",
+        "loader.js": "^4.7.0",
+        "qunit-dom": "^0.9.0"
+      },
+      "engines": {
+        "node": "8.* || >= 10.*"
+      },
+      "ember-addon": {
+        "configPath": "tests/dummy/config"
+      },
+      "readmeFilename": "README.md",
+      "readme": "ember-slds-components\n==============================================================================\n\nEmber JS implementations of components from the [Lightning Design System](https://www.lightningdesignsystem.com/)\n\n\nCompatibility\n------------------------------------------------------------------------------\n\n* Ember.js v3.4 or above\n* Ember CLI v2.13 or above\n* Node.js v8 or above\n\n\nDevelopment\n------------------------------------------------------------------------------\nTo spin up Storybook, run\n```bash\nyarn storybook:dev\n```\nNote that this will spin up the Ember server in a background process, and then Storybook in the foreground.\n\nInstallation\n------------------------------------------------------------------------------\n\n```\nember install ember-slds-components\n```\n\n\nContributing\n------------------------------------------------------------------------------\n\nSee the [Contributing](CONTRIBUTING.md) guide for details.\n\n\nLicense\n------------------------------------------------------------------------------\n\nThis project is licensed under the [MIT License](LICENSE.md).\n",
+      "licenseText": "The MIT License (MIT)\n\nCopyright (c) 2019\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n",
+      "_id": "@heroku/ember-slds-components@0.0.2-0",
+      "dist": {
+        "shasum": "61ca02627f3de2fcec1cbf9838f559c2f6169d7c",
+        "integrity": "sha512-zsUpaCOiSuH6/9TnT3Et1GeWSqNp17F8rXErWxQIGLYow2MCTsjnrarPYpb41bBJWmJWy83MDH1NjlXJfhWf3g==",
+        "tarball": "https://registry.npmjs.org/@heroku/ember-slds-components/-/ember-slds-components-0.0.2-0.tgz",
+        "fileCount": 38,
+        "unpackedSize": 15075,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdzrtXCRA9TVsSAnZWagAARCoQAIkhzjc6FgxVPDqkeSrY\neegFBuasssbZJ2HHF5+fhLuSHfuYDIRsK3GiuPcjFOa2VxA4TJxQEgkd6YDi\nuJnDvnmipf/8MMjH+aXbPpGTfH0e19ivhfKKdeVF8wl+3jAPJ+5UWaqzuABh\nwX4n3ivvji3fzA+MmEx4v5BbaoSEy7Ws2plg3RKlx+GUxuaargzIL5ZFuuRb\nd+Uw028iUmISX0VIGeyKbSZzLET2XbjPA+rFdw6GQOC3+2eRs2syitZOGD68\n5+sZIVHZa+KUEK2tk/6cvciTJVc7QAIoazHbDoCOaQIiBD4WGuozrhmIkQNp\nZReC1OrAOWtgAYYflM73I5UPLDlI+qpAvxWpDo/dE2vBaMDvEO3U4um8lUdg\nc6TCwjY969hDyfJUBFBYOZ4DvxJfEq92RBGVANHixiMG2Jfdizi8QkS+ljsR\nMzyrhHqG6viM+fkT5krF//u9/CvCJV0Nf19zaR5ANzFMibHJMyuh4ldOat6d\n2eepi9qYM7zYSieEuVxuMeb3yv+/qLVnPE/HzfscSgZfBxbacHYveMAdWlno\nCOyyRSQr7puhMKaebS/3fT2KUs88UVdI4I75tLp0MadswFmyOjsi/tQZb5+v\n8w75lu0o/dxwXRBXRMCpJ/1QTwrxDS+9fV5HZ7Cp7y93CHSEsNer+rynt0iN\nI/bo\r\n=oHbz\r\n-----END PGP SIGNATURE-----\r\n",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEQCIFTzeVVfx/gPYejv2SZq97c2J98YrEhkdMdJLuMiba4SAiA2pgI6kBeUJZWfoDyGQoWeeMhyS0TQ14klR8cN7SVVwA=="
+          }
+        ]
+      },
+      "maintainers": [
+        {
+          "name": "7ftz",
+          "email": "zwhitfield@heroku.com"
+        },
+        {
+          "name": "abernicchia",
+          "email": "abernicchia@heroku.com"
+        },
+        {
+          "name": "abnovak",
+          "email": "anovak@salesforce.com"
+        },
+        {
+          "name": "adelcambre",
+          "email": "adelcambre@gmail.com"
+        },
+        {
+          "name": "adovenmuehlesf",
+          "email": "adovenmuehle@salesforce.com"
+        },
+        {
+          "name": "agnaite",
+          "email": "agnesklimaite@gmail.com"
+        },
+        {
+          "name": "ahamidi",
+          "email": "ahamidi@salesforce.com"
+        },
+        {
+          "name": "alouie-sfdc",
+          "email": "alouie@heroku.com"
+        },
+        {
+          "name": "amandadolan",
+          "email": "amandacrawfordalc@gmail.com"
+        },
+        {
+          "name": "amerine",
+          "email": "mark@amerine.net"
+        },
+        {
+          "name": "andscoop",
+          "email": "andycooper.s@gmail.com"
+        },
+        {
+          "name": "anniesexton",
+          "email": "asexton@salesforce.com"
+        },
+        {
+          "name": "apdarr",
+          "email": "alexdarr@gmail.com"
+        },
+        {
+          "name": "apghero",
+          "email": "agwozdziewycz@salesforce.com"
+        },
+        {
+          "name": "arafatm",
+          "email": "npmjs@arafatm.com"
+        },
+        {
+          "name": "aschneider-heroku",
+          "email": "alexander.schneider@heroku.com"
+        },
+        {
+          "name": "asegebresalazar",
+          "email": "asegebresalazar@salesforce.com"
+        },
+        {
+          "name": "astojanovic",
+          "email": "astojanovic@salesforce.com"
+        },
+        {
+          "name": "baliles",
+          "email": "david@baliles.com"
+        },
+        {
+          "name": "bdjohnso",
+          "email": "bradley@heroku.com"
+        },
+        {
+          "name": "beanieboi",
+          "email": "bfritsch@heroku.com"
+        },
+        {
+          "name": "bensymonds",
+          "email": "bsymonds@salesforce.com"
+        },
+        {
+          "name": "bernerdschaefer",
+          "email": "bernerd.schaefer@salesforce.com"
+        },
+        {
+          "name": "bigaluk",
+          "email": "big.aps@gmail.com"
+        },
+        {
+          "name": "binarycleric",
+          "email": "binarycleric@gmail.com"
+        },
+        {
+          "name": "bob_h",
+          "email": "bob@heroku.com"
+        },
+        {
+          "name": "breeldo",
+          "email": "bdodd@salesforce.com"
+        },
+        {
+          "name": "brettgoulder",
+          "email": "brett.goulder@gmail.com"
+        },
+        {
+          "name": "brockspratlen",
+          "email": "npm@brockspratlen.com"
+        },
+        {
+          "name": "bvanderhoof",
+          "email": "bvanderhoof@heroku.com"
+        },
+        {
+          "name": "cafreeman",
+          "email": "cfreeman.code@gmail.com"
+        },
+        {
+          "name": "camillebaldock",
+          "email": "npm@camillebaldock.com"
+        },
+        {
+          "name": "cdueltgen-heroku",
+          "email": "cdueltgen@heroku.com"
+        },
+        {
+          "name": "ceaess",
+          "email": "ceaess@gmail.com"
+        },
+        {
+          "name": "cfaist",
+          "email": "cfaist@salesforce.com"
+        },
+        {
+          "name": "cfunkhouser",
+          "email": "cfunkhouser@heroku.com"
+        },
+        {
+          "name": "chadbailey59",
+          "email": "chadbailey@gmail.com"
+        },
+        {
+          "name": "chadian",
+          "email": "chadcarbert@me.com"
+        },
+        {
+          "name": "chandana_anumula",
+          "email": "canumula@heroku.com"
+        },
+        {
+          "name": "chap",
+          "email": "chapambrose@gmail.com"
+        },
+        {
+          "name": "chrismarino",
+          "email": "christopher.marino@heroku.com"
+        },
+        {
+          "name": "cji",
+          "email": "cingram@heroku.com"
+        },
+        {
+          "name": "cleroy",
+          "email": "cleroy@heroku.com"
+        },
+        {
+          "name": "cobyr",
+          "email": "crandquist@salesforce.com"
+        },
+        {
+          "name": "code0100fun",
+          "email": "chase@code0100fun.com"
+        },
+        {
+          "name": "codefinger",
+          "email": "joe@heroku.com"
+        },
+        {
+          "name": "coreymartinheroku",
+          "email": "corey.martin@salesforce.com"
+        },
+        {
+          "name": "coreypurcell",
+          "email": "me@coreypurcell.com"
+        },
+        {
+          "name": "crcastle",
+          "email": "castle@heroku.com"
+        },
+        {
+          "name": "csinghaus-sfdc",
+          "email": "csinghaus@heroku.com"
+        },
+        {
+          "name": "curzonj",
+          "email": "curzonj@gmail.com"
+        },
+        {
+          "name": "cwallsf",
+          "email": "cwall@salesforce.com"
+        },
+        {
+          "name": "cyx",
+          "email": "cyx@cyx.is"
+        },
+        {
+          "name": "dan.richards",
+          "email": "dan.richards@heroku.com"
+        },
+        {
+          "name": "danielleadams",
+          "email": "adamzdanielle@gmail.com"
+        },
+        {
+          "name": "danp128",
+          "email": "dpiddy@gmail.com"
+        },
+        {
+          "name": "dhaulagiri",
+          "email": "brian.runnells+github@gmail.com"
+        },
+        {
+          "name": "dhavalthakkar93",
+          "email": "dthakkar@salesforce.com"
+        },
+        {
+          "name": "diana.doherty",
+          "email": "diana.doherty@heroku.com"
+        },
+        {
+          "name": "dkvdm",
+          "email": "dkvdmeer@salesforce.com"
+        },
+        {
+          "name": "dmathieu",
+          "email": "damien@heroku.com"
+        },
+        {
+          "name": "dmcinnes",
+          "email": "doug@dougmcinnes.com"
+        },
+        {
+          "name": "drapergeek",
+          "email": "jason@drapergeek.com"
+        },
+        {
+          "name": "dzhuo",
+          "email": "dzhuo@salesforce.com"
+        },
+        {
+          "name": "dzuelke",
+          "email": "dzuelke@gmail.com"
+        },
+        {
+          "name": "eallard",
+          "email": "eallard@heroku.com"
+        },
+        {
+          "name": "eblack",
+          "email": "eblack@heroku.com"
+        },
+        {
+          "name": "edmorley",
+          "email": "edmorley@users.noreply.github.com"
+        },
+        {
+          "name": "edubs",
+          "email": "erin.willis@salesforce.com"
+        },
+        {
+          "name": "elbandito",
+          "email": "longoria.public@gmail.com"
+        },
+        {
+          "name": "emccartie",
+          "email": "emccartie@salesforce.com"
+        },
+        {
+          "name": "enelson1992",
+          "email": "enelson@salesforce.com"
+        },
+        {
+          "name": "ericlchen2",
+          "email": "echen1@salesforce.com"
+        },
+        {
+          "name": "erik.jones",
+          "email": "ejones@heroku.com"
+        },
+        {
+          "name": "eviking",
+          "email": "jschutt@salesforce.com"
+        },
+        {
+          "name": "fivetanley",
+          "email": "stanley@stan.li"
+        },
+        {
+          "name": "fivetanley-heroku",
+          "email": "sstuart@heroku.com"
+        },
+        {
+          "name": "flarco",
+          "email": "flarco@live.com"
+        },
+        {
+          "name": "freeformz",
+          "email": "edwardam@interlix.com"
+        },
+        {
+          "name": "friism",
+          "email": "friism@gmail.com"
+        },
+        {
+          "name": "geemus",
+          "email": "geemus@gmail.com"
+        },
+        {
+          "name": "genslein",
+          "email": "genslein@salesforce.com"
+        },
+        {
+          "name": "gulopine",
+          "email": "marty@martyalchin.com"
+        },
+        {
+          "name": "gwinter",
+          "email": "gwinter@heroku.com"
+        },
+        {
+          "name": "halorgium",
+          "email": "tim@spork.in"
+        },
+        {
+          "name": "hannesfostie",
+          "email": "hannes.fostie@gmail.com"
+        },
+        {
+          "name": "heroku-dod-npm",
+          "email": "dod-secure@heroku.com"
+        },
+        {
+          "name": "heroku-hit",
+          "email": "johnny@heroku.com"
+        },
+        {
+          "name": "heroku-tcrayford",
+          "email": "tcrayford@heroku.com"
+        },
+        {
+          "name": "hone",
+          "email": "hone02@gmail.com"
+        },
+        {
+          "name": "hsophie-sf",
+          "email": "hsophie@salesforce.com"
+        },
+        {
+          "name": "hunterloftis",
+          "email": "hunter@hunterloftis.com"
+        },
+        {
+          "name": "hwalls",
+          "email": "hwalls@heroku.com"
+        },
+        {
+          "name": "iamjem",
+          "email": "pixeldonor@gmail.com"
+        },
+        {
+          "name": "icoffeysfdc",
+          "email": "icoffey@salesforce.com"
+        },
+        {
+          "name": "imtayadeway",
+          "email": "hello@timjwade.com"
+        },
+        {
+          "name": "iriberri",
+          "email": "iriberrig@gmail.com"
+        },
+        {
+          "name": "jabrown85",
+          "email": "jabrown85@gmail.com"
+        },
+        {
+          "name": "jahnavi_barma",
+          "email": "bjahnavi@heroku.com"
+        },
+        {
+          "name": "jason.cummings",
+          "email": "jason.cummings@heroku.com"
+        },
+        {
+          "name": "jbousiquotheroku",
+          "email": "jboursiquot@heroku.com"
+        },
+        {
+          "name": "jbyrum",
+          "email": "jbyrum@heroku.com"
+        },
+        {
+          "name": "jdance",
+          "email": "jdance@salesforce.com"
+        },
+        {
+          "name": "jdowning",
+          "email": "justin@downing.us"
+        },
+        {
+          "name": "jessieheroku711",
+          "email": "jessie.young@heroku.com"
+        },
+        {
+          "name": "jgwhite",
+          "email": "jamie@jgwhite.co.uk"
+        },
+        {
+          "name": "jhargis",
+          "email": "jhargis@salesforce.com"
+        },
+        {
+          "name": "jingweno",
+          "email": "jingweno@gmail.com"
+        },
+        {
+          "name": "jmahmood",
+          "email": "jmahmood@salesforce.com"
+        },
+        {
+          "name": "jmar910",
+          "email": "jmar910@gmail.com"
+        },
+        {
+          "name": "jmccartie",
+          "email": "jon@mccartie.com"
+        },
+        {
+          "name": "jmervine",
+          "email": "joshua@mervine.net"
+        },
+        {
+          "name": "jmonster",
+          "email": "jvdomino@gmail.com"
+        },
+        {
+          "name": "jmorrell",
+          "email": "morrell.jeremy@gmail.com"
+        },
+        {
+          "name": "jntullo",
+          "email": "jillian.tullo@gmail.com"
+        },
+        {
+          "name": "joanneyeung",
+          "email": "jttyeung@gmail.com"
+        },
+        {
+          "name": "johlym",
+          "email": "jelyman@gmail.com"
+        },
+        {
+          "name": "johnbeynon",
+          "email": "john@beynon.org.uk"
+        },
+        {
+          "name": "johndalton",
+          "email": "john@johndalton.info"
+        },
+        {
+          "name": "jonmountjoy",
+          "email": "tech+npm@jonmountjoy.com"
+        },
+        {
+          "name": "jordaneekey",
+          "email": "jordanee@heroku.com"
+        },
+        {
+          "name": "josephwegner",
+          "email": "dev@joewegner.com"
+        },
+        {
+          "name": "joshwlewis",
+          "email": "josh.w.lewis@gmail.com"
+        },
+        {
+          "name": "jqian",
+          "email": "jqian@salesforce.com"
+        },
+        {
+          "name": "jroes-sfdc",
+          "email": "jroes@salesforce.com"
+        },
+        {
+          "name": "jsalaz",
+          "email": "jsalaz@salesforce.com"
+        },
+        {
+          "name": "jsoyland",
+          "email": "jsoyland@heroku.com"
+        },
+        {
+          "name": "jsullivandigs",
+          "email": "josh@dipperstove.com"
+        },
+        {
+          "name": "julianduque",
+          "email": "julianduquej@gmail.com"
+        },
+        {
+          "name": "jvinil05",
+          "email": "vjain@heroku.com"
+        },
+        {
+          "name": "k.parnell",
+          "email": "k.parnell@gmail.com"
+        },
+        {
+          "name": "karuna123",
+          "email": "kgarigipati@salesforce.com"
+        },
+        {
+          "name": "kbong",
+          "email": "kbong@salesforce.com"
+        },
+        {
+          "name": "kevinbrolly",
+          "email": "kbrolly@heroku.com"
+        },
+        {
+          "name": "klockwood",
+          "email": "klockwood@heroku.com"
+        },
+        {
+          "name": "kstonesf",
+          "email": "Kyle.Stone@salesforce.com"
+        },
+        {
+          "name": "kwugirl",
+          "email": "kwu@heroku.com"
+        },
+        {
+          "name": "lambacck",
+          "email": "clambacher@heroku.com"
+        },
+        {
+          "name": "lmatte7",
+          "email": "lmatte@heroku.com"
+        },
+        {
+          "name": "lsorstokke",
+          "email": "lsorstokke@heroku.com"
+        },
+        {
+          "name": "luzcn6",
+          "email": "zheng.lu@salesforce.com"
+        },
+        {
+          "name": "lxfontes",
+          "email": "lxfontes@gmail.com"
+        },
+        {
+          "name": "lyric",
+          "email": "lyrichartley@gmail.com"
+        },
+        {
+          "name": "lyubo1",
+          "email": "lyubo@heroku.com"
+        },
+        {
+          "name": "mark.newell",
+          "email": "mark.newell@salesforce.com"
+        },
+        {
+          "name": "mars",
+          "email": "m@marsorange.com"
+        },
+        {
+          "name": "mathias_heroku",
+          "email": "mathias@heroku.com"
+        },
+        {
+          "name": "mattgraham",
+          "email": "kickthebox@gmail.com"
+        },
+        {
+          "name": "mattrothenberg",
+          "email": "hello@mattrothenberg.com"
+        },
+        {
+          "name": "matttannahill",
+          "email": "matthew.r.tannahill@live.com"
+        },
+        {
+          "name": "mble-sfdc",
+          "email": "mblewitt@salesforce.com"
+        },
+        {
+          "name": "mbuschheroku",
+          "email": "mbusch@heroku.com"
+        },
+        {
+          "name": "mcavage",
+          "email": "mcavage@gmail.com"
+        },
+        {
+          "name": "mhale_salesforce",
+          "email": "mhale@salesforce.com"
+        },
+        {
+          "name": "mikemondragon",
+          "email": "mikemondragon@gmail.com"
+        },
+        {
+          "name": "mimen",
+          "email": "miladmaaan@gmail.com"
+        },
+        {
+          "name": "mjandreau",
+          "email": "mjandreau@heroku.com"
+        },
+        {
+          "name": "mklinger",
+          "email": "mklinger@salesforce.com"
+        },
+        {
+          "name": "mnorth",
+          "email": "mnorth@heroku.com"
+        },
+        {
+          "name": "mpsenn",
+          "email": "npmjs@msenn.com"
+        },
+        {
+          "name": "mrmicahcooper",
+          "email": "mrmicahcooper@gmail.com"
+        },
+        {
+          "name": "mrowley",
+          "email": "mrowley@heroku.com"
+        },
+        {
+          "name": "mttr",
+          "email": "mitsuteru.s@gmail.com"
+        },
+        {
+          "name": "murphybytes",
+          "email": "jmurphy@heroku.com"
+        },
+        {
+          "name": "mwhagedorn_h",
+          "email": "mhagedorn@heroku.com"
+        },
+        {
+          "name": "mwoods79",
+          "email": "micahwoods@gmail.com"
+        },
+        {
+          "name": "n.kothari",
+          "email": "n.kothari@salesforce.com"
+        },
+        {
+          "name": "naaman",
+          "email": "naaman@heroku.com"
+        },
+        {
+          "name": "neerajheroku",
+          "email": "kumar.neeraj@heroku.com"
+        },
+        {
+          "name": "neilmiddleton",
+          "email": "neil@heroku.com"
+        },
+        {
+          "name": "nickcannariato",
+          "email": "nickcannariato@gmail.com"
+        },
+        {
+          "name": "niklasrichardson",
+          "email": "niklas.richardson@salesforce.com"
+        },
+        {
+          "name": "nsamsami",
+          "email": "nsamsami@salesforce.com"
+        },
+        {
+          "name": "ojacobson",
+          "email": "owen@grimoire.ca"
+        },
+        {
+          "name": "oodelola",
+          "email": "oodelola@heroku.com"
+        },
+        {
+          "name": "paulcsmith",
+          "email": "catalystmediastudios@gmail.com"
+        },
+        {
+          "name": "pbalchin-heroku",
+          "email": "pbalchin@heroku.com"
+        },
+        {
+          "name": "philheroku",
+          "email": "phil@heroku.com"
+        },
+        {
+          "name": "plathrop",
+          "email": "plathrop@salesforce.com"
+        },
+        {
+          "name": "pnance",
+          "email": "pamela.nance@yahoo.com"
+        },
+        {
+          "name": "pradhantushar",
+          "email": "tpradhan@salesforce.com"
+        },
+        {
+          "name": "rakesh.patil",
+          "email": "rakesh.patil@salesforce.com"
+        },
+        {
+          "name": "randerton",
+          "email": "randerton@salesforce.com"
+        },
+        {
+          "name": "ransombriggs",
+          "email": "rbriggs@heroku.com"
+        },
+        {
+          "name": "rasphilco",
+          "email": "philipe@heroku.com"
+        },
+        {
+          "name": "raulb",
+          "email": "ra.barroso@gmail.com"
+        },
+        {
+          "name": "raulmurciano",
+          "email": "raul@murciano.net"
+        },
+        {
+          "name": "rbriggs",
+          "email": "rbriggs@heroku.com"
+        },
+        {
+          "name": "rchanda",
+          "email": "rchanda@heroku.com"
+        },
+        {
+          "name": "rchimal",
+          "email": "ricardo@heroku.com"
+        },
+        {
+          "name": "rcross",
+          "email": "rcross@gmail.com"
+        },
+        {
+          "name": "reidmix",
+          "email": "reidmix@gmail.com"
+        },
+        {
+          "name": "rmanrique",
+          "email": "rmanrique@breadbox.io"
+        },
+        {
+          "name": "ryanbrainard",
+          "email": "ryan@ryanbrainard.com"
+        },
+        {
+          "name": "samuel.sharaf",
+          "email": "samuel.sharaf@salesforce.com"
+        },
+        {
+          "name": "sandy.lai",
+          "email": "sandy.lai@salesforce.com"
+        },
+        {
+          "name": "santoshbandari7",
+          "email": "saisantosh.bandari@heroku.com"
+        },
+        {
+          "name": "sarahpmac2",
+          "email": "sarah.macdonald@salesforce.com"
+        },
+        {
+          "name": "schneems",
+          "email": "richard.schneeman+no-recruiters@gmail.com"
+        },
+        {
+          "name": "scureton",
+          "email": "scureton@heroku.com"
+        },
+        {
+          "name": "sghaffar",
+          "email": "sghaffar@heroku.com"
+        },
+        {
+          "name": "sheax0r",
+          "email": "michael.shea@heroku.com"
+        },
+        {
+          "name": "sibson",
+          "email": "sibson@gmail.com"
+        },
+        {
+          "name": "sigmavirus24",
+          "email": "graffatcolmingov+npm@gmail.com"
+        },
+        {
+          "name": "sjezewskicm",
+          "email": "sjezewski@salesforce.com"
+        },
+        {
+          "name": "sleight42",
+          "email": "elight@salesforce.com"
+        },
+        {
+          "name": "sowjusutherland",
+          "email": "smudunuri@salesforce.com"
+        },
+        {
+          "name": "sripad.kulkarni",
+          "email": "sripad.kulkarni@heroku.com"
+        },
+        {
+          "name": "ssetayeshfar",
+          "email": "ssetayeshfar@salesforce.com"
+        },
+        {
+          "name": "sshaginyan",
+          "email": "SShaginyan@Gmail.com"
+        },
+        {
+          "name": "ssherbondy77",
+          "email": "seanderson07@gmail.com"
+        },
+        {
+          "name": "staaldraad",
+          "email": "estalmans@heroku.com"
+        },
+        {
+          "name": "stellacotton",
+          "email": "stella@stellacotton.com"
+        },
+        {
+          "name": "stevenharman",
+          "email": "steven@harmanly.com"
+        },
+        {
+          "name": "subakva",
+          "email": "jdwadsworth@gmail.com"
+        },
+        {
+          "name": "sudayavarman",
+          "email": "sudayavarman@heroku.com"
+        },
+        {
+          "name": "suguruo",
+          "email": "sohtaka@heroku.com"
+        },
+        {
+          "name": "superhighfives",
+          "email": "hi@charliegleason.com"
+        },
+        {
+          "name": "taylor.jones",
+          "email": "taylor.jones@heroku.com"
+        },
+        {
+          "name": "tbalthazar",
+          "email": "tbalthazar@heroku.com"
+        },
+        {
+          "name": "tcuilty",
+          "email": "tcuilty@salesforce.com"
+        },
+        {
+          "name": "tevanoff",
+          "email": "vitamint100@gmail.com"
+        },
+        {
+          "name": "thaichili",
+          "email": "thaichili@hotmail.com"
+        },
+        {
+          "name": "thebecky",
+          "email": "beckyjaimes@gmail.com"
+        },
+        {
+          "name": "thody",
+          "email": "adam@adamthody.com"
+        },
+        {
+          "name": "tholmes",
+          "email": "shadox@gmail.com"
+        },
+        {
+          "name": "tholschuh-salesforce",
+          "email": "tholschuh@salesforce.com"
+        },
+        {
+          "name": "threadwaste",
+          "email": "tony@threadwaste.com"
+        },
+        {
+          "name": "tkoh",
+          "email": "tim.kohrumel@gmail.com"
+        },
+        {
+          "name": "tlinquist",
+          "email": "tlinquist@heroku.com"
+        },
+        {
+          "name": "tmock12",
+          "email": "taylor.mock@heroku.com"
+        },
+        {
+          "name": "tomozilla",
+          "email": "tmitani@salesforce.com"
+        },
+        {
+          "name": "treznick",
+          "email": "treznick+npmjs@heroku.com"
+        },
+        {
+          "name": "troelsthomsen",
+          "email": "troethom@gmail.com"
+        },
+        {
+          "name": "uchi_mata",
+          "email": "mluft@heroku.com"
+        },
+        {
+          "name": "varunbezzam",
+          "email": "varun.bezzam@heroku.com"
+        },
+        {
+          "name": "vishalr7",
+          "email": "vrawtani@heroku.com"
+        },
+        {
+          "name": "vishvananda",
+          "email": "vishvananda@gmail.com"
+        },
+        {
+          "name": "vjohne",
+          "email": "vjohne@heroku.com"
+        },
+        {
+          "name": "vrana2019",
+          "email": "vikram.s.rana1@gmail.com"
+        },
+        {
+          "name": "vshiva",
+          "email": "vshiva@gmail.com"
+        },
+        {
+          "name": "w.griggs",
+          "email": "w.griggs@heroku.com"
+        },
+        {
+          "name": "wbarnette",
+          "email": "wbarnette@heroku.com"
+        },
+        {
+          "name": "wchrisjohnson",
+          "email": "wchrisjohnson@gmail.com"
+        },
+        {
+          "name": "wfarrington",
+          "email": "wfarrington@salesforce.com"
+        },
+        {
+          "name": "william-schmitt",
+          "email": "w.schmitt@heroku.com"
+        },
+        {
+          "name": "woodchopgirl",
+          "email": "karalyncapone@gmail.com"
+        },
+        {
+          "name": "xavriley",
+          "email": "info@xavierriley.co.uk"
+        },
+        {
+          "name": "xiaolin-ninja",
+          "email": "xiaolin.xu@heroku.com"
+        },
+        {
+          "name": "yann_ck",
+          "email": "yannick.schutz@gmail.com"
+        },
+        {
+          "name": "ymiyake",
+          "email": "ymiyake@salesforce.com"
+        },
+        {
+          "name": "yy318",
+          "email": "yueya8@gmail.com"
+        },
+        {
+          "name": "zhang.l",
+          "email": "zhang.l@salesforce.com"
+        },
+        {
+          "name": "zunda",
+          "email": "zundan@gmail.com"
+        }
+      ],
+      "_npmUser": {
+        "name": "raulb",
+        "email": "ra.barroso@gmail.com"
+      },
+      "directories": {},
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/ember-slds-components_0.0.2-0_1573829463208_0.1675592147787981"
+      },
+      "_hasShrinkwrap": false
+    },
+    "0.0.3-0": {
+      "name": "@heroku/ember-slds-components",
+      "version": "0.0.3-0",
+      "description": "The default blueprint for ember-cli addons.",
+      "keywords": [
+        "ember-addon"
+      ],
+      "repository": {
+        "type": "git",
+        "url": ""
+      },
+      "license": "MIT",
+      "author": {},
+      "scripts": {
+        "build": "ember build",
+        "dev": "ember serve",
+        "prebuild-storybook": "yarn build && shx cp -r public/* dist",
+        "build-storybook": "build-storybook -s dist",
+        "storybook": "yarn build && start-storybook -p 9009 -s dist",
+        "storybook:dev": "yarn dev & start-storybook -p 9009 -s dist",
+        "lint:hbs": "ember-template-lint .",
+        "lint:js": "eslint .",
+        "start": "ember serve",
+        "test": "ember test",
+        "test:all": "ember try:each"
+      },
+      "dependencies": {
+        "@salesforce-ux/design-system": "^2.10.2",
+        "broccoli-funnel": "^2.0.2",
+        "broccoli-merge-trees": "^3.0.2",
+        "ember-cli-babel": "^7.11.1",
+        "ember-cli-htmlbars": "^4.0.0"
+      },
+      "devDependencies": {
+        "@babel/core": "^7.7.2",
+        "@ember/optional-features": "^1.0.0",
+        "@storybook/addon-a11y": "^5.2.6",
+        "@storybook/addon-actions": "^5.2.6",
+        "@storybook/addon-backgrounds": "^5.2.6",
+        "@storybook/addon-knobs": "^5.2.6",
+        "@storybook/addon-storysource": "^5.2.6",
+        "@storybook/addon-viewport": "^5.2.6",
+        "@storybook/ember": "^5.2.6",
+        "@storybook/source-loader": "^5.2.6",
+        "babel-eslint": "^10.0.3",
+        "babel-loader": "^8.0.6",
+        "broccoli-asset-rev": "^3.0.0",
+        "ember-cli": "~3.13.1",
+        "ember-cli-dependency-checker": "^3.1.0",
+        "ember-cli-eslint": "^5.1.0",
+        "ember-cli-htmlbars-inline-precompile": "^3.0.1",
+        "ember-cli-inject-live-reload": "^2.0.1",
+        "ember-cli-sri": "^2.1.1",
+        "ember-cli-storybook": "^0.1.0",
+        "ember-cli-template-lint": "^1.0.0-beta.3",
+        "ember-cli-uglify": "^3.0.0",
+        "ember-disable-prototype-extensions": "^1.1.3",
+        "ember-export-application-global": "^2.0.0",
+        "ember-load-initializers": "^2.1.0",
+        "ember-maybe-import-regenerator": "^0.1.6",
+        "ember-qunit": "^4.5.1",
+        "ember-resolver": "^5.3.0",
+        "ember-source": "~3.13.0",
+        "ember-source-channel-url": "^2.0.1",
+        "ember-try": "^1.2.1",
+        "eslint-plugin-ember": "^7.1.0",
+        "eslint-plugin-node": "^10.0.0",
+        "loader.js": "^4.7.0",
+        "qunit-dom": "^0.9.0"
+      },
+      "engines": {
+        "node": "8.* || >= 10.*"
+      },
+      "ember-addon": {
+        "configPath": "tests/dummy/config"
+      },
+      "readmeFilename": "README.md",
+      "readme": "ember-slds-components\n==============================================================================\n\nEmber JS implementations of components from the [Lightning Design System](https://www.lightningdesignsystem.com/)\n\n\nCompatibility\n------------------------------------------------------------------------------\n\n* Ember.js v3.4 or above\n* Ember CLI v2.13 or above\n* Node.js v8 or above\n\n\nDevelopment\n------------------------------------------------------------------------------\nTo spin up Storybook, run\n```bash\nyarn storybook:dev\n```\nNote that this will spin up the Ember server in a background process, and then Storybook in the foreground.\n\nInstallation\n------------------------------------------------------------------------------\n\n```\nember install ember-slds-components\n```\n\n\nContributing\n------------------------------------------------------------------------------\n\nSee the [Contributing](CONTRIBUTING.md) guide for details.\n\n\nLicense\n------------------------------------------------------------------------------\n\nThis project is licensed under the [MIT License](LICENSE.md).\n",
+      "licenseText": "The MIT License (MIT)\n\nCopyright (c) 2019\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n",
+      "_id": "@heroku/ember-slds-components@0.0.3-0",
+      "dist": {
+        "shasum": "64696007f0d7b121de37b9afe69d7e4b8c268a19",
+        "integrity": "sha512-BRdZomS6bXVe8+v7akndq5BcxnITc8a0tM9zFrNqc7VMqFa/dmaJTAmcrfmDt3PmzznH8uYPoYqyd9Qg5LBpjA==",
+        "tarball": "https://registry.npmjs.org/@heroku/ember-slds-components/-/ember-slds-components-0.0.3-0.tgz",
+        "fileCount": 38,
+        "unpackedSize": 15135,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdzsoTCRA9TVsSAnZWagAA2XoP/1w992jF9gHGhUIYSyXX\njXGIdtBi5n7XvCJjlqmsnfGmyhiQATQOFXi+amKbC0yrIOTiX+dBylSsT8/R\njfS8s4v6lOuxgnG6tXPO/1hBOgXXztqz0C990BqdAzCIIjUehPONdp1ZDmPS\nJnr16VpEsLxDBw6mEawjTVMhGVnP+K/Qoc6rroQzU+7xOsK11GkHbsZEG40q\nQ+GmQb2jYVprFwEhmz7jjUcY6KV590CNNP5FqsC09o2d5IitaNpuU58GxtEU\n4z9RSaBxRYcklD+1q3H1DMeS4DNPSA9Ix/fHJgPfb+mMZJ1gfe4I5fgZ6I4x\nHXoEHn4No1r5JBj8c3DHon8Oar3c9IJq881FlWQbt+jrB6WQ3U2KOhyGYEoQ\niDcCJpDAdxnoAw239D+yq4Xxwy0JwwGCY1aYR5bW/IcN9CUIRS7vly2XdrJ+\nt9Do1XlGM+VLJg25N6vBBfPqzYZdPwDp4gHjEJ5UbQYEGHy0b7GldmU8vIwa\nSccNS+R2NofWXkkua9j6i3E+mwSwYjeC92Qgs8tlxsZxjGqWz0hlBzyXrjH7\nm/ZtvoCsFFfmZFGEnE2ZQX5MTvTQ8C9rXdCz9jUi7Eua6uMdzBidyNbW6KBj\njNSXTe7+ihyM34z9H7UabbuPu/OTyR2axBKibuWCQhsAeJINjb92xUNZwv50\nxc6W\r\n=N9T3\r\n-----END PGP SIGNATURE-----\r\n",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEUCIQC86yFri7bhjJVqoP2YmectEKeYD8npwTxCfSn5S+b0ZgIgSZkwHKmrMKgh3Xt2U+dP8kMg0wlH8Lm0nSjmMpTaGY4="
+          }
+        ]
+      },
+      "maintainers": [
+        {
+          "name": "7ftz",
+          "email": "zwhitfield@heroku.com"
+        },
+        {
+          "name": "abernicchia",
+          "email": "abernicchia@heroku.com"
+        },
+        {
+          "name": "abnovak",
+          "email": "anovak@salesforce.com"
+        },
+        {
+          "name": "adelcambre",
+          "email": "adelcambre@gmail.com"
+        },
+        {
+          "name": "adovenmuehlesf",
+          "email": "adovenmuehle@salesforce.com"
+        },
+        {
+          "name": "agnaite",
+          "email": "agnesklimaite@gmail.com"
+        },
+        {
+          "name": "ahamidi",
+          "email": "ahamidi@salesforce.com"
+        },
+        {
+          "name": "alouie-sfdc",
+          "email": "alouie@heroku.com"
+        },
+        {
+          "name": "amandadolan",
+          "email": "amandacrawfordalc@gmail.com"
+        },
+        {
+          "name": "amerine",
+          "email": "mark@amerine.net"
+        },
+        {
+          "name": "andscoop",
+          "email": "andycooper.s@gmail.com"
+        },
+        {
+          "name": "anniesexton",
+          "email": "asexton@salesforce.com"
+        },
+        {
+          "name": "apdarr",
+          "email": "alexdarr@gmail.com"
+        },
+        {
+          "name": "apghero",
+          "email": "agwozdziewycz@salesforce.com"
+        },
+        {
+          "name": "arafatm",
+          "email": "npmjs@arafatm.com"
+        },
+        {
+          "name": "aschneider-heroku",
+          "email": "alexander.schneider@heroku.com"
+        },
+        {
+          "name": "asegebresalazar",
+          "email": "asegebresalazar@salesforce.com"
+        },
+        {
+          "name": "astojanovic",
+          "email": "astojanovic@salesforce.com"
+        },
+        {
+          "name": "baliles",
+          "email": "david@baliles.com"
+        },
+        {
+          "name": "bdjohnso",
+          "email": "bradley@heroku.com"
+        },
+        {
+          "name": "beanieboi",
+          "email": "bfritsch@heroku.com"
+        },
+        {
+          "name": "bensymonds",
+          "email": "bsymonds@salesforce.com"
+        },
+        {
+          "name": "bernerdschaefer",
+          "email": "bernerd.schaefer@salesforce.com"
+        },
+        {
+          "name": "bigaluk",
+          "email": "big.aps@gmail.com"
+        },
+        {
+          "name": "binarycleric",
+          "email": "binarycleric@gmail.com"
+        },
+        {
+          "name": "bob_h",
+          "email": "bob@heroku.com"
+        },
+        {
+          "name": "breeldo",
+          "email": "bdodd@salesforce.com"
+        },
+        {
+          "name": "brettgoulder",
+          "email": "brett.goulder@gmail.com"
+        },
+        {
+          "name": "brockspratlen",
+          "email": "npm@brockspratlen.com"
+        },
+        {
+          "name": "bvanderhoof",
+          "email": "bvanderhoof@heroku.com"
+        },
+        {
+          "name": "cafreeman",
+          "email": "cfreeman.code@gmail.com"
+        },
+        {
+          "name": "camillebaldock",
+          "email": "npm@camillebaldock.com"
+        },
+        {
+          "name": "cdueltgen-heroku",
+          "email": "cdueltgen@heroku.com"
+        },
+        {
+          "name": "ceaess",
+          "email": "ceaess@gmail.com"
+        },
+        {
+          "name": "cfaist",
+          "email": "cfaist@salesforce.com"
+        },
+        {
+          "name": "cfunkhouser",
+          "email": "cfunkhouser@heroku.com"
+        },
+        {
+          "name": "chadbailey59",
+          "email": "chadbailey@gmail.com"
+        },
+        {
+          "name": "chadian",
+          "email": "chadcarbert@me.com"
+        },
+        {
+          "name": "chandana_anumula",
+          "email": "canumula@heroku.com"
+        },
+        {
+          "name": "chap",
+          "email": "chapambrose@gmail.com"
+        },
+        {
+          "name": "chrismarino",
+          "email": "christopher.marino@heroku.com"
+        },
+        {
+          "name": "cji",
+          "email": "cingram@heroku.com"
+        },
+        {
+          "name": "cleroy",
+          "email": "cleroy@heroku.com"
+        },
+        {
+          "name": "cobyr",
+          "email": "crandquist@salesforce.com"
+        },
+        {
+          "name": "code0100fun",
+          "email": "chase@code0100fun.com"
+        },
+        {
+          "name": "codefinger",
+          "email": "joe@heroku.com"
+        },
+        {
+          "name": "coreymartinheroku",
+          "email": "corey.martin@salesforce.com"
+        },
+        {
+          "name": "coreypurcell",
+          "email": "me@coreypurcell.com"
+        },
+        {
+          "name": "crcastle",
+          "email": "castle@heroku.com"
+        },
+        {
+          "name": "csinghaus-sfdc",
+          "email": "csinghaus@heroku.com"
+        },
+        {
+          "name": "curzonj",
+          "email": "curzonj@gmail.com"
+        },
+        {
+          "name": "cwallsf",
+          "email": "cwall@salesforce.com"
+        },
+        {
+          "name": "cyx",
+          "email": "cyx@cyx.is"
+        },
+        {
+          "name": "dan.richards",
+          "email": "dan.richards@heroku.com"
+        },
+        {
+          "name": "danielleadams",
+          "email": "adamzdanielle@gmail.com"
+        },
+        {
+          "name": "danp128",
+          "email": "dpiddy@gmail.com"
+        },
+        {
+          "name": "dhaulagiri",
+          "email": "brian.runnells+github@gmail.com"
+        },
+        {
+          "name": "dhavalthakkar93",
+          "email": "dthakkar@salesforce.com"
+        },
+        {
+          "name": "diana.doherty",
+          "email": "diana.doherty@heroku.com"
+        },
+        {
+          "name": "dkvdm",
+          "email": "dkvdmeer@salesforce.com"
+        },
+        {
+          "name": "dmathieu",
+          "email": "damien@heroku.com"
+        },
+        {
+          "name": "dmcinnes",
+          "email": "doug@dougmcinnes.com"
+        },
+        {
+          "name": "drapergeek",
+          "email": "jason@drapergeek.com"
+        },
+        {
+          "name": "dzhuo",
+          "email": "dzhuo@salesforce.com"
+        },
+        {
+          "name": "dzuelke",
+          "email": "dzuelke@gmail.com"
+        },
+        {
+          "name": "eallard",
+          "email": "eallard@heroku.com"
+        },
+        {
+          "name": "eblack",
+          "email": "eblack@heroku.com"
+        },
+        {
+          "name": "edmorley",
+          "email": "edmorley@users.noreply.github.com"
+        },
+        {
+          "name": "edubs",
+          "email": "erin.willis@salesforce.com"
+        },
+        {
+          "name": "elbandito",
+          "email": "longoria.public@gmail.com"
+        },
+        {
+          "name": "emccartie",
+          "email": "emccartie@salesforce.com"
+        },
+        {
+          "name": "enelson1992",
+          "email": "enelson@salesforce.com"
+        },
+        {
+          "name": "ericlchen2",
+          "email": "echen1@salesforce.com"
+        },
+        {
+          "name": "erik.jones",
+          "email": "ejones@heroku.com"
+        },
+        {
+          "name": "eviking",
+          "email": "jschutt@salesforce.com"
+        },
+        {
+          "name": "fivetanley",
+          "email": "stanley@stan.li"
+        },
+        {
+          "name": "fivetanley-heroku",
+          "email": "sstuart@heroku.com"
+        },
+        {
+          "name": "flarco",
+          "email": "flarco@live.com"
+        },
+        {
+          "name": "freeformz",
+          "email": "edwardam@interlix.com"
+        },
+        {
+          "name": "friism",
+          "email": "friism@gmail.com"
+        },
+        {
+          "name": "geemus",
+          "email": "geemus@gmail.com"
+        },
+        {
+          "name": "genslein",
+          "email": "genslein@salesforce.com"
+        },
+        {
+          "name": "gulopine",
+          "email": "marty@martyalchin.com"
+        },
+        {
+          "name": "gwinter",
+          "email": "gwinter@heroku.com"
+        },
+        {
+          "name": "halorgium",
+          "email": "tim@spork.in"
+        },
+        {
+          "name": "hannesfostie",
+          "email": "hannes.fostie@gmail.com"
+        },
+        {
+          "name": "heroku-dod-npm",
+          "email": "dod-secure@heroku.com"
+        },
+        {
+          "name": "heroku-hit",
+          "email": "johnny@heroku.com"
+        },
+        {
+          "name": "heroku-tcrayford",
+          "email": "tcrayford@heroku.com"
+        },
+        {
+          "name": "hone",
+          "email": "hone02@gmail.com"
+        },
+        {
+          "name": "hsophie-sf",
+          "email": "hsophie@salesforce.com"
+        },
+        {
+          "name": "hunterloftis",
+          "email": "hunter@hunterloftis.com"
+        },
+        {
+          "name": "hwalls",
+          "email": "hwalls@heroku.com"
+        },
+        {
+          "name": "iamjem",
+          "email": "pixeldonor@gmail.com"
+        },
+        {
+          "name": "icoffeysfdc",
+          "email": "icoffey@salesforce.com"
+        },
+        {
+          "name": "imtayadeway",
+          "email": "hello@timjwade.com"
+        },
+        {
+          "name": "iriberri",
+          "email": "iriberrig@gmail.com"
+        },
+        {
+          "name": "jabrown85",
+          "email": "jabrown85@gmail.com"
+        },
+        {
+          "name": "jahnavi_barma",
+          "email": "bjahnavi@heroku.com"
+        },
+        {
+          "name": "jason.cummings",
+          "email": "jason.cummings@heroku.com"
+        },
+        {
+          "name": "jbousiquotheroku",
+          "email": "jboursiquot@heroku.com"
+        },
+        {
+          "name": "jbyrum",
+          "email": "jbyrum@heroku.com"
+        },
+        {
+          "name": "jdance",
+          "email": "jdance@salesforce.com"
+        },
+        {
+          "name": "jdowning",
+          "email": "justin@downing.us"
+        },
+        {
+          "name": "jessieheroku711",
+          "email": "jessie.young@heroku.com"
+        },
+        {
+          "name": "jgwhite",
+          "email": "jamie@jgwhite.co.uk"
+        },
+        {
+          "name": "jhargis",
+          "email": "jhargis@salesforce.com"
+        },
+        {
+          "name": "jingweno",
+          "email": "jingweno@gmail.com"
+        },
+        {
+          "name": "jmahmood",
+          "email": "jmahmood@salesforce.com"
+        },
+        {
+          "name": "jmar910",
+          "email": "jmar910@gmail.com"
+        },
+        {
+          "name": "jmccartie",
+          "email": "jon@mccartie.com"
+        },
+        {
+          "name": "jmervine",
+          "email": "joshua@mervine.net"
+        },
+        {
+          "name": "jmonster",
+          "email": "jvdomino@gmail.com"
+        },
+        {
+          "name": "jmorrell",
+          "email": "morrell.jeremy@gmail.com"
+        },
+        {
+          "name": "jntullo",
+          "email": "jillian.tullo@gmail.com"
+        },
+        {
+          "name": "joanneyeung",
+          "email": "jttyeung@gmail.com"
+        },
+        {
+          "name": "johlym",
+          "email": "jelyman@gmail.com"
+        },
+        {
+          "name": "johnbeynon",
+          "email": "john@beynon.org.uk"
+        },
+        {
+          "name": "johndalton",
+          "email": "john@johndalton.info"
+        },
+        {
+          "name": "jonmountjoy",
+          "email": "tech+npm@jonmountjoy.com"
+        },
+        {
+          "name": "jordaneekey",
+          "email": "jordanee@heroku.com"
+        },
+        {
+          "name": "josephwegner",
+          "email": "dev@joewegner.com"
+        },
+        {
+          "name": "joshwlewis",
+          "email": "josh.w.lewis@gmail.com"
+        },
+        {
+          "name": "jqian",
+          "email": "jqian@salesforce.com"
+        },
+        {
+          "name": "jroes-sfdc",
+          "email": "jroes@salesforce.com"
+        },
+        {
+          "name": "jsalaz",
+          "email": "jsalaz@salesforce.com"
+        },
+        {
+          "name": "jsoyland",
+          "email": "jsoyland@heroku.com"
+        },
+        {
+          "name": "jsullivandigs",
+          "email": "josh@dipperstove.com"
+        },
+        {
+          "name": "julianduque",
+          "email": "julianduquej@gmail.com"
+        },
+        {
+          "name": "jvinil05",
+          "email": "vjain@heroku.com"
+        },
+        {
+          "name": "k.parnell",
+          "email": "k.parnell@gmail.com"
+        },
+        {
+          "name": "karuna123",
+          "email": "kgarigipati@salesforce.com"
+        },
+        {
+          "name": "kbong",
+          "email": "kbong@salesforce.com"
+        },
+        {
+          "name": "kevinbrolly",
+          "email": "kbrolly@heroku.com"
+        },
+        {
+          "name": "klockwood",
+          "email": "klockwood@heroku.com"
+        },
+        {
+          "name": "kstonesf",
+          "email": "Kyle.Stone@salesforce.com"
+        },
+        {
+          "name": "kwugirl",
+          "email": "kwu@heroku.com"
+        },
+        {
+          "name": "lambacck",
+          "email": "clambacher@heroku.com"
+        },
+        {
+          "name": "lmatte7",
+          "email": "lmatte@heroku.com"
+        },
+        {
+          "name": "lsorstokke",
+          "email": "lsorstokke@heroku.com"
+        },
+        {
+          "name": "luzcn6",
+          "email": "zheng.lu@salesforce.com"
+        },
+        {
+          "name": "lxfontes",
+          "email": "lxfontes@gmail.com"
+        },
+        {
+          "name": "lyric",
+          "email": "lyrichartley@gmail.com"
+        },
+        {
+          "name": "lyubo1",
+          "email": "lyubo@heroku.com"
+        },
+        {
+          "name": "mark.newell",
+          "email": "mark.newell@salesforce.com"
+        },
+        {
+          "name": "mars",
+          "email": "m@marsorange.com"
+        },
+        {
+          "name": "mathias_heroku",
+          "email": "mathias@heroku.com"
+        },
+        {
+          "name": "mattgraham",
+          "email": "kickthebox@gmail.com"
+        },
+        {
+          "name": "mattrothenberg",
+          "email": "hello@mattrothenberg.com"
+        },
+        {
+          "name": "matttannahill",
+          "email": "matthew.r.tannahill@live.com"
+        },
+        {
+          "name": "mble-sfdc",
+          "email": "mblewitt@salesforce.com"
+        },
+        {
+          "name": "mbuschheroku",
+          "email": "mbusch@heroku.com"
+        },
+        {
+          "name": "mcavage",
+          "email": "mcavage@gmail.com"
+        },
+        {
+          "name": "mhale_salesforce",
+          "email": "mhale@salesforce.com"
+        },
+        {
+          "name": "mikemondragon",
+          "email": "mikemondragon@gmail.com"
+        },
+        {
+          "name": "mimen",
+          "email": "miladmaaan@gmail.com"
+        },
+        {
+          "name": "mjandreau",
+          "email": "mjandreau@heroku.com"
+        },
+        {
+          "name": "mklinger",
+          "email": "mklinger@salesforce.com"
+        },
+        {
+          "name": "mnorth",
+          "email": "mnorth@heroku.com"
+        },
+        {
+          "name": "mpsenn",
+          "email": "npmjs@msenn.com"
+        },
+        {
+          "name": "mrmicahcooper",
+          "email": "mrmicahcooper@gmail.com"
+        },
+        {
+          "name": "mrowley",
+          "email": "mrowley@heroku.com"
+        },
+        {
+          "name": "mttr",
+          "email": "mitsuteru.s@gmail.com"
+        },
+        {
+          "name": "murphybytes",
+          "email": "jmurphy@heroku.com"
+        },
+        {
+          "name": "mwhagedorn_h",
+          "email": "mhagedorn@heroku.com"
+        },
+        {
+          "name": "mwoods79",
+          "email": "micahwoods@gmail.com"
+        },
+        {
+          "name": "n.kothari",
+          "email": "n.kothari@salesforce.com"
+        },
+        {
+          "name": "naaman",
+          "email": "naaman@heroku.com"
+        },
+        {
+          "name": "neerajheroku",
+          "email": "kumar.neeraj@heroku.com"
+        },
+        {
+          "name": "neilmiddleton",
+          "email": "neil@heroku.com"
+        },
+        {
+          "name": "nickcannariato",
+          "email": "nickcannariato@gmail.com"
+        },
+        {
+          "name": "niklasrichardson",
+          "email": "niklas.richardson@salesforce.com"
+        },
+        {
+          "name": "nsamsami",
+          "email": "nsamsami@salesforce.com"
+        },
+        {
+          "name": "ojacobson",
+          "email": "owen@grimoire.ca"
+        },
+        {
+          "name": "oodelola",
+          "email": "oodelola@heroku.com"
+        },
+        {
+          "name": "paulcsmith",
+          "email": "catalystmediastudios@gmail.com"
+        },
+        {
+          "name": "pbalchin-heroku",
+          "email": "pbalchin@heroku.com"
+        },
+        {
+          "name": "philheroku",
+          "email": "phil@heroku.com"
+        },
+        {
+          "name": "plathrop",
+          "email": "plathrop@salesforce.com"
+        },
+        {
+          "name": "pnance",
+          "email": "pamela.nance@yahoo.com"
+        },
+        {
+          "name": "pradhantushar",
+          "email": "tpradhan@salesforce.com"
+        },
+        {
+          "name": "rakesh.patil",
+          "email": "rakesh.patil@salesforce.com"
+        },
+        {
+          "name": "randerton",
+          "email": "randerton@salesforce.com"
+        },
+        {
+          "name": "ransombriggs",
+          "email": "rbriggs@heroku.com"
+        },
+        {
+          "name": "rasphilco",
+          "email": "philipe@heroku.com"
+        },
+        {
+          "name": "raulb",
+          "email": "ra.barroso@gmail.com"
+        },
+        {
+          "name": "raulmurciano",
+          "email": "raul@murciano.net"
+        },
+        {
+          "name": "rbriggs",
+          "email": "rbriggs@heroku.com"
+        },
+        {
+          "name": "rchanda",
+          "email": "rchanda@heroku.com"
+        },
+        {
+          "name": "rchimal",
+          "email": "ricardo@heroku.com"
+        },
+        {
+          "name": "rcross",
+          "email": "rcross@gmail.com"
+        },
+        {
+          "name": "reidmix",
+          "email": "reidmix@gmail.com"
+        },
+        {
+          "name": "rmanrique",
+          "email": "rmanrique@breadbox.io"
+        },
+        {
+          "name": "ryanbrainard",
+          "email": "ryan@ryanbrainard.com"
+        },
+        {
+          "name": "samuel.sharaf",
+          "email": "samuel.sharaf@salesforce.com"
+        },
+        {
+          "name": "sandy.lai",
+          "email": "sandy.lai@salesforce.com"
+        },
+        {
+          "name": "santoshbandari7",
+          "email": "saisantosh.bandari@heroku.com"
+        },
+        {
+          "name": "sarahpmac2",
+          "email": "sarah.macdonald@salesforce.com"
+        },
+        {
+          "name": "schneems",
+          "email": "richard.schneeman+no-recruiters@gmail.com"
+        },
+        {
+          "name": "scureton",
+          "email": "scureton@heroku.com"
+        },
+        {
+          "name": "sghaffar",
+          "email": "sghaffar@heroku.com"
+        },
+        {
+          "name": "sheax0r",
+          "email": "michael.shea@heroku.com"
+        },
+        {
+          "name": "sibson",
+          "email": "sibson@gmail.com"
+        },
+        {
+          "name": "sigmavirus24",
+          "email": "graffatcolmingov+npm@gmail.com"
+        },
+        {
+          "name": "sjezewskicm",
+          "email": "sjezewski@salesforce.com"
+        },
+        {
+          "name": "sleight42",
+          "email": "elight@salesforce.com"
+        },
+        {
+          "name": "sowjusutherland",
+          "email": "smudunuri@salesforce.com"
+        },
+        {
+          "name": "sripad.kulkarni",
+          "email": "sripad.kulkarni@heroku.com"
+        },
+        {
+          "name": "ssetayeshfar",
+          "email": "ssetayeshfar@salesforce.com"
+        },
+        {
+          "name": "sshaginyan",
+          "email": "SShaginyan@Gmail.com"
+        },
+        {
+          "name": "ssherbondy77",
+          "email": "seanderson07@gmail.com"
+        },
+        {
+          "name": "staaldraad",
+          "email": "estalmans@heroku.com"
+        },
+        {
+          "name": "stellacotton",
+          "email": "stella@stellacotton.com"
+        },
+        {
+          "name": "stevenharman",
+          "email": "steven@harmanly.com"
+        },
+        {
+          "name": "subakva",
+          "email": "jdwadsworth@gmail.com"
+        },
+        {
+          "name": "sudayavarman",
+          "email": "sudayavarman@heroku.com"
+        },
+        {
+          "name": "suguruo",
+          "email": "sohtaka@heroku.com"
+        },
+        {
+          "name": "superhighfives",
+          "email": "hi@charliegleason.com"
+        },
+        {
+          "name": "taylor.jones",
+          "email": "taylor.jones@heroku.com"
+        },
+        {
+          "name": "tbalthazar",
+          "email": "tbalthazar@heroku.com"
+        },
+        {
+          "name": "tcuilty",
+          "email": "tcuilty@salesforce.com"
+        },
+        {
+          "name": "tevanoff",
+          "email": "vitamint100@gmail.com"
+        },
+        {
+          "name": "thaichili",
+          "email": "thaichili@hotmail.com"
+        },
+        {
+          "name": "thebecky",
+          "email": "beckyjaimes@gmail.com"
+        },
+        {
+          "name": "thody",
+          "email": "adam@adamthody.com"
+        },
+        {
+          "name": "tholmes",
+          "email": "shadox@gmail.com"
+        },
+        {
+          "name": "tholschuh-salesforce",
+          "email": "tholschuh@salesforce.com"
+        },
+        {
+          "name": "threadwaste",
+          "email": "tony@threadwaste.com"
+        },
+        {
+          "name": "tkoh",
+          "email": "tim.kohrumel@gmail.com"
+        },
+        {
+          "name": "tlinquist",
+          "email": "tlinquist@heroku.com"
+        },
+        {
+          "name": "tmock12",
+          "email": "taylor.mock@heroku.com"
+        },
+        {
+          "name": "tomozilla",
+          "email": "tmitani@salesforce.com"
+        },
+        {
+          "name": "treznick",
+          "email": "treznick+npmjs@heroku.com"
+        },
+        {
+          "name": "troelsthomsen",
+          "email": "troethom@gmail.com"
+        },
+        {
+          "name": "uchi_mata",
+          "email": "mluft@heroku.com"
+        },
+        {
+          "name": "varunbezzam",
+          "email": "varun.bezzam@heroku.com"
+        },
+        {
+          "name": "vishalr7",
+          "email": "vrawtani@heroku.com"
+        },
+        {
+          "name": "vishvananda",
+          "email": "vishvananda@gmail.com"
+        },
+        {
+          "name": "vjohne",
+          "email": "vjohne@heroku.com"
+        },
+        {
+          "name": "vrana2019",
+          "email": "vikram.s.rana1@gmail.com"
+        },
+        {
+          "name": "vshiva",
+          "email": "vshiva@gmail.com"
+        },
+        {
+          "name": "w.griggs",
+          "email": "w.griggs@heroku.com"
+        },
+        {
+          "name": "wbarnette",
+          "email": "wbarnette@heroku.com"
+        },
+        {
+          "name": "wchrisjohnson",
+          "email": "wchrisjohnson@gmail.com"
+        },
+        {
+          "name": "wfarrington",
+          "email": "wfarrington@salesforce.com"
+        },
+        {
+          "name": "william-schmitt",
+          "email": "w.schmitt@heroku.com"
+        },
+        {
+          "name": "woodchopgirl",
+          "email": "karalyncapone@gmail.com"
+        },
+        {
+          "name": "xavriley",
+          "email": "info@xavierriley.co.uk"
+        },
+        {
+          "name": "xiaolin-ninja",
+          "email": "xiaolin.xu@heroku.com"
+        },
+        {
+          "name": "yann_ck",
+          "email": "yannick.schutz@gmail.com"
+        },
+        {
+          "name": "ymiyake",
+          "email": "ymiyake@salesforce.com"
+        },
+        {
+          "name": "yy318",
+          "email": "yueya8@gmail.com"
+        },
+        {
+          "name": "zhang.l",
+          "email": "zhang.l@salesforce.com"
+        },
+        {
+          "name": "zunda",
+          "email": "zundan@gmail.com"
+        }
+      ],
+      "_npmUser": {
+        "name": "raulb",
+        "email": "ra.barroso@gmail.com"
+      },
+      "directories": {},
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/ember-slds-components_0.0.3-0_1573833235083_0.2232536226798767"
+      },
+      "_hasShrinkwrap": false
+    },
+    "0.0.4-0": {
+      "name": "@heroku/ember-slds-components",
+      "version": "0.0.4-0",
+      "description": "The default blueprint for ember-cli addons.",
+      "keywords": [
+        "ember-addon"
+      ],
+      "repository": {
+        "type": "git",
+        "url": ""
+      },
+      "license": "MIT",
+      "author": {},
+      "scripts": {
+        "build": "ember build",
+        "dev": "ember serve",
+        "prebuild-storybook": "yarn build && shx cp -r public/* dist",
+        "build-storybook": "build-storybook -s dist",
+        "storybook": "yarn build && start-storybook -p 9009 -s dist",
+        "storybook:dev": "yarn dev & start-storybook -p 9009 -s dist",
+        "lint:hbs": "ember-template-lint .",
+        "lint:js": "eslint .",
+        "start": "ember serve",
+        "test": "ember test",
+        "test:all": "ember try:each"
+      },
+      "dependencies": {
+        "@salesforce-ux/design-system": "^2.10.2",
+        "broccoli-funnel": "^2.0.2",
+        "broccoli-merge-trees": "^3.0.2",
+        "ember-cli-babel": "^7.11.1",
+        "ember-cli-htmlbars": "^4.0.0"
+      },
+      "devDependencies": {
+        "@babel/core": "^7.7.2",
+        "@ember/optional-features": "^1.0.0",
+        "@storybook/addon-a11y": "^5.2.6",
+        "@storybook/addon-actions": "^5.2.6",
+        "@storybook/addon-backgrounds": "^5.2.6",
+        "@storybook/addon-knobs": "^5.2.6",
+        "@storybook/addon-storysource": "^5.2.6",
+        "@storybook/addon-viewport": "^5.2.6",
+        "@storybook/ember": "^5.2.6",
+        "@storybook/source-loader": "^5.2.6",
+        "babel-eslint": "^10.0.3",
+        "babel-loader": "^8.0.6",
+        "broccoli-asset-rev": "^3.0.0",
+        "ember-cli": "~3.13.1",
+        "ember-cli-dependency-checker": "^3.1.0",
+        "ember-cli-eslint": "^5.1.0",
+        "ember-cli-htmlbars-inline-precompile": "^3.0.1",
+        "ember-cli-inject-live-reload": "^2.0.1",
+        "ember-cli-sri": "^2.1.1",
+        "ember-cli-storybook": "^0.1.0",
+        "ember-cli-template-lint": "^1.0.0-beta.3",
+        "ember-cli-uglify": "^3.0.0",
+        "ember-disable-prototype-extensions": "^1.1.3",
+        "ember-export-application-global": "^2.0.0",
+        "ember-load-initializers": "^2.1.0",
+        "ember-maybe-import-regenerator": "^0.1.6",
+        "ember-qunit": "^4.5.1",
+        "ember-resolver": "^5.3.0",
+        "ember-source": "~3.13.0",
+        "ember-source-channel-url": "^2.0.1",
+        "ember-try": "^1.2.1",
+        "eslint-plugin-ember": "^7.1.0",
+        "eslint-plugin-node": "^10.0.0",
+        "loader.js": "^4.7.0",
+        "purgecss": "^1.4.1",
+        "qunit-dom": "^0.9.0"
+      },
+      "engines": {
+        "node": "8.* || >= 10.*"
+      },
+      "ember-addon": {
+        "configPath": "tests/dummy/config"
+      },
+      "readmeFilename": "README.md",
+      "readme": "ember-slds-components\n==============================================================================\n\nEmber JS implementations of components from the [Lightning Design System](https://www.lightningdesignsystem.com/)\n\n\nCompatibility\n------------------------------------------------------------------------------\n\n* Ember.js v3.4 or above\n* Ember CLI v2.13 or above\n* Node.js v8 or above\n\n\nDevelopment\n------------------------------------------------------------------------------\nTo spin up Storybook, run\n```bash\nyarn storybook:dev\n```\nNote that this will spin up the Ember server in a background process, and then Storybook in the foreground.\n\nInstallation\n------------------------------------------------------------------------------\n\n```\nember install ember-slds-components\n```\n\n\nContributing\n------------------------------------------------------------------------------\n\nSee the [Contributing](CONTRIBUTING.md) guide for details.\n\n\nLicense\n------------------------------------------------------------------------------\n\nThis project is licensed under the [MIT License](LICENSE.md).\n",
+      "licenseText": "The MIT License (MIT)\n\nCopyright (c) 2019\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n",
+      "_id": "@heroku/ember-slds-components@0.0.4-0",
+      "dist": {
+        "shasum": "c19fd157ce7af21edb609659cde8da15777f1748",
+        "integrity": "sha512-gskKlWumjhULIHSyDRpALDfl1E75TeVFyxq/NA3VFVMn+H4IDjCJAnTReCr/J7H/EmgTtFv/FnlNaPMe2XN8Hw==",
+        "tarball": "https://registry.npmjs.org/@heroku/ember-slds-components/-/ember-slds-components-0.0.4-0.tgz",
+        "fileCount": 37,
+        "unpackedSize": 15793,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJd1+lVCRA9TVsSAnZWagAA3lMP/iTQD0U7ZAB1itOZ10+q\nFjMfZSfX/kmfIm6JEtmhUWX/ipWfmTCLU70OBTfN9YskIv8QdmZHuLsSv+u4\nYgjiwPEIDxIssBS/5wR8X4N8LNfyHQnEj7xydJyvGwfK6OvQ4/Bmj22D1P94\nSIxedMAY1h+vnm3xKU7tSS9+/CRo6K+3Wna5fZv1WMfMwqXkflFRmEtTY5yC\nPeaYtObbZrxOJdTZSQUEpL+8BkRheqHkx2WKFzvGuE02+BLxQBDlOTYviptK\n58qS2UxvQofOatU+waNAmNubIOjCs2jrWn7SeiEqUVfmH9Dk+NTyAGWYZWfo\nzfkTePuLublKQdGEvw1mmhN8Pl7vkUmlRfiinU4wVOp1xBDkpoAiP4F+AvtG\nlotSaSZhCg/u+v4m0aulo+jnVO2n/7KJKSUO9+fnSuTaEEnkVikGs6E6CXYi\nJpa7GRKHqW8OyJRXYIEyLtGmhFNiZ5pcFVYgGIi1QgY80AYbXSmh2ekmk87G\nXphO+69Vs1uLkilcrXTQHSW0MQD49oKsiZIC79+WYXpsU/qVzgTNyVGqQgRb\nsLAp+0lQTKeNeiIAyXmSQQla1669tcpOfbiqxLBk/W3iWSXFNoWayXJcZ5JR\noj/9RxsT1nxeruv/z++sxTzYbpriATlNiB24px1IFV4meFy2Ti+QkKUteKTv\nsyDd\r\n=cvJu\r\n-----END PGP SIGNATURE-----\r\n",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEQCIDXGaXzwA3niYp/SQZpQS4jBviOwtVTH1aqF/Skkzr1IAiAvZwCBc/jbbO9ADaupXwgRbJdKkatEx/UH43AP1/D5Qw=="
+          }
+        ]
+      },
+      "maintainers": [
+        {
+          "email": "zwhitfield@heroku.com",
+          "name": "7ftz"
+        },
+        {
+          "email": "abernicchia@heroku.com",
+          "name": "abernicchia"
+        },
+        {
+          "email": "anovak@salesforce.com",
+          "name": "abnovak"
+        },
+        {
+          "email": "adelcambre@gmail.com",
+          "name": "adelcambre"
+        },
+        {
+          "email": "adovenmuehle@salesforce.com",
+          "name": "adovenmuehlesf"
+        },
+        {
+          "email": "agnesklimaite@gmail.com",
+          "name": "agnaite"
+        },
+        {
+          "email": "ahamidi@salesforce.com",
+          "name": "ahamidi"
+        },
+        {
+          "email": "alouie@heroku.com",
+          "name": "alouie-sfdc"
+        },
+        {
+          "email": "amandacrawfordalc@gmail.com",
+          "name": "amandadolan"
+        },
+        {
+          "email": "mark@amerine.net",
+          "name": "amerine"
+        },
+        {
+          "email": "andycooper.s@gmail.com",
+          "name": "andscoop"
+        },
+        {
+          "email": "asexton@salesforce.com",
+          "name": "anniesexton"
+        },
+        {
+          "email": "alexdarr@gmail.com",
+          "name": "apdarr"
+        },
+        {
+          "email": "agwozdziewycz@salesforce.com",
+          "name": "apghero"
+        },
+        {
+          "email": "npmjs@arafatm.com",
+          "name": "arafatm"
+        },
+        {
+          "email": "alexander.schneider@heroku.com",
+          "name": "aschneider-heroku"
+        },
+        {
+          "email": "asegebresalazar@salesforce.com",
+          "name": "asegebresalazar"
+        },
+        {
+          "email": "astojanovic@salesforce.com",
+          "name": "astojanovic"
+        },
+        {
+          "email": "david@baliles.com",
+          "name": "baliles"
+        },
+        {
+          "email": "bradley@heroku.com",
+          "name": "bdjohnso"
+        },
+        {
+          "email": "bfritsch@heroku.com",
+          "name": "beanieboi"
+        },
+        {
+          "email": "bsymonds@salesforce.com",
+          "name": "bensymonds"
+        },
+        {
+          "email": "bernerd.schaefer@salesforce.com",
+          "name": "bernerdschaefer"
+        },
+        {
+          "email": "big.aps@gmail.com",
+          "name": "bigaluk"
+        },
+        {
+          "email": "binarycleric@gmail.com",
+          "name": "binarycleric"
+        },
+        {
+          "email": "bob@heroku.com",
+          "name": "bob_h"
+        },
+        {
+          "email": "bdodd@salesforce.com",
+          "name": "breeldo"
+        },
+        {
+          "email": "brett.goulder@gmail.com",
+          "name": "brettgoulder"
+        },
+        {
+          "email": "npm@brockspratlen.com",
+          "name": "brockspratlen"
+        },
+        {
+          "email": "bvanderhoof@heroku.com",
+          "name": "bvanderhoof"
+        },
+        {
+          "email": "cfreeman.code@gmail.com",
+          "name": "cafreeman"
+        },
+        {
+          "email": "npm@camillebaldock.com",
+          "name": "camillebaldock"
+        },
+        {
+          "email": "cdueltgen@heroku.com",
+          "name": "cdueltgen-heroku"
+        },
+        {
+          "email": "ceaess@gmail.com",
+          "name": "ceaess"
+        },
+        {
+          "email": "cfaist@salesforce.com",
+          "name": "cfaist"
+        },
+        {
+          "email": "cfunkhouser@heroku.com",
+          "name": "cfunkhouser"
+        },
+        {
+          "email": "chadbailey@gmail.com",
+          "name": "chadbailey59"
+        },
+        {
+          "email": "chadcarbert@me.com",
+          "name": "chadian"
+        },
+        {
+          "email": "canumula@heroku.com",
+          "name": "chandana_anumula"
+        },
+        {
+          "email": "chapambrose@gmail.com",
+          "name": "chap"
+        },
+        {
+          "email": "christopher.marino@heroku.com",
+          "name": "chrismarino"
+        },
+        {
+          "email": "cingram@heroku.com",
+          "name": "cji"
+        },
+        {
+          "email": "cleroy@heroku.com",
+          "name": "cleroy"
+        },
+        {
+          "email": "crandquist@salesforce.com",
+          "name": "cobyr"
+        },
+        {
+          "email": "chase@code0100fun.com",
+          "name": "code0100fun"
+        },
+        {
+          "email": "joe@heroku.com",
+          "name": "codefinger"
+        },
+        {
+          "email": "corey.martin@salesforce.com",
+          "name": "coreymartinheroku"
+        },
+        {
+          "email": "me@coreypurcell.com",
+          "name": "coreypurcell"
+        },
+        {
+          "email": "castle@heroku.com",
+          "name": "crcastle"
+        },
+        {
+          "email": "csinghaus@heroku.com",
+          "name": "csinghaus-sfdc"
+        },
+        {
+          "email": "curzonj@gmail.com",
+          "name": "curzonj"
+        },
+        {
+          "email": "cwall@salesforce.com",
+          "name": "cwallsf"
+        },
+        {
+          "email": "cyx@cyx.is",
+          "name": "cyx"
+        },
+        {
+          "email": "dan.richards@heroku.com",
+          "name": "dan.richards"
+        },
+        {
+          "email": "adamzdanielle@gmail.com",
+          "name": "danielleadams"
+        },
+        {
+          "email": "dpiddy@gmail.com",
+          "name": "danp128"
+        },
+        {
+          "email": "brian.runnells+github@gmail.com",
+          "name": "dhaulagiri"
+        },
+        {
+          "email": "dthakkar@salesforce.com",
+          "name": "dhavalthakkar93"
+        },
+        {
+          "email": "diana.doherty@heroku.com",
+          "name": "diana.doherty"
+        },
+        {
+          "email": "dkvdmeer@salesforce.com",
+          "name": "dkvdm"
+        },
+        {
+          "email": "damien@heroku.com",
+          "name": "dmathieu"
+        },
+        {
+          "email": "doug@dougmcinnes.com",
+          "name": "dmcinnes"
+        },
+        {
+          "email": "jason@drapergeek.com",
+          "name": "drapergeek"
+        },
+        {
+          "email": "dzhuo@salesforce.com",
+          "name": "dzhuo"
+        },
+        {
+          "email": "dzuelke@gmail.com",
+          "name": "dzuelke"
+        },
+        {
+          "email": "eallard@heroku.com",
+          "name": "eallard"
+        },
+        {
+          "email": "eblack@heroku.com",
+          "name": "eblack"
+        },
+        {
+          "email": "edmorley@users.noreply.github.com",
+          "name": "edmorley"
+        },
+        {
+          "email": "erin.willis@salesforce.com",
+          "name": "edubs"
+        },
+        {
+          "email": "longoria.public@gmail.com",
+          "name": "elbandito"
+        },
+        {
+          "email": "emccartie@salesforce.com",
+          "name": "emccartie"
+        },
+        {
+          "email": "enelson@salesforce.com",
+          "name": "enelson1992"
+        },
+        {
+          "email": "echen1@salesforce.com",
+          "name": "ericlchen2"
+        },
+        {
+          "email": "ejones@heroku.com",
+          "name": "erik.jones"
+        },
+        {
+          "email": "jschutt@salesforce.com",
+          "name": "eviking"
+        },
+        {
+          "email": "stanley@stan.li",
+          "name": "fivetanley"
+        },
+        {
+          "email": "sstuart@heroku.com",
+          "name": "fivetanley-heroku"
+        },
+        {
+          "email": "flarco@live.com",
+          "name": "flarco"
+        },
+        {
+          "email": "edwardam@interlix.com",
+          "name": "freeformz"
+        },
+        {
+          "email": "friism@gmail.com",
+          "name": "friism"
+        },
+        {
+          "email": "geemus@gmail.com",
+          "name": "geemus"
+        },
+        {
+          "email": "genslein@salesforce.com",
+          "name": "genslein"
+        },
+        {
+          "email": "marty@martyalchin.com",
+          "name": "gulopine"
+        },
+        {
+          "email": "gwinter@heroku.com",
+          "name": "gwinter"
+        },
+        {
+          "email": "tim@spork.in",
+          "name": "halorgium"
+        },
+        {
+          "email": "hannes.fostie@gmail.com",
+          "name": "hannesfostie"
+        },
+        {
+          "email": "dod-secure@heroku.com",
+          "name": "heroku-dod-npm"
+        },
+        {
+          "email": "johnny@heroku.com",
+          "name": "heroku-hit"
+        },
+        {
+          "email": "tcrayford@heroku.com",
+          "name": "heroku-tcrayford"
+        },
+        {
+          "email": "hone02@gmail.com",
+          "name": "hone"
+        },
+        {
+          "email": "hsophie@salesforce.com",
+          "name": "hsophie-sf"
+        },
+        {
+          "email": "hunter@hunterloftis.com",
+          "name": "hunterloftis"
+        },
+        {
+          "email": "hwalls@heroku.com",
+          "name": "hwalls"
+        },
+        {
+          "email": "pixeldonor@gmail.com",
+          "name": "iamjem"
+        },
+        {
+          "email": "icoffey@salesforce.com",
+          "name": "icoffeysfdc"
+        },
+        {
+          "email": "hello@timjwade.com",
+          "name": "imtayadeway"
+        },
+        {
+          "email": "iriberrig@gmail.com",
+          "name": "iriberri"
+        },
+        {
+          "email": "jabrown85@gmail.com",
+          "name": "jabrown85"
+        },
+        {
+          "email": "bjahnavi@heroku.com",
+          "name": "jahnavi_barma"
+        },
+        {
+          "email": "jason.cummings@heroku.com",
+          "name": "jason.cummings"
+        },
+        {
+          "email": "jboursiquot@heroku.com",
+          "name": "jbousiquotheroku"
+        },
+        {
+          "email": "jbyrum@heroku.com",
+          "name": "jbyrum"
+        },
+        {
+          "email": "jdance@salesforce.com",
+          "name": "jdance"
+        },
+        {
+          "email": "justin@downing.us",
+          "name": "jdowning"
+        },
+        {
+          "email": "jessie.young@heroku.com",
+          "name": "jessieheroku711"
+        },
+        {
+          "email": "jamie@jgwhite.co.uk",
+          "name": "jgwhite"
+        },
+        {
+          "email": "jhargis@salesforce.com",
+          "name": "jhargis"
+        },
+        {
+          "email": "jingweno@gmail.com",
+          "name": "jingweno"
+        },
+        {
+          "email": "jmahmood@salesforce.com",
+          "name": "jmahmood"
+        },
+        {
+          "email": "jmar910@gmail.com",
+          "name": "jmar910"
+        },
+        {
+          "email": "jon@mccartie.com",
+          "name": "jmccartie"
+        },
+        {
+          "email": "joshua@mervine.net",
+          "name": "jmervine"
+        },
+        {
+          "email": "jvdomino@gmail.com",
+          "name": "jmonster"
+        },
+        {
+          "email": "morrell.jeremy@gmail.com",
+          "name": "jmorrell"
+        },
+        {
+          "email": "jillian.tullo@gmail.com",
+          "name": "jntullo"
+        },
+        {
+          "email": "jttyeung@gmail.com",
+          "name": "joanneyeung"
+        },
+        {
+          "email": "jelyman@gmail.com",
+          "name": "johlym"
+        },
+        {
+          "email": "john@beynon.org.uk",
+          "name": "johnbeynon"
+        },
+        {
+          "email": "john@johndalton.info",
+          "name": "johndalton"
+        },
+        {
+          "email": "tech+npm@jonmountjoy.com",
+          "name": "jonmountjoy"
+        },
+        {
+          "email": "jordanee@heroku.com",
+          "name": "jordaneekey"
+        },
+        {
+          "email": "dev@joewegner.com",
+          "name": "josephwegner"
+        },
+        {
+          "email": "josh.w.lewis@gmail.com",
+          "name": "joshwlewis"
+        },
+        {
+          "email": "jqian@salesforce.com",
+          "name": "jqian"
+        },
+        {
+          "email": "jroes@salesforce.com",
+          "name": "jroes-sfdc"
+        },
+        {
+          "email": "jsalaz@salesforce.com",
+          "name": "jsalaz"
+        },
+        {
+          "email": "jsoyland@heroku.com",
+          "name": "jsoyland"
+        },
+        {
+          "email": "josh@dipperstove.com",
+          "name": "jsullivandigs"
+        },
+        {
+          "email": "joshuatobin@gmail.com",
+          "name": "jtobinheroku"
+        },
+        {
+          "email": "julianduquej@gmail.com",
+          "name": "julianduque"
+        },
+        {
+          "email": "vjain@heroku.com",
+          "name": "jvinil05"
+        },
+        {
+          "email": "k.parnell@gmail.com",
+          "name": "k.parnell"
+        },
+        {
+          "email": "kgarigipati@salesforce.com",
+          "name": "karuna123"
+        },
+        {
+          "email": "kbong@salesforce.com",
+          "name": "kbong"
+        },
+        {
+          "email": "kbrolly@heroku.com",
+          "name": "kevinbrolly"
+        },
+        {
+          "email": "klockwood@heroku.com",
+          "name": "klockwood"
+        },
+        {
+          "email": "Kyle.Stone@salesforce.com",
+          "name": "kstonesf"
+        },
+        {
+          "email": "kwu@heroku.com",
+          "name": "kwugirl"
+        },
+        {
+          "email": "clambacher@heroku.com",
+          "name": "lambacck"
+        },
+        {
+          "email": "lmatte@heroku.com",
+          "name": "lmatte7"
+        },
+        {
+          "email": "lsorstokke@heroku.com",
+          "name": "lsorstokke"
+        },
+        {
+          "email": "zheng.lu@salesforce.com",
+          "name": "luzcn6"
+        },
+        {
+          "email": "lxfontes@gmail.com",
+          "name": "lxfontes"
+        },
+        {
+          "email": "lyrichartley@gmail.com",
+          "name": "lyric"
+        },
+        {
+          "email": "lyubo@heroku.com",
+          "name": "lyubo1"
+        },
+        {
+          "email": "mark.newell@salesforce.com",
+          "name": "mark.newell"
+        },
+        {
+          "email": "m@marsorange.com",
+          "name": "mars"
+        },
+        {
+          "email": "mathias@heroku.com",
+          "name": "mathias_heroku"
+        },
+        {
+          "email": "kickthebox@gmail.com",
+          "name": "mattgraham"
+        },
+        {
+          "email": "hello@mattrothenberg.com",
+          "name": "mattrothenberg"
+        },
+        {
+          "email": "matthew.r.tannahill@live.com",
+          "name": "matttannahill"
+        },
+        {
+          "email": "mblewitt@salesforce.com",
+          "name": "mble-sfdc"
+        },
+        {
+          "email": "mbusch@heroku.com",
+          "name": "mbuschheroku"
+        },
+        {
+          "email": "mcavage@gmail.com",
+          "name": "mcavage"
+        },
+        {
+          "email": "mhale@salesforce.com",
+          "name": "mhale_salesforce"
+        },
+        {
+          "email": "mikemondragon@gmail.com",
+          "name": "mikemondragon"
+        },
+        {
+          "email": "miladmaaan@gmail.com",
+          "name": "mimen"
+        },
+        {
+          "email": "mjandreau@heroku.com",
+          "name": "mjandreau"
+        },
+        {
+          "email": "mklinger@salesforce.com",
+          "name": "mklinger"
+        },
+        {
+          "email": "mnorth@heroku.com",
+          "name": "mnorth"
+        },
+        {
+          "email": "npmjs@msenn.com",
+          "name": "mpsenn"
+        },
+        {
+          "email": "mrmicahcooper@gmail.com",
+          "name": "mrmicahcooper"
+        },
+        {
+          "email": "mrowley@heroku.com",
+          "name": "mrowley"
+        },
+        {
+          "email": "mitsuteru.s@gmail.com",
+          "name": "mttr"
+        },
+        {
+          "email": "jmurphy@heroku.com",
+          "name": "murphybytes"
+        },
+        {
+          "email": "mhagedorn@heroku.com",
+          "name": "mwhagedorn_h"
+        },
+        {
+          "email": "micahwoods@gmail.com",
+          "name": "mwoods79"
+        },
+        {
+          "email": "n.kothari@salesforce.com",
+          "name": "n.kothari"
+        },
+        {
+          "email": "naaman@heroku.com",
+          "name": "naaman"
+        },
+        {
+          "email": "kumar.neeraj@heroku.com",
+          "name": "neerajheroku"
+        },
+        {
+          "email": "neil@heroku.com",
+          "name": "neilmiddleton"
+        },
+        {
+          "email": "nickcannariato@gmail.com",
+          "name": "nickcannariato"
+        },
+        {
+          "email": "niklas.richardson@salesforce.com",
+          "name": "niklasrichardson"
+        },
+        {
+          "email": "nsamsami@salesforce.com",
+          "name": "nsamsami"
+        },
+        {
+          "email": "owen@grimoire.ca",
+          "name": "ojacobson"
+        },
+        {
+          "email": "oodelola@heroku.com",
+          "name": "oodelola"
+        },
+        {
+          "email": "catalystmediastudios@gmail.com",
+          "name": "paulcsmith"
+        },
+        {
+          "email": "pbalchin@heroku.com",
+          "name": "pbalchin-heroku"
+        },
+        {
+          "email": "phil@heroku.com",
+          "name": "philheroku"
+        },
+        {
+          "email": "plathrop@salesforce.com",
+          "name": "plathrop"
+        },
+        {
+          "email": "pamela.nance@yahoo.com",
+          "name": "pnance"
+        },
+        {
+          "email": "tpradhan@salesforce.com",
+          "name": "pradhantushar"
+        },
+        {
+          "email": "rakesh.patil@salesforce.com",
+          "name": "rakesh.patil"
+        },
+        {
+          "email": "randerton@salesforce.com",
+          "name": "randerton"
+        },
+        {
+          "email": "rbriggs@heroku.com",
+          "name": "ransombriggs"
+        },
+        {
+          "email": "philipe@heroku.com",
+          "name": "rasphilco"
+        },
+        {
+          "email": "ra.barroso@gmail.com",
+          "name": "raulb"
+        },
+        {
+          "email": "raul@murciano.net",
+          "name": "raulmurciano"
+        },
+        {
+          "email": "rbriggs@heroku.com",
+          "name": "rbriggs"
+        },
+        {
+          "email": "rchanda@heroku.com",
+          "name": "rchanda"
+        },
+        {
+          "email": "ricardo@heroku.com",
+          "name": "rchimal"
+        },
+        {
+          "email": "rcross@gmail.com",
+          "name": "rcross"
+        },
+        {
+          "email": "reidmix@gmail.com",
+          "name": "reidmix"
+        },
+        {
+          "email": "rkotti@salesforce.com",
+          "name": "rkotti"
+        },
+        {
+          "email": "rmanrique@breadbox.io",
+          "name": "rmanrique"
+        },
+        {
+          "email": "ryan@ryanbrainard.com",
+          "name": "ryanbrainard"
+        },
+        {
+          "email": "samuel.sharaf@salesforce.com",
+          "name": "samuel.sharaf"
+        },
+        {
+          "email": "sandy.lai@salesforce.com",
+          "name": "sandy.lai"
+        },
+        {
+          "email": "saisantosh.bandari@heroku.com",
+          "name": "santoshbandari7"
+        },
+        {
+          "email": "sarah.macdonald@salesforce.com",
+          "name": "sarahpmac2"
+        },
+        {
+          "email": "richard.schneeman+no-recruiters@gmail.com",
+          "name": "schneems"
+        },
+        {
+          "email": "scureton@heroku.com",
+          "name": "scureton"
+        },
+        {
+          "email": "sghaffar@heroku.com",
+          "name": "sghaffar"
+        },
+        {
+          "email": "michael.shea@heroku.com",
+          "name": "sheax0r"
+        },
+        {
+          "email": "sibson@gmail.com",
+          "name": "sibson"
+        },
+        {
+          "email": "graffatcolmingov+npm@gmail.com",
+          "name": "sigmavirus24"
+        },
+        {
+          "email": "sjezewski@salesforce.com",
+          "name": "sjezewskicm"
+        },
+        {
+          "email": "elight@salesforce.com",
+          "name": "sleight42"
+        },
+        {
+          "email": "smudunuri@salesforce.com",
+          "name": "sowjusutherland"
+        },
+        {
+          "email": "sripad.kulkarni@heroku.com",
+          "name": "sripad.kulkarni"
+        },
+        {
+          "email": "ssetayeshfar@salesforce.com",
+          "name": "ssetayeshfar"
+        },
+        {
+          "email": "SShaginyan@Gmail.com",
+          "name": "sshaginyan"
+        },
+        {
+          "email": "seanderson07@gmail.com",
+          "name": "ssherbondy77"
+        },
+        {
+          "email": "estalmans@heroku.com",
+          "name": "staaldraad"
+        },
+        {
+          "email": "stella@stellacotton.com",
+          "name": "stellacotton"
+        },
+        {
+          "email": "steven@harmanly.com",
+          "name": "stevenharman"
+        },
+        {
+          "email": "jdwadsworth@gmail.com",
+          "name": "subakva"
+        },
+        {
+          "email": "sudayavarman@heroku.com",
+          "name": "sudayavarman"
+        },
+        {
+          "email": "sohtaka@heroku.com",
+          "name": "suguruo"
+        },
+        {
+          "email": "hi@charliegleason.com",
+          "name": "superhighfives"
+        },
+        {
+          "email": "taylor.jones@heroku.com",
+          "name": "taylor.jones"
+        },
+        {
+          "email": "tbalthazar@heroku.com",
+          "name": "tbalthazar"
+        },
+        {
+          "email": "tcuilty@salesforce.com",
+          "name": "tcuilty"
+        },
+        {
+          "email": "vitamint100@gmail.com",
+          "name": "tevanoff"
+        },
+        {
+          "email": "thaichili@hotmail.com",
+          "name": "thaichili"
+        },
+        {
+          "email": "beckyjaimes@gmail.com",
+          "name": "thebecky"
+        },
+        {
+          "email": "adam@adamthody.com",
+          "name": "thody"
+        },
+        {
+          "email": "shadox@gmail.com",
+          "name": "tholmes"
+        },
+        {
+          "email": "tholschuh@salesforce.com",
+          "name": "tholschuh-salesforce"
+        },
+        {
+          "email": "tony@threadwaste.com",
+          "name": "threadwaste"
+        },
+        {
+          "email": "tim.kohrumel@gmail.com",
+          "name": "tkoh"
+        },
+        {
+          "email": "tlinquist@heroku.com",
+          "name": "tlinquist"
+        },
+        {
+          "email": "taylor.mock@heroku.com",
+          "name": "tmock12"
+        },
+        {
+          "email": "tmitani@salesforce.com",
+          "name": "tomozilla"
+        },
+        {
+          "email": "treznick+npmjs@heroku.com",
+          "name": "treznick"
+        },
+        {
+          "email": "troethom@gmail.com",
+          "name": "troelsthomsen"
+        },
+        {
+          "email": "mluft@heroku.com",
+          "name": "uchi_mata"
+        },
+        {
+          "email": "varun.bezzam@heroku.com",
+          "name": "varunbezzam"
+        },
+        {
+          "email": "vrawtani@heroku.com",
+          "name": "vishalr7"
+        },
+        {
+          "email": "vishvananda@gmail.com",
+          "name": "vishvananda"
+        },
+        {
+          "email": "vjohne@heroku.com",
+          "name": "vjohne"
+        },
+        {
+          "email": "vikram.s.rana1@gmail.com",
+          "name": "vrana2019"
+        },
+        {
+          "email": "vshiva@gmail.com",
+          "name": "vshiva"
+        },
+        {
+          "email": "w.griggs@heroku.com",
+          "name": "w.griggs"
+        },
+        {
+          "email": "wbarnette@heroku.com",
+          "name": "wbarnette"
+        },
+        {
+          "email": "wchrisjohnson@gmail.com",
+          "name": "wchrisjohnson"
+        },
+        {
+          "email": "wfarrington@salesforce.com",
+          "name": "wfarrington"
+        },
+        {
+          "email": "w.schmitt@heroku.com",
+          "name": "william-schmitt"
+        },
+        {
+          "email": "karalyncapone@gmail.com",
+          "name": "woodchopgirl"
+        },
+        {
+          "email": "alexander.dale@salesforce.com",
+          "name": "xander-salesforce"
+        },
+        {
+          "email": "info@xavierriley.co.uk",
+          "name": "xavriley"
+        },
+        {
+          "email": "xiaolin.xu@heroku.com",
+          "name": "xiaolin-ninja"
+        },
+        {
+          "email": "yannick.schutz@gmail.com",
+          "name": "yann_ck"
+        },
+        {
+          "email": "ymiyake@salesforce.com",
+          "name": "ymiyake"
+        },
+        {
+          "email": "yueya8@gmail.com",
+          "name": "yy318"
+        },
+        {
+          "email": "zhang.l@salesforce.com",
+          "name": "zhang.l"
+        },
+        {
+          "email": "zundan@gmail.com",
+          "name": "zunda"
+        }
+      ],
+      "_npmUser": {
+        "name": "mattrothenberg",
+        "email": "hello@mattrothenberg.com"
+      },
+      "directories": {},
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/ember-slds-components_0.0.4-0_1574431060717_0.6862215254783606"
+      },
+      "_hasShrinkwrap": false
+    },
+    "0.0.5-0": {
+      "name": "@heroku/ember-slds-components",
+      "version": "0.0.5-0",
+      "description": "The default blueprint for ember-cli addons.",
+      "keywords": [
+        "ember-addon"
+      ],
+      "repository": {
+        "type": "git",
+        "url": ""
+      },
+      "license": "MIT",
+      "author": {},
+      "scripts": {
+        "build": "ember build",
+        "dev": "ember serve",
+        "prebuild-storybook": "yarn build && shx cp -r public/* dist",
+        "build-storybook": "build-storybook -s dist",
+        "storybook": "yarn build && start-storybook -p 9009 -s dist",
+        "storybook:dev": "yarn dev & start-storybook -p 9009 -s dist",
+        "lint:hbs": "ember-template-lint .",
+        "lint:js": "eslint .",
+        "start": "ember serve",
+        "test": "ember test",
+        "test:all": "ember try:each"
+      },
+      "dependencies": {
+        "@salesforce-ux/design-system": "^2.10.2",
+        "broccoli-funnel": "^2.0.2",
+        "broccoli-merge-trees": "^3.0.2",
+        "ember-cli-babel": "^7.11.1",
+        "ember-cli-htmlbars": "^4.0.0",
+        "purgecss": "^1.4.1"
+      },
+      "devDependencies": {
+        "@babel/core": "^7.7.2",
+        "@ember/optional-features": "^1.0.0",
+        "@storybook/addon-a11y": "^5.2.6",
+        "@storybook/addon-actions": "^5.2.6",
+        "@storybook/addon-backgrounds": "^5.2.6",
+        "@storybook/addon-knobs": "^5.2.6",
+        "@storybook/addon-storysource": "^5.2.6",
+        "@storybook/addon-viewport": "^5.2.6",
+        "@storybook/ember": "^5.2.6",
+        "@storybook/source-loader": "^5.2.6",
+        "babel-eslint": "^10.0.3",
+        "babel-loader": "^8.0.6",
+        "broccoli-asset-rev": "^3.0.0",
+        "ember-cli": "~3.13.1",
+        "ember-cli-dependency-checker": "^3.1.0",
+        "ember-cli-eslint": "^5.1.0",
+        "ember-cli-htmlbars-inline-precompile": "^3.0.1",
+        "ember-cli-inject-live-reload": "^2.0.1",
+        "ember-cli-sri": "^2.1.1",
+        "ember-cli-storybook": "^0.1.0",
+        "ember-cli-template-lint": "^1.0.0-beta.3",
+        "ember-cli-uglify": "^3.0.0",
+        "ember-disable-prototype-extensions": "^1.1.3",
+        "ember-export-application-global": "^2.0.0",
+        "ember-load-initializers": "^2.1.0",
+        "ember-maybe-import-regenerator": "^0.1.6",
+        "ember-qunit": "^4.5.1",
+        "ember-resolver": "^5.3.0",
+        "ember-source": "~3.13.0",
+        "ember-source-channel-url": "^2.0.1",
+        "ember-try": "^1.2.1",
+        "eslint-plugin-ember": "^7.1.0",
+        "eslint-plugin-node": "^10.0.0",
+        "loader.js": "^4.7.0",
+        "qunit-dom": "^0.9.0"
+      },
+      "engines": {
+        "node": "8.* || >= 10.*"
+      },
+      "ember-addon": {
+        "configPath": "tests/dummy/config"
+      },
+      "readmeFilename": "README.md",
+      "readme": "ember-slds-components\n==============================================================================\n\nEmber JS implementations of components from the [Lightning Design System](https://www.lightningdesignsystem.com/)\n\n\nCompatibility\n------------------------------------------------------------------------------\n\n* Ember.js v3.4 or above\n* Ember CLI v2.13 or above\n* Node.js v8 or above\n\n\nDevelopment\n------------------------------------------------------------------------------\nTo spin up Storybook, run\n```bash\nyarn storybook:dev\n```\nNote that this will spin up the Ember server in a background process, and then Storybook in the foreground.\n\nInstallation\n------------------------------------------------------------------------------\n\n```\nember install @heroku/ember-slds-components\n```\n\n\nContributing\n------------------------------------------------------------------------------\n\nSee the [Contributing](CONTRIBUTING.md) guide for details.\n\n\nLicense\n------------------------------------------------------------------------------\n\nThis project is licensed under the [MIT License](LICENSE.md).\n",
+      "licenseText": "The MIT License (MIT)\n\nCopyright (c) 2019\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n",
+      "_id": "@heroku/ember-slds-components@0.0.5-0",
+      "dist": {
+        "shasum": "52e51f5eaa25a18f1cb1ed92ca67011bd3fa75e1",
+        "integrity": "sha512-23B/sM2Rij1TwV4PBq/nJOQmxNrNlCAvuMdepBbcmqBymElicgL5PM5Rik7siYubJx0DopEtOn71oZLK1swJHw==",
+        "tarball": "https://registry.npmjs.org/@heroku/ember-slds-components/-/ember-slds-components-0.0.5-0.tgz",
+        "fileCount": 38,
+        "unpackedSize": 15861,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJd2B50CRA9TVsSAnZWagAA/S4P/jg7atxbGzmZe8evla0f\n7+UhDX4lGgLfG2vjKRVqb3pNFiITWGqniw09b3N2g3Nlz7oBu19sf38N/yTP\nTTCEe+20aYNgTy4I3sWHmaw1RXQbgmzvN+jBczrFIJUKKGIT7BDIqsRXxi9V\nAtvo3yoDGlQzsaSIa92ED40D3lvc5nGmKeWu7ApQTrv1W5oSB4BjgMoD2z6O\nWYGM+1XiCLh1AwcaUeuEGTtx5yXQOq/bSXLdcH9mN0TMygA2MsHslBgP/wZw\n8NC26YOq1chx8TTb2EyC0Jy8mKR6V85ikEEqDCwGOy6ZZETltvEfLkVM8ezt\nzAt8fdoSnAFpuzxdXRHv5i2qg7e7cZhkdfllqyfR2RDRSZT3htHb3LMi1qko\nL/HbI8a1dIe4uA4uDV3o/Kjp4VGpME4+wU3HHpM8uPGTVpMu73eWDn5TVCTj\nLa+7PYkVPrt8SJkvBUU4jOHugsA1m5HzZeDxx5LrWS6tP9T8lufGPHWVU9GL\nHJ3K7AA4OzqIzO5TJNFN/UVX6t1S44seoCe7zj2xOSHVKTw7RTKyOvho040f\nmEf8HrcY9NFxQU3k0gfuCAm9bgGuXEZtnC4/hlGt8F32Di3cFBatWPxOkcNt\nAs3llZgRAHmlkfHbBITbbwLarBg+uetFV3A32nrI63njQ11R2gaWiqFHIQMv\nC3uq\r\n=b8zj\r\n-----END PGP SIGNATURE-----\r\n",
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEUCIQCQOfc8EqWYePVv1JjRynyVl3yFSNtCDzZR9EDdQ3BMswIgf5ysFoCgcS6fXc/ySqUd5oepZhBFyDwJNSzxrEQFgLs="
+          }
+        ]
+      },
+      "maintainers": [
+        {
+          "email": "zwhitfield@heroku.com",
+          "name": "7ftz"
+        },
+        {
+          "email": "abernicchia@heroku.com",
+          "name": "abernicchia"
+        },
+        {
+          "email": "anovak@salesforce.com",
+          "name": "abnovak"
+        },
+        {
+          "email": "adelcambre@gmail.com",
+          "name": "adelcambre"
+        },
+        {
+          "email": "adovenmuehle@salesforce.com",
+          "name": "adovenmuehlesf"
+        },
+        {
+          "email": "agnesklimaite@gmail.com",
+          "name": "agnaite"
+        },
+        {
+          "email": "ahamidi@salesforce.com",
+          "name": "ahamidi"
+        },
+        {
+          "email": "alouie@heroku.com",
+          "name": "alouie-sfdc"
+        },
+        {
+          "email": "amandacrawfordalc@gmail.com",
+          "name": "amandadolan"
+        },
+        {
+          "email": "mark@amerine.net",
+          "name": "amerine"
+        },
+        {
+          "email": "andycooper.s@gmail.com",
+          "name": "andscoop"
+        },
+        {
+          "email": "asexton@salesforce.com",
+          "name": "anniesexton"
+        },
+        {
+          "email": "alexdarr@gmail.com",
+          "name": "apdarr"
+        },
+        {
+          "email": "agwozdziewycz@salesforce.com",
+          "name": "apghero"
+        },
+        {
+          "email": "npmjs@arafatm.com",
+          "name": "arafatm"
+        },
+        {
+          "email": "alexander.schneider@heroku.com",
+          "name": "aschneider-heroku"
+        },
+        {
+          "email": "asegebresalazar@salesforce.com",
+          "name": "asegebresalazar"
+        },
+        {
+          "email": "astojanovic@salesforce.com",
+          "name": "astojanovic"
+        },
+        {
+          "email": "david@baliles.com",
+          "name": "baliles"
+        },
+        {
+          "email": "bradley@heroku.com",
+          "name": "bdjohnso"
+        },
+        {
+          "email": "bfritsch@heroku.com",
+          "name": "beanieboi"
+        },
+        {
+          "email": "bsymonds@salesforce.com",
+          "name": "bensymonds"
+        },
+        {
+          "email": "bernerd.schaefer@salesforce.com",
+          "name": "bernerdschaefer"
+        },
+        {
+          "email": "big.aps@gmail.com",
+          "name": "bigaluk"
+        },
+        {
+          "email": "binarycleric@gmail.com",
+          "name": "binarycleric"
+        },
+        {
+          "email": "bob@heroku.com",
+          "name": "bob_h"
+        },
+        {
+          "email": "bdodd@salesforce.com",
+          "name": "breeldo"
+        },
+        {
+          "email": "brett.goulder@gmail.com",
+          "name": "brettgoulder"
+        },
+        {
+          "email": "npm@brockspratlen.com",
+          "name": "brockspratlen"
+        },
+        {
+          "email": "bvanderhoof@heroku.com",
+          "name": "bvanderhoof"
+        },
+        {
+          "email": "cfreeman.code@gmail.com",
+          "name": "cafreeman"
+        },
+        {
+          "email": "npm@camillebaldock.com",
+          "name": "camillebaldock"
+        },
+        {
+          "email": "cdueltgen@heroku.com",
+          "name": "cdueltgen-heroku"
+        },
+        {
+          "email": "ceaess@gmail.com",
+          "name": "ceaess"
+        },
+        {
+          "email": "cfaist@salesforce.com",
+          "name": "cfaist"
+        },
+        {
+          "email": "cfunkhouser@heroku.com",
+          "name": "cfunkhouser"
+        },
+        {
+          "email": "chadbailey@gmail.com",
+          "name": "chadbailey59"
+        },
+        {
+          "email": "chadcarbert@me.com",
+          "name": "chadian"
+        },
+        {
+          "email": "canumula@heroku.com",
+          "name": "chandana_anumula"
+        },
+        {
+          "email": "chapambrose@gmail.com",
+          "name": "chap"
+        },
+        {
+          "email": "christopher.marino@heroku.com",
+          "name": "chrismarino"
+        },
+        {
+          "email": "cingram@heroku.com",
+          "name": "cji"
+        },
+        {
+          "email": "cleroy@heroku.com",
+          "name": "cleroy"
+        },
+        {
+          "email": "crandquist@salesforce.com",
+          "name": "cobyr"
+        },
+        {
+          "email": "chase@code0100fun.com",
+          "name": "code0100fun"
+        },
+        {
+          "email": "joe@heroku.com",
+          "name": "codefinger"
+        },
+        {
+          "email": "corey.martin@salesforce.com",
+          "name": "coreymartinheroku"
+        },
+        {
+          "email": "me@coreypurcell.com",
+          "name": "coreypurcell"
+        },
+        {
+          "email": "castle@heroku.com",
+          "name": "crcastle"
+        },
+        {
+          "email": "csinghaus@heroku.com",
+          "name": "csinghaus-sfdc"
+        },
+        {
+          "email": "curzonj@gmail.com",
+          "name": "curzonj"
+        },
+        {
+          "email": "cwall@salesforce.com",
+          "name": "cwallsf"
+        },
+        {
+          "email": "cyx@cyx.is",
+          "name": "cyx"
+        },
+        {
+          "email": "dan.richards@heroku.com",
+          "name": "dan.richards"
+        },
+        {
+          "email": "adamzdanielle@gmail.com",
+          "name": "danielleadams"
+        },
+        {
+          "email": "dpiddy@gmail.com",
+          "name": "danp128"
+        },
+        {
+          "email": "brian.runnells+github@gmail.com",
+          "name": "dhaulagiri"
+        },
+        {
+          "email": "dthakkar@salesforce.com",
+          "name": "dhavalthakkar93"
+        },
+        {
+          "email": "diana.doherty@heroku.com",
+          "name": "diana.doherty"
+        },
+        {
+          "email": "dkvdmeer@salesforce.com",
+          "name": "dkvdm"
+        },
+        {
+          "email": "damien@heroku.com",
+          "name": "dmathieu"
+        },
+        {
+          "email": "doug@dougmcinnes.com",
+          "name": "dmcinnes"
+        },
+        {
+          "email": "jason@drapergeek.com",
+          "name": "drapergeek"
+        },
+        {
+          "email": "dzhuo@salesforce.com",
+          "name": "dzhuo"
+        },
+        {
+          "email": "dzuelke@gmail.com",
+          "name": "dzuelke"
+        },
+        {
+          "email": "eallard@heroku.com",
+          "name": "eallard"
+        },
+        {
+          "email": "eblack@heroku.com",
+          "name": "eblack"
+        },
+        {
+          "email": "edmorley@users.noreply.github.com",
+          "name": "edmorley"
+        },
+        {
+          "email": "erin.willis@salesforce.com",
+          "name": "edubs"
+        },
+        {
+          "email": "longoria.public@gmail.com",
+          "name": "elbandito"
+        },
+        {
+          "email": "emccartie@salesforce.com",
+          "name": "emccartie"
+        },
+        {
+          "email": "enelson@salesforce.com",
+          "name": "enelson1992"
+        },
+        {
+          "email": "echen1@salesforce.com",
+          "name": "ericlchen2"
+        },
+        {
+          "email": "ejones@heroku.com",
+          "name": "erik.jones"
+        },
+        {
+          "email": "jschutt@salesforce.com",
+          "name": "eviking"
+        },
+        {
+          "email": "stanley@stan.li",
+          "name": "fivetanley"
+        },
+        {
+          "email": "sstuart@heroku.com",
+          "name": "fivetanley-heroku"
+        },
+        {
+          "email": "flarco@live.com",
+          "name": "flarco"
+        },
+        {
+          "email": "edwardam@interlix.com",
+          "name": "freeformz"
+        },
+        {
+          "email": "friism@gmail.com",
+          "name": "friism"
+        },
+        {
+          "email": "geemus@gmail.com",
+          "name": "geemus"
+        },
+        {
+          "email": "genslein@salesforce.com",
+          "name": "genslein"
+        },
+        {
+          "email": "marty@martyalchin.com",
+          "name": "gulopine"
+        },
+        {
+          "email": "gwinter@heroku.com",
+          "name": "gwinter"
+        },
+        {
+          "email": "tim@spork.in",
+          "name": "halorgium"
+        },
+        {
+          "email": "hannes.fostie@gmail.com",
+          "name": "hannesfostie"
+        },
+        {
+          "email": "dod-secure@heroku.com",
+          "name": "heroku-dod-npm"
+        },
+        {
+          "email": "johnny@heroku.com",
+          "name": "heroku-hit"
+        },
+        {
+          "email": "tcrayford@heroku.com",
+          "name": "heroku-tcrayford"
+        },
+        {
+          "email": "hone02@gmail.com",
+          "name": "hone"
+        },
+        {
+          "email": "hsophie@salesforce.com",
+          "name": "hsophie-sf"
+        },
+        {
+          "email": "hunter@hunterloftis.com",
+          "name": "hunterloftis"
+        },
+        {
+          "email": "hwalls@heroku.com",
+          "name": "hwalls"
+        },
+        {
+          "email": "pixeldonor@gmail.com",
+          "name": "iamjem"
+        },
+        {
+          "email": "icoffey@salesforce.com",
+          "name": "icoffeysfdc"
+        },
+        {
+          "email": "hello@timjwade.com",
+          "name": "imtayadeway"
+        },
+        {
+          "email": "iriberrig@gmail.com",
+          "name": "iriberri"
+        },
+        {
+          "email": "jabrown85@gmail.com",
+          "name": "jabrown85"
+        },
+        {
+          "email": "bjahnavi@heroku.com",
+          "name": "jahnavi_barma"
+        },
+        {
+          "email": "jason.cummings@heroku.com",
+          "name": "jason.cummings"
+        },
+        {
+          "email": "jboursiquot@heroku.com",
+          "name": "jbousiquotheroku"
+        },
+        {
+          "email": "jbyrum@heroku.com",
+          "name": "jbyrum"
+        },
+        {
+          "email": "jdance@salesforce.com",
+          "name": "jdance"
+        },
+        {
+          "email": "justin@downing.us",
+          "name": "jdowning"
+        },
+        {
+          "email": "jessie.young@heroku.com",
+          "name": "jessieheroku711"
+        },
+        {
+          "email": "jamie@jgwhite.co.uk",
+          "name": "jgwhite"
+        },
+        {
+          "email": "jhargis@salesforce.com",
+          "name": "jhargis"
+        },
+        {
+          "email": "jingweno@gmail.com",
+          "name": "jingweno"
+        },
+        {
+          "email": "jmahmood@salesforce.com",
+          "name": "jmahmood"
+        },
+        {
+          "email": "jmar910@gmail.com",
+          "name": "jmar910"
+        },
+        {
+          "email": "jon@mccartie.com",
+          "name": "jmccartie"
+        },
+        {
+          "email": "joshua@mervine.net",
+          "name": "jmervine"
+        },
+        {
+          "email": "jvdomino@gmail.com",
+          "name": "jmonster"
+        },
+        {
+          "email": "morrell.jeremy@gmail.com",
+          "name": "jmorrell"
+        },
+        {
+          "email": "jillian.tullo@gmail.com",
+          "name": "jntullo"
+        },
+        {
+          "email": "jttyeung@gmail.com",
+          "name": "joanneyeung"
+        },
+        {
+          "email": "jelyman@gmail.com",
+          "name": "johlym"
+        },
+        {
+          "email": "john@beynon.org.uk",
+          "name": "johnbeynon"
+        },
+        {
+          "email": "john@johndalton.info",
+          "name": "johndalton"
+        },
+        {
+          "email": "tech+npm@jonmountjoy.com",
+          "name": "jonmountjoy"
+        },
+        {
+          "email": "jordanee@heroku.com",
+          "name": "jordaneekey"
+        },
+        {
+          "email": "dev@joewegner.com",
+          "name": "josephwegner"
+        },
+        {
+          "email": "josh.w.lewis@gmail.com",
+          "name": "joshwlewis"
+        },
+        {
+          "email": "jqian@salesforce.com",
+          "name": "jqian"
+        },
+        {
+          "email": "jroes@salesforce.com",
+          "name": "jroes-sfdc"
+        },
+        {
+          "email": "jsalaz@salesforce.com",
+          "name": "jsalaz"
+        },
+        {
+          "email": "jsoyland@heroku.com",
+          "name": "jsoyland"
+        },
+        {
+          "email": "josh@dipperstove.com",
+          "name": "jsullivandigs"
+        },
+        {
+          "email": "joshuatobin@gmail.com",
+          "name": "jtobinheroku"
+        },
+        {
+          "email": "julianduquej@gmail.com",
+          "name": "julianduque"
+        },
+        {
+          "email": "vjain@heroku.com",
+          "name": "jvinil05"
+        },
+        {
+          "email": "k.parnell@gmail.com",
+          "name": "k.parnell"
+        },
+        {
+          "email": "kgarigipati@salesforce.com",
+          "name": "karuna123"
+        },
+        {
+          "email": "kbong@salesforce.com",
+          "name": "kbong"
+        },
+        {
+          "email": "kbrolly@heroku.com",
+          "name": "kevinbrolly"
+        },
+        {
+          "email": "klockwood@heroku.com",
+          "name": "klockwood"
+        },
+        {
+          "email": "Kyle.Stone@salesforce.com",
+          "name": "kstonesf"
+        },
+        {
+          "email": "kwu@heroku.com",
+          "name": "kwugirl"
+        },
+        {
+          "email": "clambacher@heroku.com",
+          "name": "lambacck"
+        },
+        {
+          "email": "lmatte@heroku.com",
+          "name": "lmatte7"
+        },
+        {
+          "email": "lsorstokke@heroku.com",
+          "name": "lsorstokke"
+        },
+        {
+          "email": "zheng.lu@salesforce.com",
+          "name": "luzcn6"
+        },
+        {
+          "email": "lxfontes@gmail.com",
+          "name": "lxfontes"
+        },
+        {
+          "email": "lyrichartley@gmail.com",
+          "name": "lyric"
+        },
+        {
+          "email": "lyubo@heroku.com",
+          "name": "lyubo1"
+        },
+        {
+          "email": "mark.newell@salesforce.com",
+          "name": "mark.newell"
+        },
+        {
+          "email": "m@marsorange.com",
+          "name": "mars"
+        },
+        {
+          "email": "mathias@heroku.com",
+          "name": "mathias_heroku"
+        },
+        {
+          "email": "kickthebox@gmail.com",
+          "name": "mattgraham"
+        },
+        {
+          "email": "hello@mattrothenberg.com",
+          "name": "mattrothenberg"
+        },
+        {
+          "email": "matthew.r.tannahill@live.com",
+          "name": "matttannahill"
+        },
+        {
+          "email": "mblewitt@salesforce.com",
+          "name": "mble-sfdc"
+        },
+        {
+          "email": "mbusch@heroku.com",
+          "name": "mbuschheroku"
+        },
+        {
+          "email": "mcavage@gmail.com",
+          "name": "mcavage"
+        },
+        {
+          "email": "mhale@salesforce.com",
+          "name": "mhale_salesforce"
+        },
+        {
+          "email": "mikemondragon@gmail.com",
+          "name": "mikemondragon"
+        },
+        {
+          "email": "miladmaaan@gmail.com",
+          "name": "mimen"
+        },
+        {
+          "email": "mjandreau@heroku.com",
+          "name": "mjandreau"
+        },
+        {
+          "email": "mklinger@salesforce.com",
+          "name": "mklinger"
+        },
+        {
+          "email": "mnorth@heroku.com",
+          "name": "mnorth"
+        },
+        {
+          "email": "npmjs@msenn.com",
+          "name": "mpsenn"
+        },
+        {
+          "email": "mrmicahcooper@gmail.com",
+          "name": "mrmicahcooper"
+        },
+        {
+          "email": "mrowley@heroku.com",
+          "name": "mrowley"
+        },
+        {
+          "email": "mitsuteru.s@gmail.com",
+          "name": "mttr"
+        },
+        {
+          "email": "jmurphy@heroku.com",
+          "name": "murphybytes"
+        },
+        {
+          "email": "mhagedorn@heroku.com",
+          "name": "mwhagedorn_h"
+        },
+        {
+          "email": "micahwoods@gmail.com",
+          "name": "mwoods79"
+        },
+        {
+          "email": "n.kothari@salesforce.com",
+          "name": "n.kothari"
+        },
+        {
+          "email": "naaman@heroku.com",
+          "name": "naaman"
+        },
+        {
+          "email": "kumar.neeraj@heroku.com",
+          "name": "neerajheroku"
+        },
+        {
+          "email": "neil@heroku.com",
+          "name": "neilmiddleton"
+        },
+        {
+          "email": "nickcannariato@gmail.com",
+          "name": "nickcannariato"
+        },
+        {
+          "email": "niklas.richardson@salesforce.com",
+          "name": "niklasrichardson"
+        },
+        {
+          "email": "nsamsami@salesforce.com",
+          "name": "nsamsami"
+        },
+        {
+          "email": "owen@grimoire.ca",
+          "name": "ojacobson"
+        },
+        {
+          "email": "oodelola@heroku.com",
+          "name": "oodelola"
+        },
+        {
+          "email": "catalystmediastudios@gmail.com",
+          "name": "paulcsmith"
+        },
+        {
+          "email": "pbalchin@heroku.com",
+          "name": "pbalchin-heroku"
+        },
+        {
+          "email": "phil@heroku.com",
+          "name": "philheroku"
+        },
+        {
+          "email": "plathrop@salesforce.com",
+          "name": "plathrop"
+        },
+        {
+          "email": "pamela.nance@yahoo.com",
+          "name": "pnance"
+        },
+        {
+          "email": "tpradhan@salesforce.com",
+          "name": "pradhantushar"
+        },
+        {
+          "email": "rakesh.patil@salesforce.com",
+          "name": "rakesh.patil"
+        },
+        {
+          "email": "randerton@salesforce.com",
+          "name": "randerton"
+        },
+        {
+          "email": "rbriggs@heroku.com",
+          "name": "ransombriggs"
+        },
+        {
+          "email": "philipe@heroku.com",
+          "name": "rasphilco"
+        },
+        {
+          "email": "ra.barroso@gmail.com",
+          "name": "raulb"
+        },
+        {
+          "email": "raul@murciano.net",
+          "name": "raulmurciano"
+        },
+        {
+          "email": "rbriggs@heroku.com",
+          "name": "rbriggs"
+        },
+        {
+          "email": "rchanda@heroku.com",
+          "name": "rchanda"
+        },
+        {
+          "email": "ricardo@heroku.com",
+          "name": "rchimal"
+        },
+        {
+          "email": "rcross@gmail.com",
+          "name": "rcross"
+        },
+        {
+          "email": "reidmix@gmail.com",
+          "name": "reidmix"
+        },
+        {
+          "email": "rkotti@salesforce.com",
+          "name": "rkotti"
+        },
+        {
+          "email": "rmanrique@breadbox.io",
+          "name": "rmanrique"
+        },
+        {
+          "email": "ryan@ryanbrainard.com",
+          "name": "ryanbrainard"
+        },
+        {
+          "email": "samuel.sharaf@salesforce.com",
+          "name": "samuel.sharaf"
+        },
+        {
+          "email": "sandy.lai@salesforce.com",
+          "name": "sandy.lai"
+        },
+        {
+          "email": "saisantosh.bandari@heroku.com",
+          "name": "santoshbandari7"
+        },
+        {
+          "email": "sarah.macdonald@salesforce.com",
+          "name": "sarahpmac2"
+        },
+        {
+          "email": "richard.schneeman+no-recruiters@gmail.com",
+          "name": "schneems"
+        },
+        {
+          "email": "scureton@heroku.com",
+          "name": "scureton"
+        },
+        {
+          "email": "sghaffar@heroku.com",
+          "name": "sghaffar"
+        },
+        {
+          "email": "michael.shea@heroku.com",
+          "name": "sheax0r"
+        },
+        {
+          "email": "sibson@gmail.com",
+          "name": "sibson"
+        },
+        {
+          "email": "graffatcolmingov+npm@gmail.com",
+          "name": "sigmavirus24"
+        },
+        {
+          "email": "sjezewski@salesforce.com",
+          "name": "sjezewskicm"
+        },
+        {
+          "email": "elight@salesforce.com",
+          "name": "sleight42"
+        },
+        {
+          "email": "smudunuri@salesforce.com",
+          "name": "sowjusutherland"
+        },
+        {
+          "email": "sripad.kulkarni@heroku.com",
+          "name": "sripad.kulkarni"
+        },
+        {
+          "email": "ssetayeshfar@salesforce.com",
+          "name": "ssetayeshfar"
+        },
+        {
+          "email": "SShaginyan@Gmail.com",
+          "name": "sshaginyan"
+        },
+        {
+          "email": "seanderson07@gmail.com",
+          "name": "ssherbondy77"
+        },
+        {
+          "email": "estalmans@heroku.com",
+          "name": "staaldraad"
+        },
+        {
+          "email": "stella@stellacotton.com",
+          "name": "stellacotton"
+        },
+        {
+          "email": "steven@harmanly.com",
+          "name": "stevenharman"
+        },
+        {
+          "email": "jdwadsworth@gmail.com",
+          "name": "subakva"
+        },
+        {
+          "email": "sudayavarman@heroku.com",
+          "name": "sudayavarman"
+        },
+        {
+          "email": "sohtaka@heroku.com",
+          "name": "suguruo"
+        },
+        {
+          "email": "hi@charliegleason.com",
+          "name": "superhighfives"
+        },
+        {
+          "email": "taylor.jones@heroku.com",
+          "name": "taylor.jones"
+        },
+        {
+          "email": "tbalthazar@heroku.com",
+          "name": "tbalthazar"
+        },
+        {
+          "email": "tcuilty@salesforce.com",
+          "name": "tcuilty"
+        },
+        {
+          "email": "vitamint100@gmail.com",
+          "name": "tevanoff"
+        },
+        {
+          "email": "thaichili@hotmail.com",
+          "name": "thaichili"
+        },
+        {
+          "email": "beckyjaimes@gmail.com",
+          "name": "thebecky"
+        },
+        {
+          "email": "adam@adamthody.com",
+          "name": "thody"
+        },
+        {
+          "email": "shadox@gmail.com",
+          "name": "tholmes"
+        },
+        {
+          "email": "tholschuh@salesforce.com",
+          "name": "tholschuh-salesforce"
+        },
+        {
+          "email": "tony@threadwaste.com",
+          "name": "threadwaste"
+        },
+        {
+          "email": "tim.kohrumel@gmail.com",
+          "name": "tkoh"
+        },
+        {
+          "email": "tlinquist@heroku.com",
+          "name": "tlinquist"
+        },
+        {
+          "email": "taylor.mock@heroku.com",
+          "name": "tmock12"
+        },
+        {
+          "email": "tmitani@salesforce.com",
+          "name": "tomozilla"
+        },
+        {
+          "email": "treznick+npmjs@heroku.com",
+          "name": "treznick"
+        },
+        {
+          "email": "troethom@gmail.com",
+          "name": "troelsthomsen"
+        },
+        {
+          "email": "mluft@heroku.com",
+          "name": "uchi_mata"
+        },
+        {
+          "email": "varun.bezzam@heroku.com",
+          "name": "varunbezzam"
+        },
+        {
+          "email": "vrawtani@heroku.com",
+          "name": "vishalr7"
+        },
+        {
+          "email": "vishvananda@gmail.com",
+          "name": "vishvananda"
+        },
+        {
+          "email": "vjohne@heroku.com",
+          "name": "vjohne"
+        },
+        {
+          "email": "vikram.s.rana1@gmail.com",
+          "name": "vrana2019"
+        },
+        {
+          "email": "vshiva@gmail.com",
+          "name": "vshiva"
+        },
+        {
+          "email": "w.griggs@heroku.com",
+          "name": "w.griggs"
+        },
+        {
+          "email": "wbarnette@heroku.com",
+          "name": "wbarnette"
+        },
+        {
+          "email": "wchrisjohnson@gmail.com",
+          "name": "wchrisjohnson"
+        },
+        {
+          "email": "wfarrington@salesforce.com",
+          "name": "wfarrington"
+        },
+        {
+          "email": "w.schmitt@heroku.com",
+          "name": "william-schmitt"
+        },
+        {
+          "email": "karalyncapone@gmail.com",
+          "name": "woodchopgirl"
+        },
+        {
+          "email": "alexander.dale@salesforce.com",
+          "name": "xander-salesforce"
+        },
+        {
+          "email": "info@xavierriley.co.uk",
+          "name": "xavriley"
+        },
+        {
+          "email": "xiaolin.xu@heroku.com",
+          "name": "xiaolin-ninja"
+        },
+        {
+          "email": "yannick.schutz@gmail.com",
+          "name": "yann_ck"
+        },
+        {
+          "email": "ymiyake@salesforce.com",
+          "name": "ymiyake"
+        },
+        {
+          "email": "yueya8@gmail.com",
+          "name": "yy318"
+        },
+        {
+          "email": "zhang.l@salesforce.com",
+          "name": "zhang.l"
+        },
+        {
+          "email": "zundan@gmail.com",
+          "name": "zunda"
+        }
+      ],
+      "_npmUser": {
+        "name": "raulb",
+        "email": "ra.barroso@gmail.com"
+      },
+      "directories": {},
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/ember-slds-components_0.0.5-0_1574444660571_0.5169877197337076"
+      },
+      "_hasShrinkwrap": false
+    }
+  },
+  "time": {
+    "created": "2019-11-15T13:02:36.679Z",
+    "0.0.1": "2019-11-15T13:02:36.838Z",
+    "modified": "2022-05-02T20:41:37.932Z",
+    "0.0.2-0": "2019-11-15T14:51:03.363Z",
+    "0.0.3-0": "2019-11-15T15:53:55.185Z",
+    "0.0.4-0": "2019-11-22T13:57:40.880Z",
+    "0.0.5-0": "2019-11-22T17:44:20.698Z"
+  },
+  "maintainers": [
+    {
+      "email": "jwinn@salesforce.com",
+      "name": "heroku-johnny"
+    },
+    {
+      "email": "cdemartin@heroku.com",
+      "name": "codydemartin"
+    },
+    {
+      "email": "hritch@salesforce.com",
+      "name": "hritch"
+    },
+    {
+      "email": "lyrichartley@gmail.com",
+      "name": "lyric"
+    },
+    {
+      "email": "vamsi.mundra@salesforce.com",
+      "name": "vammundra"
+    },
+    {
+      "email": "msamineni@salesforce.com",
+      "name": "msamineni"
+    },
+    {
+      "email": "asamudrala@salesforce.com",
+      "name": "asamudralas"
+    },
+    {
+      "email": "j.cummings@salesforce.com",
+      "name": "jasoncummings-heroku"
+    },
+    {
+      "email": "ccasey@salesforce.com",
+      "name": "ccasey"
+    },
+    {
+      "email": "tvlahovic@salesforce.com",
+      "name": "tvlahovic"
+    },
+    {
+      "email": "kvandavasi@salesforce.com",
+      "name": "kvandavasi"
+    },
+    {
+      "email": "a.gautam@salesforce.com",
+      "name": "ashishgautam007"
+    },
+    {
+      "email": "aschaffert@heroku.com",
+      "name": "aschaffert-heroku"
+    },
+    {
+      "email": "jdodson@salesforce.com",
+      "name": "sfjonnpm"
+    },
+    {
+      "email": "cmarcojos@salesforce.com",
+      "name": "cmarcojos"
+    },
+    {
+      "email": "kharlow@salesforce.com",
+      "name": "kharlowsf"
+    },
+    {
+      "email": "ptemporini@heroku.com",
+      "name": "ptemporini"
+    },
+    {
+      "email": "suppada@salesforce.com",
+      "name": "suppada"
+    },
+    {
+      "email": "apadala@salesforce.com",
+      "name": "apadala"
+    },
+    {
+      "email": "sruthi.chennoju@salesforce.com",
+      "name": "sruthich"
+    },
+    {
+      "email": "lalitreddy.muthyala@salesforce.com",
+      "name": "lalitreddy"
+    },
+    {
+      "email": "llamattina@heroku.com",
+      "name": "llamattina"
+    },
+    {
+      "email": "jeanmichel.quint@heroku.com",
+      "name": "jeanmichel.quint"
+    },
+    {
+      "email": "cbaxter@salesforce.com",
+      "name": "cbaxtersf"
+    },
+    {
+      "email": "hardik.gupta@salesforce.com",
+      "name": "hardiksfheroku"
+    },
+    {
+      "email": "mkalidindi@salesforce.com",
+      "name": "madhukalidindi"
+    },
+    {
+      "email": "npasupuleti@salesforce.com",
+      "name": "nishant2602"
+    },
+    {
+      "email": "maly@heroku.com",
+      "name": "the7oka"
+    },
+    {
+      "email": "jmcallister@salesforce.com",
+      "name": "jonnymac"
+    },
+    {
+      "email": "brown.joseph@salesforce.com",
+      "name": "joeybrown90sf"
+    },
+    {
+      "email": "csamuel@salesforce.com",
+      "name": "csamuelsf"
+    },
+    {
+      "email": "ryoneyama@salesforce.com",
+      "name": "ryoneyama"
+    },
+    {
+      "email": "binarycleric@gmail.com",
+      "name": "binarycleric"
+    },
+    {
+      "email": "mbarik@salesforce.com",
+      "name": "jhili!16"
+    },
+    {
+      "email": "ncascio@salesforce.com",
+      "name": "nicholaicasciosalesforce"
+    },
+    {
+      "email": "knagar@salesforce.com",
+      "name": "kamakshinagar"
+    },
+    {
+      "email": "asegebresalazar@salesforce.com",
+      "name": "asegebresalazar"
+    },
+    {
+      "email": "troy.coll@salesforce.com",
+      "name": "troy.coll"
+    },
+    {
+      "email": "brohde@salesforce.com",
+      "name": "b_rohde"
+    },
+    {
+      "email": "ceciquin@protonmail.com",
+      "name": "ceciquin"
+    },
+    {
+      "email": "rdanford@heroku.com",
+      "name": "rdan2"
+    },
+    {
+      "email": "kerry.bennett@salesforce.com",
+      "name": "kerry-bennett"
+    },
+    {
+      "email": "cmontes@heroku.com",
+      "name": "montes_heroku"
+    },
+    {
+      "email": "el.zoona@gmail.com",
+      "name": "elzoona"
+    },
+    {
+      "email": "alfonso.campodonico@gmail.com",
+      "name": "alfonsocampodonico"
+    },
+    {
+      "email": "lennox.mckenzie@gmail.com",
+      "name": "agony1023"
+    },
+    {
+      "email": "rappinavenkata@salesforce.com",
+      "name": "rappinavenkata"
+    },
+    {
+      "email": "bpanyam@salesforce.com",
+      "name": "panyambhagya"
+    },
+    {
+      "email": "juliano.martinez@salesforce.com",
+      "name": "juliano.martinez"
+    },
+    {
+      "email": "lhoang@salesforce.com",
+      "name": "lhoang"
+    },
+    {
+      "email": "samuel.burden@heroku.com",
+      "name": "sam-burden-heroku"
+    },
+    {
+      "email": "grisel.martinez@salesforce.com",
+      "name": "grismar17"
+    },
+    {
+      "email": "gurvindersingh@salesforce.com",
+      "name": "gsinghsfdc"
+    },
+    {
+      "email": "amargam@salesforce.com",
+      "name": "ashishmargam"
+    },
+    {
+      "email": "vjain@heroku.com",
+      "name": "jvinil05"
+    },
+    {
+      "email": "mhale@salesforce.com",
+      "name": "mhale_salesforce"
+    },
+    {
+      "email": "ryan@ryanbrainard.com",
+      "name": "ryanbrainard"
+    },
+    {
+      "email": "swadesna.rout@salesforce.com",
+      "name": "srout03"
+    },
+    {
+      "email": "jabrown85@gmail.com",
+      "name": "jabrown85"
+    },
+    {
+      "email": "bradley@heroku.com",
+      "name": "bdjohnso"
+    },
+    {
+      "email": "m@marsorange.com",
+      "name": "mars"
+    },
+    {
+      "email": "wfarrington@salesforce.com",
+      "name": "wfarrington"
+    },
+    {
+      "email": "k.parnell@gmail.com",
+      "name": "k.parnell"
+    },
+    {
+      "email": "doug@dougmcinnes.com",
+      "name": "dmcinnes"
+    },
+    {
+      "email": "jessie.young@heroku.com",
+      "name": "jessieheroku711"
+    },
+    {
+      "email": "tholschuh@salesforce.com",
+      "name": "tholschuh-salesforce"
+    },
+    {
+      "email": "dzuelke@gmail.com",
+      "name": "dzuelke"
+    },
+    {
+      "email": "zundan@gmail.com",
+      "name": "zunda"
+    },
+    {
+      "email": "mitsuteru.s@gmail.com",
+      "name": "mttr"
+    },
+    {
+      "email": "tbalthazar@heroku.com",
+      "name": "tbalthazar"
+    },
+    {
+      "email": "jillian.tullo@gmail.com",
+      "name": "jntullo"
+    },
+    {
+      "email": "mark@amerine.net",
+      "name": "amerine"
+    },
+    {
+      "email": "justin@downing.us",
+      "name": "jdowning"
+    },
+    {
+      "email": "klockwood@heroku.com",
+      "name": "klockwood"
+    },
+    {
+      "email": "eblack@salesforce.com",
+      "name": "eblack"
+    },
+    {
+      "email": "alouie@heroku.com",
+      "name": "alouie-sfdc"
+    },
+    {
+      "email": "miladmaaan@gmail.com",
+      "name": "mimen"
+    },
+    {
+      "email": "bfritsch@heroku.com",
+      "name": "beanieboi"
+    },
+    {
+      "email": "longoria.public@gmail.com",
+      "name": "elbandito"
+    },
+    {
+      "email": "tim@spork.in",
+      "name": "halorgium"
+    },
+    {
+      "email": "josh@dipperstove.com",
+      "name": "jsullivandigs"
+    },
+    {
+      "email": "nlanatta@heroku.com",
+      "name": "nlanatta"
+    },
+    {
+      "email": "joe@heroku.com",
+      "name": "codefinger"
+    },
+    {
+      "email": "rcourtois@heroku.com",
+      "name": "rcourtois"
+    },
+    {
+      "email": "kdreyeroren@salesforce.com",
+      "name": "kdreyeroren"
+    },
+    {
+      "email": "d@nstarner.email",
+      "name": "dstarner"
+    },
+    {
+      "email": "johnny@heroku.com",
+      "name": "heroku-hit"
+    },
+    {
+      "email": "jorge.lopez@salesforce.com",
+      "name": "jlopezdan"
+    },
+    {
+      "email": "dod-secure@heroku.com",
+      "name": "heroku-dod-npm"
+    },
+    {
+      "email": "troethom@gmail.com",
+      "name": "troelsthomsen"
+    },
+    {
+      "email": "dreichenberg@salesforce.com",
+      "name": "dreichenberg"
+    },
+    {
+      "email": "philipe.navarro@salesforce.com",
+      "name": "rasphilco"
+    },
+    {
+      "email": "morrell.jeremy@gmail.com",
+      "name": "jmorrell"
+    },
+    {
+      "email": "hpriya@salesforce.com",
+      "name": "hpriya16"
+    },
+    {
+      "email": "micahwoods@gmail.com",
+      "name": "mwoods79"
+    },
+    {
+      "email": "hi@charliegleason.com",
+      "name": "superhighfives"
+    },
+    {
+      "email": "dgallegos@heroku.com",
+      "name": "archa347"
+    },
+    {
+      "email": "christopher.jose@salesforce.com",
+      "name": "christopher.jose"
+    },
+    {
+      "email": "tizhang2718@gmail.com",
+      "name": "nombie_zinja"
+    },
+    {
+      "email": "bjahnavi@heroku.com",
+      "name": "jahnavi_barma"
+    },
+    {
+      "email": "sarahoh@heroku.com",
+      "name": "sarahoh2468"
+    },
+    {
+      "email": "smuppavarapu@heroku.com",
+      "name": "smuppavarapu"
+    },
+    {
+      "email": "yannick.schutz@gmail.com",
+      "name": "yann_ck"
+    },
+    {
+      "email": "josh.w.lewis@gmail.com",
+      "name": "joshwlewis"
+    },
+    {
+      "email": "rethesh.pradhan@heroku.com",
+      "name": "retheshpradhan"
+    },
+    {
+      "email": "amandacrawfordalc@gmail.com",
+      "name": "amandadolan"
+    },
+    {
+      "email": "hone02@gmail.com",
+      "name": "hone"
+    },
+    {
+      "email": "Kyle.Stone@salesforce.com",
+      "name": "kstonesf"
+    },
+    {
+      "email": "rcross@gmail.com",
+      "name": "rcross"
+    },
+    {
+      "email": "jsalaz@salesforce.com",
+      "name": "jsalaz"
+    },
+    {
+      "email": "vitamint100@gmail.com",
+      "name": "tevanoff"
+    },
+    {
+      "email": "gwinter@heroku.com",
+      "name": "gwinter"
+    },
+    {
+      "email": "richard.schneeman+no-recruiters@gmail.com",
+      "name": "schneems"
+    },
+    {
+      "email": "mbusch@heroku.com",
+      "name": "mbuschheroku"
+    },
+    {
+      "email": "jdwadsworth@gmail.com",
+      "name": "subakva"
+    },
+    {
+      "email": "wchrisjohnson@gmail.com",
+      "name": "wchrisjohnson"
+    },
+    {
+      "email": "friism@gmail.com",
+      "name": "friism"
+    },
+    {
+      "email": "jon@mccartie.com",
+      "name": "jmccartie"
+    },
+    {
+      "email": "vjohne@heroku.com",
+      "name": "vjohne"
+    },
+    {
+      "email": "jordanee@heroku.com",
+      "name": "jordaneekey"
+    },
+    {
+      "email": "michael.shea@heroku.com",
+      "name": "sheax0r"
+    },
+    {
+      "email": "reidmix@gmail.com",
+      "name": "reidmix"
+    },
+    {
+      "email": "kgarigipati@salesforce.com",
+      "name": "karuna123"
+    },
+    {
+      "email": "rchanda@heroku.com",
+      "name": "rchanda"
+    },
+    {
+      "email": "taylor.jones@heroku.com",
+      "name": "taylor.jones"
+    },
+    {
+      "email": "vishvananda@gmail.com",
+      "name": "vishvananda"
+    },
+    {
+      "email": "dthakkar@salesforce.com",
+      "name": "dhavalthakkar93"
+    },
+    {
+      "email": "csinghaus@heroku.com",
+      "name": "csinghaus-sfdc"
+    },
+    {
+      "email": "hello@timjwade.com",
+      "name": "imtayadeway"
+    },
+    {
+      "email": "andycooper.s@gmail.com",
+      "name": "andscoop"
+    },
+    {
+      "email": "bdodd@salesforce.com",
+      "name": "breeldo"
+    },
+    {
+      "email": "chase@code0100fun.com",
+      "name": "code0100fun"
+    },
+    {
+      "email": "john@johndalton.info",
+      "name": "johndalton"
+    },
+    {
+      "email": "ricardo@heroku.com",
+      "name": "rchimal"
+    },
+    {
+      "email": "zwhitfield@heroku.com",
+      "name": "7ftz"
+    },
+    {
+      "email": "ymiyake@salesforce.com",
+      "name": "ymiyake"
+    },
+    {
+      "email": "edmorley@users.noreply.github.com",
+      "name": "edmorley"
+    },
+    {
+      "email": "jelyman@gmail.com",
+      "name": "johlym"
+    },
+    {
+      "email": "lsorstokke@heroku.com",
+      "name": "lsorstokke"
+    },
+    {
+      "email": "hsophie@salesforce.com",
+      "name": "hsophie-sf"
+    },
+    {
+      "email": "chadcarbert@me.com",
+      "name": "chadian"
+    },
+    {
+      "email": "mark.newell@salesforce.com",
+      "name": "mark.newell"
+    },
+    {
+      "email": "iriberrig@gmail.com",
+      "name": "iriberri"
+    },
+    {
+      "email": "mluft@heroku.com",
+      "name": "uchi_mata"
+    },
+    {
+      "email": "ssetayeshfar@salesforce.com",
+      "name": "ssetayeshfar"
+    },
+    {
+      "email": "jboursiquot@heroku.com",
+      "name": "jbousiquotheroku"
+    },
+    {
+      "email": "sghaffar@heroku.com",
+      "name": "sghaffar"
+    },
+    {
+      "email": "abernicchia@heroku.com",
+      "name": "abernicchia"
+    },
+    {
+      "email": "big.aps@gmail.com",
+      "name": "bigaluk"
+    },
+    {
+      "email": "mrmicahcooper@gmail.com",
+      "name": "mrmicahcooper"
+    },
+    {
+      "email": "christopher.marino@heroku.com",
+      "name": "chrismarino"
+    },
+    {
+      "email": "w.griggs@heroku.com",
+      "name": "w.griggs"
+    },
+    {
+      "email": "seanderson07@gmail.com",
+      "name": "ssherbondy77"
+    },
+    {
+      "email": "aaronorosen@gmail.com",
+      "name": "aaronorosen"
+    },
+    {
+      "email": "sonny.horne@salesforce.com",
+      "name": "snnyhorne"
+    },
+    {
+      "email": "mdmitrovic@salesforce.com",
+      "name": "maja_d"
+    },
+    {
+      "email": "julianduquej@gmail.com",
+      "name": "julianduque"
+    },
+    {
+      "email": "sripad.kulkarni@heroku.com",
+      "name": "sripad.kulkarni"
+    },
+    {
+      "email": "dzhuo@salesforce.com",
+      "name": "dzhuo"
+    },
+    {
+      "email": "sudayavarman@heroku.com",
+      "name": "sudayavarman"
+    },
+    {
+      "email": "saisantosh.bandari@heroku.com",
+      "name": "santoshbandari7"
+    },
+    {
+      "email": "vrawtani@heroku.com",
+      "name": "vishalr7"
+    },
+    {
+      "email": "canumula@heroku.com",
+      "name": "chandana_anumula"
+    },
+    {
+      "email": "david@baliles.com",
+      "name": "baliles"
+    },
+    {
+      "email": "msenn@salesforce.com",
+      "name": "mpsenn"
+    },
+    {
+      "email": "cwall@salesforce.com",
+      "name": "cwallsf"
+    },
+    {
+      "email": "alexander.dale@salesforce.com",
+      "name": "xander-salesforce"
+    },
+    {
+      "email": "rkotti@salesforce.com",
+      "name": "rkotti"
+    },
+    {
+      "email": "z.li@salesforce.com",
+      "name": "zli-sf"
+    },
+    {
+      "email": "hang.zhou@salesforce.com",
+      "name": "hangzhousfdc"
+    },
+    {
+      "email": "kbarber@salesforce.com",
+      "name": "kbarbersf"
+    },
+    {
+      "email": "malax@malax.de",
+      "name": "malax"
+    },
+    {
+      "email": "pfleming@salesforce.com",
+      "name": "paulyfleming"
+    },
+    {
+      "email": "sasikanth.bontha@salesforce.com",
+      "name": "sasikanth.bontha"
+    },
+    {
+      "email": "mohammadfazil.shaik@heroku.com",
+      "name": "mohammadfazil.shaik"
+    },
+    {
+      "email": "dhagberg@salesforce.com",
+      "name": "dhagberg-sf"
+    },
+    {
+      "email": "alex.arnell@gmail.com",
+      "name": "voidlock"
+    },
+    {
+      "email": "aoriada@salesforce.com",
+      "name": "aoriada"
+    },
+    {
+      "email": "evan.bulman@gmail.com",
+      "name": "ebulman"
+    },
+    {
+      "email": "pchittum@salesforce.com",
+      "name": "pchittum"
+    },
+    {
+      "email": "mblankenship@salesforce.com",
+      "name": "marcusblankenship"
+    },
+    {
+      "email": "udeb@salesforce.com",
+      "name": "udeb"
+    },
+    {
+      "email": "stelang@salesforce.com",
+      "name": "stelang"
+    },
+    {
+      "email": "tkaneko@salesforce.com",
+      "name": "tetsuya_"
+    },
+    {
+      "email": "pallavi.rao@salesforce.com",
+      "name": "pallavi.rao"
+    },
+    {
+      "email": "kotutuloro@salesforce.com",
+      "name": "kotutuloro"
+    },
+    {
+      "email": "ntonollier@salesforce.com",
+      "name": "ntonollier"
+    },
+    {
+      "email": "valerie.woolard@gmail.com",
+      "name": "valeriecodes"
+    },
+    {
+      "email": "elizabeth.cox@salesforce.com",
+      "name": "slizco"
+    },
+    {
+      "email": "bmukund@salesforce.com",
+      "name": "bmukund"
+    },
+    {
+      "email": "hkodamunja@salesforce.com",
+      "name": "harish.457"
+    },
+    {
+      "email": "ruohan.zhang@salesforce.com",
+      "name": "ruohan.zhang"
+    },
+    {
+      "email": "jonathank.brown@salesforce.com",
+      "name": "jonathankenbrown"
+    },
+    {
+      "email": "dcalermo@salesforce.com",
+      "name": "lcalermo"
+    },
+    {
+      "email": "ylokotkin@salesforce.com",
+      "name": "yuriyl"
+    },
+    {
+      "email": "yangsu@heroku.com",
+      "name": "yangsu-heroku"
+    },
+    {
+      "email": "gnetter@salesforce.com",
+      "name": "gnetter"
+    },
+    {
+      "email": "kristin.foss@salesforce.com",
+      "name": "kristinfoss"
+    },
+    {
+      "email": "sabayanathan@heroku.com",
+      "name": "sabayanathan"
+    },
+    {
+      "email": "ramosa@salesforce.com",
+      "name": "securamos"
+    },
+    {
+      "email": "no_oneatall@hotmail.com",
+      "name": "fernomac"
+    },
+    {
+      "email": "joseph.w.perry@gmail.com",
+      "name": "jwperry"
+    },
+    {
+      "email": "relsmore@salesforce.com",
+      "name": "rhys-sdfc"
+    },
+    {
+      "email": "deandre.boston@gmail.com",
+      "name": "dboston"
+    },
+    {
+      "email": "nkoziuk@heroku.com",
+      "name": "nkoziuk"
+    },
+    {
+      "email": "mcraviotto@salesforce.com",
+      "name": "mcraviotto"
+    },
+    {
+      "email": "michael.biven@tutanota.com",
+      "name": "michaelbiven"
+    },
+    {
+      "email": "pfuente@heroku.com",
+      "name": "pfuente"
+    },
+    {
+      "email": "me@lds.li",
+      "name": "lincoln.stoll"
+    },
+    {
+      "email": "pdhotre@salesforce.com",
+      "name": "pal-d"
+    },
+    {
+      "email": "brittany.jones@salesforce.com",
+      "name": "brittany.jones"
+    },
+    {
+      "email": "becky.chen@salesforce.com",
+      "name": "beckychen"
+    },
+    {
+      "email": "bmendiratta@salesforce.com",
+      "name": "bhawnaheroku"
+    },
+    {
+      "email": "kirk.chung@salesforce.com",
+      "name": "kirkchung"
+    },
+    {
+      "email": "knair@salesforce.com",
+      "name": "hkii"
+    },
+    {
+      "email": "elimchayseng@salesforce.com",
+      "name": "elimchaysengsf"
+    },
+    {
+      "email": "bdenton@heroku.com",
+      "name": "bdenton"
+    },
+    {
+      "email": "tianchongjiang@salesforce.com",
+      "name": "tij005"
+    },
+    {
+      "email": "animje@salesforce.com",
+      "name": "animje"
+    },
+    {
+      "email": "vivek.viswanathan@salesforce.com",
+      "name": "vivek.viswanathan"
+    },
+    {
+      "email": "eleary@salesforce.com",
+      "name": "eleary"
+    },
+    {
+      "email": "cfurrer@salesforce.com",
+      "name": "cgfuh"
+    },
+    {
+      "email": "kmendu@salesforce.com",
+      "name": "kmendu"
+    },
+    {
+      "email": "vrustagi@salesforce.com",
+      "name": "vrustagi"
+    },
+    {
+      "email": "svelivela@salesforce.com",
+      "name": "svelivela"
+    },
+    {
+      "email": "alm-cli@salesforce.com",
+      "name": "salesforce-releases"
+    },
+    {
+      "email": "tmeek@salesforce.com",
+      "name": "via7aazfntqmqqi"
+    },
+    {
+      "email": "marcelsantos@salesforce.com",
+      "name": "marcelsfdc"
+    },
+    {
+      "email": "caiten.white@salesforce.com",
+      "name": "caiten.white"
+    },
+    {
+      "email": "amphro@gmail.com",
+      "name": "amphro"
+    },
+    {
+      "email": "daebum.lee@heroku.com",
+      "name": "daebumlee"
+    },
+    {
+      "email": "nathan.tlam@gmail.com",
+      "name": "nlamt"
+    },
+    {
+      "email": "paguilar@heroku.com",
+      "name": "paguilar"
+    },
+    {
+      "email": "srisaro@heroku.com",
+      "name": "nrisaro"
+    },
+    {
+      "email": "nrenke@salesforce.com",
+      "name": "nrenke"
+    },
+    {
+      "email": "a.raja@heroku.com",
+      "name": "araja"
+    },
+    {
+      "email": "mauricio@edge14.com",
+      "name": "mgomes"
+    },
+    {
+      "email": "matthew.rossi@salesforce.com",
+      "name": "matthew.rossi"
+    },
+    {
+      "email": "bleong@salesforce.com",
+      "name": "bleong"
+    },
+    {
+      "email": "scope@heroku.com",
+      "name": "sarassassin"
+    }
+  ],
+  "description": "The default blueprint for ember-cli addons.",
+  "keywords": [
+    "ember-addon"
+  ],
+  "license": "MIT",
+  "readme": "",
+  "readmeFilename": ""
+}
