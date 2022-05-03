@@ -563,6 +563,7 @@ dependencies = [
  "clap",
  "futures",
  "node-semver",
+ "num_cpus",
  "reqwest",
  "serde",
  "serde_json",

@@ -13,9 +13,13 @@ pub enum Commands {
     Package {
         #[clap(required = true)]
         name: String,
+        #[clap(short, long)]
+        job_size: Option<usize>,
     },
     User {
         #[clap(required = true)]
         name: String,
+        #[clap(short, long)]
+        job_size: Option<usize>,
     },
 }
