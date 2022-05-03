@@ -1,22 +1,27 @@
 use clap::Parser;
-use npmjs_verify::{cli::Args, npmjs};
+use npmjs_verify::{
+    cli::{Cli, Commands},
+    npmjs,
+};
 use tracing::info;
 
 #[tokio::main]
 async fn main() {
     tracing_subscriber::fmt::init();
 
-    let args = Args::parse();
     let npmjs_token = std::env::var("NPMJS_TOKEN").ok();
     let npmjs_client = npmjs::Client::new(npmjs_token).unwrap();
-
-    if let Some(user) = args.user {
-        if let Some(packages) = npmjs_client.packages(&user).await.unwrap() {
-            let futures = packages.keys().map(|pkg| package(&npmjs_client, pkg));
-            futures::future::join_all(futures).await;
+    let args = Cli::parse();
+    match args.command {
+        Commands::Package { name } => {
+            package(&npmjs_client, &name).await;
         }
-    } else if let Some(pkg) = args.package {
-        package(&npmjs_client, &pkg).await;
+        Commands::User { name } => {
+            if let Some(packages) = npmjs_client.packages(&name).await.unwrap() {
+                let futures = packages.keys().map(|pkg| package(&npmjs_client, pkg));
+                futures::future::join_all(futures).await;
+            }
+        }
     }
 }
 
