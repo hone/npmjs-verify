@@ -1,11 +1,12 @@
 use crate::npmjs::data::{Dist, Version};
+use serde::Serialize;
 use std::{fs::File, future::Future, io::Write, path::Path, process::Output};
 use tokio::process::Command;
 use tracing::debug;
 
 const SIGNED_BY: &str = "npmregistry";
 
-#[derive(Debug)]
+#[derive(Serialize, Debug)]
 /// Possible Verification Values
 pub enum Verify {
     Pass,
@@ -13,7 +14,7 @@ pub enum Verify {
     Missing,
 }
 
-#[derive(Debug)]
+#[derive(Serialize, Debug)]
 /// Named Tuple of the Verify Output
 pub struct VerifyOutput {
     pub name: String,
